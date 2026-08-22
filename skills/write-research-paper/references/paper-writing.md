@@ -22,9 +22,11 @@ what the paper has already explained, but not a definition, motivation, or
 example that appears later. Expert guessability is not sufficient: a successful
 proof audit does not imply that the exposition passes this standard.
 
-A section or subsection should open by saying, in ordinary mathematical
-language, what will be studied and why it matters to the paper. Do not orient
-the reader by listing technical consequences whose meaning has not yet been
+A numbered section or subsection, including one in an appendix, must begin
+with at least one sentence of ordinary mathematical prose before any formal
+environment, displayed formula, list, or nested heading. The opening should
+say what will be studied and why it matters to the paper. Do not orient the
+reader by listing technical consequences whose meaning has not yet been
 introduced. A section that passes to a covering should first say which group
 acts on which quiver, what the covering algebra is, and why the conjecture
 under study transfers along the covering; terms such as `Galois covering`,
@@ -34,19 +36,19 @@ explanation before the reader knows what they mean.
 Read for continuity at major boundaries, not only for recoverability within
 individual paragraphs. At a section or subsection break, keep active the
 mathematical job that has just ended and inspect the heading together with the
-first paragraph or formal statement. They should provide an adequate handoff:
-why this task begins here, how it uses or departs from the preceding work, and
-what immediate role it has in the argument. A closing Organization block may
-make the global sequence reconstructible without making a later local handoff
-feel natural.
+required opening prose and the first formal statement. The prose should
+provide an adequate handoff: why this task begins here, how it uses or departs
+from the preceding work, and what immediate role it has in the argument. A
+closing Organization block may make the global sequence reconstructible
+without making a later local handoff feel natural.
 
-Do not force every section to begin with a stock roadmap sentence. A theorem,
-definition, or example may open a section when its heading and statement make
-the connection immediate. Repair a boundary when the reader must silently
-supply a change of task or discourse mode, wait for a later paragraph to learn
-why the new material appeared, or treat an intervening technical block as an
-interruption. Use the smallest mathematical bridge that supplies the missing
-function, and do not merely repeat the table of contents.
+The prose-first rule and the continuity test are separate. A generic roadmap
+sentence can satisfy the first mechanically while failing the second. Repair a
+boundary when the reader must silently supply a change of task or discourse
+mode, wait for a later paragraph to learn why the new material appeared, or
+treat an intervening technical block as an interruption. Use the smallest
+mathematical bridge that supplies the missing function, and do not merely
+repeat the table of contents.
 
 There is no mandatory paragraph template. An order such as
 
@@ -689,10 +691,13 @@ Before declaring a revision complete, check:
 17. Does every retained result pointer, citation-based application, informal
    alias, and apparent result name identify an exact mathematical referent and
    evidence status without requiring guesswork?
-18. At every major section or subsection boundary, do the heading and opening
+18. Does every numbered section and subsection, including each appendix,
+   begin with ordinary prose before any formal environment, display, list, or
+   nested heading?
+19. At every major section or subsection boundary, do the heading and opening
    passage provide an adequate local handoff from the work just completed,
-   without relying only on a distant Organization block or adding generic
-   roadmap boilerplate?
+   without relying only on a distant Organization block or generic roadmap
+   boilerplate?
 
 Compilation checks the artifact, not the reader's understanding. For an ordinary
 prose or proof-structure revision, compile the paper and inspect the log, but do

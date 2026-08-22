@@ -154,8 +154,11 @@ the actual transition still feels abrupt or interruptive on first encounter.
 
 At every major boundary---abstract to introduction, mathematical narrative to
 front-matter blocks, conventions to the first body section, and each section
-or subsection break---keep the job of the preceding passage active. Read the
-new heading together with its first paragraph or formal statement and ask:
+or subsection break---keep the job of the preceding passage active. First
+check that every numbered section and subsection, including appendices, begins
+with ordinary prose before any formal environment, display, list, or nested
+heading. Then read the new heading together with its opening prose and first
+formal statement and ask:
 
 - what mathematical or expository job just ended;
 - what job begins now;
@@ -164,14 +167,13 @@ new heading together with its first paragraph or formal statement and ask:
 - whether the handoff is seamless, compressed but natural, abrupt,
   interruptive, delayed, or displaced.
 
-Use `[continuity]` when a competent reader can eventually reconstruct the
-sequence but must silently supply the local connection, absorb an unexplained
-change of task or discourse mode, or wait for later orientation. Record the
-two jobs and the missing or delayed connective work. Do not use the category
-to demand a transition sentence at every heading: a theorem, definition, or
-example may open a section naturally when the heading and statement themselves
-make the handoff immediate. Do not reward generic roadmap boilerplate or a
-local repetition of the table of contents.
+Record a prose-first violation as `[order]`. Use `[continuity]` separately when
+a competent reader can eventually reconstruct the sequence but must silently
+supply the local connection, absorb an unexplained change of task or discourse
+mode, or wait for later orientation. Record the two jobs and the missing or
+delayed connective work. A generic roadmap sentence may satisfy the structural
+rule while still deserving `[continuity]`; do not reward boilerplate or a local
+repetition of the table of contents.
 
 ## Setup
 

@@ -124,12 +124,15 @@ After EVERY paragraph, stop and write a journal entry answering:
       but why is it being said here")?
   (c) What do you now expect to come next?
 
-At every major section or subsection boundary, also keep the preceding
-passage's job active and assess the heading together with the new opening. Say
-whether the handoff is seamless, compressed but natural, abrupt, interruptive,
-delayed, or displaced, and identify the connection the manuscript supplied or
-left to you. Do not demand a transition sentence when the heading and opening
-statement already perform that work, and do not reward generic roadmap prose.
+At every major section or subsection boundary, first check that the new
+section begins with ordinary prose before any formal environment, display,
+list, or nested heading; record a violation as `[order]`. Also keep the
+preceding passage's job active and assess the heading together with the opening
+prose and first formal statement. Say whether the handoff is seamless,
+compressed but natural, abrupt, interruptive, delayed, or displaced, and
+identify the connection the manuscript supplied or left to you. A generic
+roadmap sentence can pass the structural check while failing this continuity
+test, so do not reward boilerplate.
 
 Length rule: if nothing rubbed, the entry is ONE line compressing (a)-(c).
 Spend words only where there is friction.  Record your reading experience,
@@ -166,8 +169,8 @@ attention, not a checklist.}}
   boundary requires the reader to supply the local connection, absorb an
   unexplained switch of task or discourse mode, or wait for later orientation.
   State the job that ended, the job that began, and the missing or delayed
-  handoff. Do not use this tag merely because a section opens with a formal
-  statement.
+  handoff. Tag a formal-first section opening as `[order]`; add `[continuity]`
+  only when the handoff itself also imposes this reconstruction burden.
 - `[gap]` — possible mathematical problem (keep separate; do not verify).
 {{EXTRA_FLAGS — optional.  Add a category only when a whole class of
 difficulty would otherwise be invisible in the totals.}}

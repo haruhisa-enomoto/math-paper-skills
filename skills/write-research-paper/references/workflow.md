@@ -99,15 +99,17 @@ machinery. Record the exact revision and audit scope. This contaminated
 writer-side pass is not independent reading evidence. Never label it forward
 reading, forward-blind reading, or a cold review.
 
-Make a separate boundary pass from top to bottom. At each major section or
-subsection break, retain the job of the preceding passage and read the heading
-together with the new opening paragraph or formal statement. Check whether the
+Make a separate boundary pass from top to bottom. First check the structural
+invariant: every numbered section and subsection, including appendices, begins
+with ordinary prose before any formal environment, display, list, or nested
+heading. Then retain the job of the preceding passage and read the heading
+together with the opening prose and first formal statement. Check whether the
 manuscript supplies the local handoff between those jobs, rather than merely
 making the sequence recoverable from the table of contents or Organization
 block. Distinguish a concise natural opening from an abrupt switch, an
-interruptive detour, delayed motivation, or displaced explanation; do not add
-formulaic transition prose when the mathematical connection is already
-immediate.
+interruptive detour, delayed motivation, or displaced explanation. The prose
+must do real connective work; a formulaic transition does not pass the
+continuity test merely because it passes the structural one.
 
 Apply two tests to every transition, remark, qualification, repeated
 explanation, informal alias, and apparent result name. First, retain it only
