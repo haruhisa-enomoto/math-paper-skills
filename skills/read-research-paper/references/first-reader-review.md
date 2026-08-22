@@ -145,6 +145,34 @@ without interrupting the earlier mathematical route. Once the introduction
 ends, apply the ordinary first-occurrence standard strictly: every new term
 and symbol must be meaningful when it first appears.
 
+## Reading continuity and boundary handoffs
+
+The forward-blind reader is also the continuity reader. Logical
+recoverability is not the whole test: a section title or an earlier
+Organization block may let the reader reconstruct why material appears while
+the actual transition still feels abrupt or interruptive on first encounter.
+
+At every major boundary---abstract to introduction, mathematical narrative to
+front-matter blocks, conventions to the first body section, and each section
+or subsection break---keep the job of the preceding passage active. Read the
+new heading together with its first paragraph or formal statement and ask:
+
+- what mathematical or expository job just ended;
+- what job begins now;
+- whether the manuscript itself supplies why the new task begins here and how
+  it connects to the preceding work; and
+- whether the handoff is seamless, compressed but natural, abrupt,
+  interruptive, delayed, or displaced.
+
+Use `[continuity]` when a competent reader can eventually reconstruct the
+sequence but must silently supply the local connection, absorb an unexplained
+change of task or discourse mode, or wait for later orientation. Record the
+two jobs and the missing or delayed connective work. Do not use the category
+to demand a transition sentence at every heading: a theorem, definition, or
+example may open a section naturally when the heading and statement themselves
+make the handoff immediate. Do not reward generic roadmap boilerplate or a
+local repetition of the table of contents.
+
 ## Setup
 
 1. Freeze the manuscript for the duration of the run and create a review
@@ -258,7 +286,8 @@ Check exactly these:
 - Do they distinguish what the manuscript communicated from what the reader
   had to infer, reconstruct, or recover by rereading?
 - Did it append, rather than rewrite the file?
-- Did it use the flag categories, and keep `[gap]` separate?
+- Did it use the flag categories, and keep `[continuity]` and `[gap]`
+  separate?
 - Did it stop at the end of its range?
 
 Verify coverage mechanically rather than by eye.  List the block boundaries
@@ -281,7 +310,7 @@ each time you quote them.  Summing the reader's per-segment reports across a
 long relay drifts, and the drift is silent.
 
 ```bash
-for f in meaning purpose order cite idiom gap; do
+for f in meaning purpose order cite idiom continuity gap; do
   printf "%-8s %s\n" "$f" "$(sed -n '1,/^## Writing review/p' report-*.md | grep -o "\[$f\]" | wc -l)"
 done
 ```
@@ -319,9 +348,12 @@ applies the portable paper-writing guide to the manuscript's first-encounter
 evidence; it is not a second-pass necessity or referential-precision audit.
 Findings and Verdict are what you revise from: Findings should be ranked and
 anchored, and the Verdict should say where first-reading rhythm broke or flowed
-and what reconstruction burden remained. Do not treat absence of friction as
-evidence that every passage earns its space or uses the most precise
-mathematical interface; that is the separate skeptical-editor test.
+and what reconstruction burden remained. Include a compact continuity map of
+the major boundaries, distinguishing seamless or compressed-but-natural
+handoffs from abrupt, interruptive, delayed, or displaced ones. Do not treat
+absence of friction as evidence that every passage earns its space or uses the
+most precise mathematical interface; that is the separate skeptical-editor
+test.
 
 Read the whole report before acting.  Then look for *causes* rather than
 working the list: thirty findings usually have three or four sources, and

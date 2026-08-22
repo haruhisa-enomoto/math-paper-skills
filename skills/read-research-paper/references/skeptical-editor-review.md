@@ -119,6 +119,20 @@ material belonging to the mathematical narrative. After the introduction,
 apply the ordinary first-occurrence and referential-precision standards
 strictly.
 
+### Transitions and local handoffs
+
+The continuous reader owns the first-encounter evidence about whether a
+boundary feels abrupt. In this whole-paper pass, do not infer that experience
+from hindsight. Instead, when auditing an existing transition, count a concise
+local handoff as reader-visible work when it connects the task just completed
+to the task now beginning, explains why a formal statement appears at that
+point, or prevents an abrupt change of discourse mode. A global Organization
+block does not automatically make such a local bridge repetitive. Conversely,
+generic roadmap prose which supplies no distinct local capability does not earn
+retention merely because it is transitional. Do not require every section to
+have a prose preface when its heading and opening statement already perform the
+handoff.
+
 ### Necessity audit
 
 For a candidate passage ask:

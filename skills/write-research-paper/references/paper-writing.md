@@ -31,6 +31,23 @@ under study transfers along the covering; terms such as `Galois covering`,
 `push-down functor`, and `locally bounded category` must not carry the opening
 explanation before the reader knows what they mean.
 
+Read for continuity at major boundaries, not only for recoverability within
+individual paragraphs. At a section or subsection break, keep active the
+mathematical job that has just ended and inspect the heading together with the
+first paragraph or formal statement. They should provide an adequate handoff:
+why this task begins here, how it uses or departs from the preceding work, and
+what immediate role it has in the argument. A closing Organization block may
+make the global sequence reconstructible without making a later local handoff
+feel natural.
+
+Do not force every section to begin with a stock roadmap sentence. A theorem,
+definition, or example may open a section when its heading and statement make
+the connection immediate. Repair a boundary when the reader must silently
+supply a change of task or discourse mode, wait for a later paragraph to learn
+why the new material appeared, or treat an intervening technical block as an
+interruption. Use the smallest mathematical bridge that supplies the missing
+function, and do not merely repeat the table of contents.
+
 There is no mandatory paragraph template. An order such as
 
 ```text
@@ -672,6 +689,10 @@ Before declaring a revision complete, check:
 17. Does every retained result pointer, citation-based application, informal
    alias, and apparent result name identify an exact mathematical referent and
    evidence status without requiring guesswork?
+18. At every major section or subsection boundary, do the heading and opening
+   passage provide an adequate local handoff from the work just completed,
+   without relying only on a distant Organization block or adding generic
+   roadmap boilerplate?
 
 Compilation checks the artifact, not the reader's understanding. For an ordinary
 prose or proof-structure revision, compile the paper and inspect the log, but do

@@ -99,6 +99,16 @@ machinery. Record the exact revision and audit scope. This contaminated
 writer-side pass is not independent reading evidence. Never label it forward
 reading, forward-blind reading, or a cold review.
 
+Make a separate boundary pass from top to bottom. At each major section or
+subsection break, retain the job of the preceding passage and read the heading
+together with the new opening paragraph or formal statement. Check whether the
+manuscript supplies the local handoff between those jobs, rather than merely
+making the sequence recoverable from the table of contents or Organization
+block. Distinguish a concise natural opening from an abrupt switch, an
+interruptive detour, delayed motivation, or displaced explanation; do not add
+formulaic transition prose when the mathematical connection is already
+immediate.
+
 Apply two tests to every transition, remark, qualification, repeated
 explanation, informal alias, and apparent result name. First, retain it only
 when deletion would cause an identifiable loss for the intended reader, such
