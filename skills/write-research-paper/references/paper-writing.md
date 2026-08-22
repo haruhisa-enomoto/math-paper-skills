@@ -335,11 +335,51 @@ Better:
 > We count finite partially ordered sets according to their number of elements
 > and derive a recurrence for these numbers.
 
+### Give the introduction its own job
+
 The introduction should give a governing mathematical question and a clear
 hierarchy of results. Explain the familiar setting, formulate the problem,
-state the principal results precisely, and distinguish the new contribution
-from known work. Define every term and symbol needed in an introductory theorem
-before that theorem. A pointer to a later section is not a definition.
+state the principal results precisely, distinguish the new contribution from
+known work, and indicate the proof strategy when that helps the reader see why
+the announced ingredients enter. The introduction is mathematical front
+matter, not a preliminary section: do not interrupt this route with routine
+declarations about module side, path-composition order, representative choices,
+variance, or standard notation.
+
+This placement rule is specific to the introduction. Standard vocabulary and
+conventional notation belonging to the paper's stated audience may be used
+there before the closing conventions block. Do not require a definition of a
+path algebra before mentioning path algebras, or a declaration of arrow order
+before a sentence whose meaning is independent of that order. Likewise, a
+Morita-invariant introductory assertion need not be interrupted by the choice
+of a basic representative. Forward readability requires the introductory
+passage to be meaningful when encountered; it does not require every harmless
+global convention to precede its first mention.
+
+An introductory theorem must nevertheless be understandable at the level at
+which it is stated. Define every paper-specific term and symbol needed to read
+it, and fix a convention locally when different choices change the meaning of
+the statement or of a displayed formula. A pointer to a later section is not a
+definition. An informal introductory preview also does not relieve the body of
+giving the complete formal definition before a proof or later result depends on
+it. Once the introduction ends, apply the ordinary first-occurrence standard
+strictly.
+
+Close the introduction with two visibly separate, bold, unnumbered blocks in
+the following order:
+
+- **Organization.** Explain the logical route through the paper and how the
+  sections contribute to the main results. Do not merely paraphrase the table
+  of contents.
+- **Conventions and notation.** Collect the global assumptions, choices, and
+  durable notation needed for the body, including module side,
+  path-composition order, base-field conventions, representative choices, and
+  variance when relevant. Keep proof, motivation, and substantive mathematical
+  development out of this block.
+
+Use the manuscript's existing unnumbered environments when available;
+otherwise implement these as bold unnumbered paragraph headings. The blocks
+have different reader functions and must not be merged.
 
 A heading should identify the mathematical content below. It should name the
 principal object and indicate what the section does with it: formulate a
@@ -603,32 +643,35 @@ Before declaring a revision complete, check:
 1. Can the abstract be understood without the introduction?
 2. Does the introduction state a governing question and a hierarchy of new
    results?
-3. Does the table of contents give a useful mathematical synopsis?
-4. Does every sentence have a clear subject, predicate, referent, and purpose?
-5. Is every term and symbol meaningful at its first occurrence?
-6. Are module side, field assumptions, and algebra class stated wherever the
+3. Does the introduction close with separate bold unnumbered **Organization**
+   and **Conventions and notation** blocks, with routine global setup deferred
+   there unless an earlier passage is convention-sensitive?
+4. Does the table of contents give a useful mathematical synopsis?
+5. Does every sentence have a clear subject, predicate, referent, and purpose?
+6. Is every term and symbol meaningful at its first occurrence?
+7. Are module side, field assumptions, and algebra class stated wherever the
    argument depends on them?
-7. Do `Definition`, `Construction`, and inline introductions consistently
+8. Do `Definition`, `Construction`, and inline introductions consistently
    reflect the later mathematical roles of the notions being introduced?
-8. Does every named object need its own symbol, and has every load-bearing
+9. Does every named object need its own symbol, and has every load-bearing
    configuration of several maps been considered for a commutative diagram?
-9. Does every substantial proof expose its directions, dependencies, and
+10. Does every substantial proof expose its directions, dependencies, and
    load-bearing steps, with the fixed-algebra or universal level of each
    implication explicit?
-10. Is each imported result stated precisely, separated from the paper's new
-    contribution, and free of coined theorem names?
-11. Does every computational claim state its exact scope?
-12. Are optional interpretations placed after, rather than in place of, the
-    main explanation?
-13. Has every reference to prompts, instructions, review history, internal
-    records, agent behavior, or the revision process been removed?
-14. Have recurring causes been repaired throughout the manuscript rather than
-    only at the locations first reported?
-15. Would deleting each remark, qualification, transition, informal alias, or
-    result name cause an identifiable loss to the intended reader?
-16. Does every retained result pointer, citation-based application, informal
-    alias, and apparent result name identify an exact mathematical referent and
-    evidence status without requiring guesswork?
+11. Is each imported result stated precisely, separated from the paper's new
+   contribution, and free of coined theorem names?
+12. Does every computational claim state its exact scope?
+13. Are optional interpretations placed after, rather than in place of, the
+   main explanation?
+14. Has every reference to prompts, instructions, review history, internal
+   records, agent behavior, or the revision process been removed?
+15. Have recurring causes been repaired throughout the manuscript rather than
+   only at the locations first reported?
+16. Would deleting each remark, qualification, transition, informal alias, or
+   result name cause an identifiable loss to the intended reader?
+17. Does every retained result pointer, citation-based application, informal
+   alias, and apparent result name identify an exact mathematical referent and
+   evidence status without requiring guesswork?
 
 Compilation checks the artifact, not the reader's understanding. For an ordinary
 prose or proof-structure revision, compile the paper and inspect the log, but do

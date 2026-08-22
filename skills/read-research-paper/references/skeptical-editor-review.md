@@ -99,6 +99,26 @@ The editor makes two passes.
    substitutes for exact predicates, and phrases shaped like names of theorems
    or criteria.
 
+### Introduction architecture
+
+Audit the introduction under its specific contract in the paper-writing guide.
+Do not classify standard background vocabulary or harmless conventional
+notation as imprecise solely because the closing **Conventions and notation**
+block has not yet appeared. Require a concrete ambiguity: the object is not
+available to the stated audience, the terminology is paper-specific, or a
+plausible choice of convention changes the current assertion or display. A
+later block must not be used retroactively to excuse a genuine ambiguity in an
+introductory theorem.
+
+Treat the closing **Organization** and **Conventions and notation** blocks as
+distinct structural components rather than presumptive repetition. Audit the
+first for a concise account of the paper's logical route and the second for the
+global setup needed by the body; flag either block when it is missing,
+misplaced, merged with the other, substantively incomplete, or filled with
+material belonging to the mathematical narrative. After the introduction,
+apply the ordinary first-occurrence and referential-precision standards
+strictly.
+
 ### Necessity audit
 
 For a candidate passage ask:

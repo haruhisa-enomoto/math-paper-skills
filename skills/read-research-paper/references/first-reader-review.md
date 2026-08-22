@@ -124,6 +124,27 @@ English, and do not turn the category into a record of stylistic preference.
 Use `[meaning]` instead when the sentence cannot be parsed or remains genuinely
 ambiguous.
 
+## Introduction-specific convention discipline
+
+Apply the paper-writing guide's delayed-convention allowance only while reading
+the introduction. Do not record a flag merely because standard vocabulary or
+conventional notation belonging to the assumed background appears before the
+closing **Conventions and notation** block. First identify a concrete burden at
+that point: for example, the term is paper-specific, the intended audience
+cannot identify the object, or different plausible conventions change the
+meaning of the current assertion or display. The mere fact that module side,
+path-composition order, or another harmless global choice has not yet been
+declared is not a first-reading defect.
+
+This rule does not permit looking ahead to repair a genuine ambiguity. If an
+introductory theorem or convention-sensitive formula cannot be interpreted as
+issued, record that burden where it occurs. When the end of the introduction
+is issued, assess whether it closes with distinct **Organization** and
+**Conventions and notation** blocks and whether each performs its assigned job
+without interrupting the earlier mathematical route. Once the introduction
+ends, apply the ordinary first-occurrence standard strictly: every new term
+and symbol must be meaningful when it first appears.
+
 ## Setup
 
 1. Freeze the manuscript for the duration of the run and create a review
