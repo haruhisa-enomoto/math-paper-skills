@@ -32,22 +32,30 @@ conclusions.
 ## Role
 
 Read the complete paper once to recover its promise, result hierarchy, section
-jobs, and expository budget.  Then read it again as a skeptical editor.  For
-each candidate passage ask:
+jobs, and expository budget. Then read it again under two coupled audits:
 
-> What exact reader-visible loss would result if this were deleted?
+1. **Necessity:** What exact reader-visible loss would result if this were
+   deleted?
+2. **Referential precision:** If it remains, can the reader identify its exact
+   mathematical subject, predicate, status, and referent without guessing?
 
 Understanding a passage's purpose does not prove that the purpose is worth the
-reader's time.  Truth, clarity, mathematical relevance, and harmlessness are
-not sufficient retention tests.  Conversely, do not shorten the paper at the
-expense of necessary motivation, definitions, hypotheses, proof explanation,
-or a genuinely useful scope boundary.
+reader's time. Truth, clarity, mathematical relevance, and harmlessness are
+not sufficient retention or precision tests. A passage may earn its space yet
+still require an exact theorem reference, predicate, status marker, or
+replacement for an apparent result name. Conversely, do not shorten the paper
+at the expense of necessary motivation, definitions, hypotheses, proof
+explanation, or a genuinely useful scope boundary.
 
 Pay particular attention to transitions, remarks, qualifications, negative
-scope statements, repetition, informal aliases, evaluative adjectives, and
-phrases that sound like names of theorems, criteria, principles, methods, or
-arguments.  Do not flag a word or category by itself; explain its marginal
-reader value.
+scope statements, repetition, informal aliases, evaluative adjectives,
+citations used as result pointers, ordinary-language substitutes for exact
+predicates, and phrases that sound like names of theorems, criteria,
+principles, methods, or arguments. Do not flag a word or category by itself.
+For a necessity finding, explain marginal reader value. For a precision
+finding, identify the exact intended referent or predicate and the inference or
+ambiguity imposed by the wording. Understandable-by-guessing does not pass the
+precision audit.
 
 ## Isolation and authority
 
@@ -75,6 +83,9 @@ seen withheld material, mark the run invalid and stop.
 - `[label]` -- an informal alias adds terminology without later benefit.
 - `[name]` -- a result phrase sounds established without a conventional or
   immediately introduced referent.
+- `[precision]` -- retained wording makes the exact object, predicate, result,
+  citation interface, or evidence status recoverable only through guesswork or
+  backward reconstruction.
 - `[defensive]` -- a qualification answers no plausible question raised by the
   paper.
 - `[repeat]` -- the same mathematical work has already been done without a new
@@ -87,15 +98,20 @@ Write one Markdown report to the recorded destination.  Include:
 1. mode, exact revision, verified reading-copy identity, material read,
    isolation conditions, and completion;
 2. the recovered paper contract;
-3. a section-by-section necessity audit;
+3. a section-by-section necessity and referential-precision audit;
 4. inventories of every explicit remark, negative or defensive scope
-   qualification, recurring informal alias, and named-result phrase, each with
-   a `keep`, `compress`, `delete`, or `rename` verdict and one-sentence reason;
+   qualification, recurring informal alias, named-result phrase, and each
+   loose result pointer, hidden mathematical predicate, or citation-based
+   application found in the precision audit, each with a `keep`, `compress`,
+   `delete`, `rename`, or `replace` verdict and one-sentence reason;
 5. ranked findings giving the opening phrase, locator, category, intended role,
-   reader-visible loss under deletion, concrete beneficiary if any, verdict,
-   confidence, and at most a brief repair direction; and
-6. an overall pass/fail verdict which distinguishes objective exposition
-   defects from owner-judgment questions.
+   audit evidence, verdict, confidence, and at most a brief repair direction;
+   necessity findings give reader-visible loss under deletion and any concrete
+   beneficiary, while precision findings give the intended exact referent or
+   predicate and the reconstruction currently required; and
+6. separate pass/fail verdicts for the necessity and referential-precision
+   audits, an overall editorial verdict, and a distinction between objective
+   exposition defects and owner-judgment questions.
 
 Do not rewrite passages.  Silence is not endorsement, and this review does not
 certify mathematics, sources, novelty, or first-pass readability.

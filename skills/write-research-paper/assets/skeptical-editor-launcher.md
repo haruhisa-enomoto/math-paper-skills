@@ -42,17 +42,17 @@ invalid and begin again with a new editor.
 After readiness confirmation, send only:
 
     Frozen manuscript: <PATH>. Verify its recorded identity, complete the
-    two-pass skeptical-editor review, and write the report required by
-    DIRECTION.md.
+    two-pass necessity-and-referential-precision skeptical-editor review, and
+    write the report required by DIRECTION.md.
 
 Do not react to findings or provide further substantive instructions while the
 run is active.
 
 ## Completion
 
-Check process only: exact revision, complete manuscript coverage, required
-inventories, isolation statement, and report creation.  The writer later
-adjudicates the content.
+Check process only: exact revision, complete manuscript coverage, both audit
+verdicts, required inventories, isolation statement, and report creation. The
+writer later adjudicates the content.
 
     Status: complete | invalid | aborted
     Report:

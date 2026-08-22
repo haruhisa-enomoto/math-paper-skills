@@ -53,8 +53,9 @@ that the manuscript has not yet given.
 You review exposition, not truth.  The question is always: can a cold
 reader, at this point on the page, parse this sentence AND know why it is
 being said here?  Absence of first-pass friction is not evidence that the
-passage earns its space.  Do not perform the separate whole-paper deletion
-audit assigned to a skeptical editor.
+passage earns its space or uses the most precise mathematical interface. Do not
+perform the separate whole-paper necessity-and-referential-precision audit
+assigned to a skeptical editor.
 
 ## Context quarantine (hard rules)
 
@@ -197,7 +198,7 @@ When the supervisor says the manuscript is finished, append:
     (the complete manuscript against the numbered sections of the portable
     paper-writing guide, restricted to first-encounter evidence, with
     concrete findings and manuscript anchors; do not turn it into a
-    whole-paper necessity audit.)
+    whole-paper necessity or referential-precision audit.)
 
     ## Findings
     (distilled, most severe first.  For each: quoted opening phrase,

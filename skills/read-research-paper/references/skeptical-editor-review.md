@@ -2,14 +2,21 @@
 
 Read this guide before running or supervising a skeptical-editor review of a
 mathematics manuscript.  This is an independent whole-manuscript exposition
-audit.  It asks a different question from a forward-blind first reading:
+audit.  It asks different questions from a forward-blind first reading:
 
-> Having understood the complete paper, what would an intended reader lose if
-> this passage were deleted?
+1. **Necessity:** Having understood the complete paper, what would an intended
+   reader lose if this passage were deleted?
+2. **Referential precision:** If the passage remains, can the reader identify
+   its exact mathematical subject, predicate, status, and referent without
+   guessing from context?
 
 Truth, grammatical clarity, and a reconstructible purpose are necessary but
-not sufficient reasons to retain prose.  The editor tests marginal reader
-value without treating shortness as an end in itself. Apply the
+not sufficient reasons to retain prose or accept its wording.  The editor tests
+marginal reader value without treating shortness as an end in itself, and it
+tests the semantic interface of retained prose without turning the review into
+copy editing. A passage may earn its space yet still require an exact theorem
+reference, predicate, status marker, or replacement for an apparent result
+name. Apply the
 [mathematical paper-writing guide](../../write-research-paper/references/paper-writing.md)
 throughout the review.
 
@@ -23,15 +30,16 @@ Run this pass on the nearly final integrated revision of:
   length and detail budget.
 
 Also run it when the owner requests compression or raises recurring concerns
-about disclaimers, repeated explanation, informal aliases, or apparently
-coined result names.  It is not routinely required for a precise local repair
-which adds none of those risks.
+about disclaimers, repeated explanation, informal aliases, apparently coined
+result names, loose result pointers, or ordinary-language phrases that hide an
+exact mathematical assertion.  It is not routinely required for a precise
+local repair which adds none of those risks.
 
 This pass does not replace continuous first reading or post-edit regression:
 
 ```text
 continuous reader  -> can the paper be followed on first encounter?
-skeptical editor   -> does each retained passage repay its cost?
+skeptical editor   -> does each passage repay its cost and state its interface precisely?
 delta regression  -> did accepted edits preserve local readability?
 ```
 
@@ -72,8 +80,9 @@ reading copy.  Do not add diagnoses, target phrases, or reactions while the
 run is active.
 
 Unlike a continuous first-reader relay, this editor must see the complete
-paper.  Redundancy, displaced explanation, and unnecessary qualifications can
-only be judged against the whole argument.
+paper.  Redundancy, displaced explanation, unnecessary qualifications, and the
+uniqueness and consistency of result or object references can only be judged
+against the whole argument.
 
 ## Reading protocol
 
@@ -82,11 +91,15 @@ The editor makes two passes.
 1. **Recover the paper.** Read once in order and record the paper's promise,
    result hierarchy, section jobs, intended audience, and apparent length and
    detail boundary.  Do not begin by hunting for trigger words.
-2. **Apply the deletion counterfactual.** Read again and test the marginal
-   contribution of each paragraph, with particular attention to transitions,
-   remarks, qualifications, negative scope statements, repeated explanations,
-   informal aliases, descriptive adjectives, and phrases shaped like names of
-   theorems or criteria.
+2. **Run the two editorial audits.** Read again and test both the marginal
+   contribution and the referential precision of the prose, with particular
+   attention to transitions, remarks, qualifications, negative scope
+   statements, repeated explanations, informal aliases, descriptive
+   adjectives, citations used as result pointers, ordinary-language
+   substitutes for exact predicates, and phrases shaped like names of theorems
+   or criteria.
+
+### Necessity audit
 
 For a candidate passage ask:
 
@@ -97,9 +110,6 @@ For a candidate passage ask:
   notation, proof, citation, or earlier paragraph?
 - Does the passage explain mathematics, or does it defend the author's scope,
   method, or wording against an objection the paper has not raised?
-- Does an informal label genuinely reduce later reading work?
-- Is an apparent theorem name conventional, explicitly introduced, or merely
-  a descriptive phrase made to sound established?
 
 A passage normally earns retention when it prevents a plausible false
 inference, explains an otherwise puzzling hypothesis, distinguishes the new
@@ -107,11 +117,38 @@ result from nearby work, exposes a proof dependency, supplies context needed
 for a later argument, or materially helps the intended reader use the result.
 Being true, clear, harmless, or mathematically related is not by itself enough.
 
+### Referential-precision audit
+
+For retained mathematical work ask:
+
+- Does each substantive sentence expose the exact subject and predicate, or
+  does ordinary English leave the reader to infer a membership, containment,
+  vanishing, factorization, implication, or other assertion?
+- Does every pronoun, descriptive phrase, relative pointer, and citation-based
+  application have one immediate mathematical referent?
+- When a result is applied, does the prose identify the exact statement or
+  numbered referent used, rather than asking the reader to know what a broad
+  citation or descriptive label contains?
+- Is an apparent theorem, criterion, principle, method, or argument name
+  conventional, explicitly introduced, or immediately tied to an exact
+  referent, rather than making a guessable application sound like an
+  established name?
+- Does an informal alias genuinely reduce later reading work, map uniquely to
+  its mathematical object, and remain consistent throughout the paper?
+- Is the evidence status visible—new, imported, conditional, computed, or
+  conjectural—where a reasonable reader could otherwise misclassify it?
+
+Record the inference or backward search required by the current wording. A
+competent reader's ability to reconstruct the intended meaning does not make
+the interface precise. A passage may pass the necessity audit and still require
+`rename` or `replace`.
+
 Do not optimize raw word count.  Keep necessary hypotheses, definitions,
 motivation, proof explanations, and scope boundaries.  Do not replace correct
 technical terminology merely because it is specialized.  This is exposition
 review, not proof verification, source checking, novelty assessment, or copy
-editing.
+editing. The precision audit concerns mathematical reference and status, not a
+reviewer's preferred prose style.
 
 ## Finding categories
 
@@ -122,14 +159,21 @@ editing.
   later work.
 - `[name]` -- wording suggests a conventional theorem, criterion, or principle
   without establishing that name or giving an immediate referent.
+- `[precision]` -- retained wording makes the exact object, predicate, result,
+  citation interface, or evidence status recoverable only through guesswork or
+  backward reconstruction.
 - `[defensive]` -- a qualification answers no plausible question raised by the
   paper or protects the writer's choice rather than the reader's understanding.
 - `[repeat]` -- the same mathematical work has already been done elsewhere in
   the paper without a new local role.
 
-Do not infer a defect from a keyword alone.  State the passage's intended role
-and the deletion counterfactual before assigning a category.  A brief repair
-direction is allowed, but the editor does not rewrite the manuscript.
+Do not infer a defect from a keyword alone. State the passage's intended role
+and give the evidence required by the relevant audit. For a necessity finding,
+state the deletion counterfactual and concrete beneficiary, if any. For a
+precision finding, state the intended exact referent or predicate, what the
+current wording actually licenses, and the inference or ambiguity imposed on
+the reader. A brief repair direction is allowed, but the editor does not
+rewrite the manuscript.
 
 ## Report
 
@@ -139,18 +183,25 @@ verified reading-copy identity, and completion state.  It then contains:
 1. **Recovered contract:** the promise, audience, result hierarchy, section
    jobs, and apparent detail budget learned from the manuscript and direction.
 2. **Section audit:** for every section, whether it earns its place and any
-   recurring source of excess or avoidable terminology.
+   recurring source of excess, avoidable terminology, or imprecise
+   mathematical reference.
 3. **Mandatory inventories:** every explicit remark; every negative or
    defensive scope qualification; every recurring informal alias; and every
    phrase presented as a named theorem, criterion, principle, method, or
-   argument.  Give each a `keep`, `compress`, `delete`, or `rename` verdict and
-   one sentence identifying the reader benefit or its absence.
+   argument. Also inventory every loose result pointer, descriptive substitute
+   for an exact mathematical predicate, or citation-based application found in
+   the precision audit. Give each a `keep`, `compress`, `delete`, `rename`, or
+   `replace` verdict and one sentence identifying either its reader benefit or
+   its exact referential defect.
 4. **Findings:** ranked findings with the quoted opening phrase, locator,
-   category, intended role, exact reader-visible loss under deletion, concrete
-   beneficiary if any, verdict, and confidence.
-5. **Verdict:** whether the manuscript passes the necessity audit, and which
-   findings involve objective exposition defects rather than choices about
-   voice, historical context, or paper scope.
+   category, intended role, audit evidence, verdict, confidence, and at most a
+   brief repair direction. Necessity evidence records reader-visible loss under
+   deletion and any concrete beneficiary; precision evidence records the exact
+   intended referent or predicate and the reconstruction currently required.
+5. **Verdict:** separately whether the manuscript passes the necessity audit
+   and the referential-precision audit, followed by an overall editorial
+   verdict and a distinction between objective exposition defects and choices
+   about voice, historical context, or paper scope.
 
 Silence is not endorsement.  A passed editorial review does not certify proof
 correctness, source accuracy, novelty, or first-encounter readability.
@@ -158,14 +209,17 @@ correctness, source accuracy, novelty, or first-encounter readability.
 ## Adjudication and regression
 
 The writer reads the complete report and adjudicates it; the editor has no edit
-authority.  Undefined aliases, apparently coined result names, literal
-repetition, and qualifications with no reader-visible payoff are usually local
-exposition defects.  Removing substantial context, history, comparisons, or
-owner-approved scope discussion may require owner judgment.
+authority. Undefined aliases, apparently coined result names, loose result
+pointers, citations standing in for the assertion used, hidden mathematical
+predicates, literal repetition, and qualifications with no reader-visible
+payoff are usually local exposition defects. Removing substantial context,
+history, comparisons, or owner-approved scope discussion may require owner
+judgment.
 
 Apply accepted findings as one bounded revision.  Ordinary deletions,
-compressions, and renamings then receive fresh delta regression.  If the edits
-change the paper promise, structural front matter, section order, or reading
-path, run a new continuous review instead.  Substantial replacement prose, new
-remarks, or new qualifications require another skeptical-editor pass; a clean
-deletion does not.
+compressions, renamings, and local precision replacements then receive fresh
+delta regression. If the edits change the paper promise, structural front
+matter, section order, or reading path, run a new continuous review instead.
+Substantial replacement prose, new remarks, or new qualifications require
+another skeptical-editor pass; a clean deletion or exact local replacement
+does not.

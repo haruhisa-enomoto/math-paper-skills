@@ -53,8 +53,8 @@ Use the route in the workflow reference:
 Apply the paper-writing guide during drafting. In particular, keep private
 discussion and internal labels out of manuscript prose, state imported results
 precisely, and test every transition, remark, qualification, repeated
-explanation, informal alias, and apparent theorem name by its reader-visible
-benefit.
+explanation, informal alias, and apparent theorem name for both reader-visible
+benefit and an exact mathematical referent.
 
 ## Supervise independent review
 

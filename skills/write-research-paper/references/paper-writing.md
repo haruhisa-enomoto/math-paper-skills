@@ -582,13 +582,18 @@ exposition needs a broader rewrite.
 
 Continuous and skeptical editorial readings answer different questions. A
 continuous reader tests whether the paper can be followed at first encounter.
-A skeptical editor reads the complete paper and asks what reader-visible loss
-would result from deleting each transition, remark, qualification, repeated
-explanation, informal label, or apparent theorem name. Follow
+A skeptical editor reads the complete paper and runs two audits: what
+reader-visible loss would result from deleting each transition, remark,
+qualification, repeated explanation, informal label, or apparent theorem name;
+and whether every retained substantive statement or result pointer has an
+exact subject, predicate, status, and referent rather than a meaning
+recoverable only by guesswork. Follow
 [skeptical-editor protocol](../../read-research-paper/references/skeptical-editor-review.md)
 for that pass. A
 passage is not justified merely because its purpose can be reconstructed or
-because it states a true limitation.
+because it states a true limitation, and an understandable result pointer is
+not justified when it sounds like an established theorem name or hides the
+exact assertion being used.
 
 Before declaring a revision complete, check:
 
@@ -618,6 +623,9 @@ Before declaring a revision complete, check:
     only at the locations first reported?
 15. Would deleting each remark, qualification, transition, informal alias, or
     result name cause an identifiable loss to the intended reader?
+16. Does every retained result pointer, citation-based application, informal
+    alias, and apparent result name identify an exact mathematical referent and
+    evidence status without requiring guesswork?
 
 Compilation checks the artifact, not the reader's understanding. For an ordinary
 prose or proof-structure revision, compile the paper and inspect the log, but do

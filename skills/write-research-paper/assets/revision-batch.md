@@ -15,11 +15,14 @@ Intended role and reader-visible loss under deletion, if editorial:
 
 Concrete beneficiary, if any:
 
+Intended exact referent or predicate and current reconstruction burden, if
+editorial precision:
+
 Likely common cause:
 
 Cold-reader success test:
 
-Minimal proposed repair:
+Minimal proposed repair: delete | reorder | replace | add local clause | other
 
 Explicit non-scope:
 

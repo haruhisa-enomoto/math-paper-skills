@@ -99,12 +99,15 @@ machinery. Record the exact revision and audit scope. This contaminated
 writer-side pass is not independent reading evidence. Never label it forward
 reading, forward-blind reading, or a cold review.
 
-Apply a deletion counterfactual to every transition, remark, qualification,
-repeated explanation, informal alias, and apparent result name. Retain it only
+Apply two tests to every transition, remark, qualification, repeated
+explanation, informal alias, and apparent result name. First, retain it only
 when deletion would cause an identifiable loss for the intended reader, such
 as a plausible false inference, an unexplained hypothesis, a hidden dependency,
-or missing context used later. A true limitation or understandable purpose does
-not by itself earn space.
+or missing context used later. Second, if retained, require an exact
+mathematical subject, predicate, status, and referent. A true limitation or
+understandable purpose does not by itself earn space, and a reader's ability to
+guess which theorem or assertion was intended does not make the wording
+precise.
 
 ### Freeze and review
 
@@ -130,20 +133,25 @@ agent in `editorial` mode under the reader skill's
 [skeptical-editor protocol](../../read-research-paper/references/skeptical-editor-review.md).
 Also run the pass for a substantial addition that changes the promise, architecture, or
 length and detail budget, and whenever the owner specifically requests a
-necessity or compression audit.
+necessity, compression, or referential-precision audit.
 
 The editor receives the complete reading-order manuscript with a reproducible
 content hash, audience, promise, detail budget, and protected content, but no
 drafting history, diagnoses, continuous report, vocabulary report, owner gold,
-or proposed cuts. It verifies the hash before reading, reads the whole paper
-before applying the deletion counterfactual, and inventories remarks,
-defensive qualifications, informal aliases, and apparent result names. Its
-finding must identify marginal reader value rather than merely say that a
-passage is clear or mathematically true.
+or proposed cuts. It verifies the hash before reading, reads the whole paper,
+then runs separate necessity and referential-precision audits. It inventories
+remarks, defensive qualifications, informal aliases, apparent result names,
+loose result pointers, and descriptive substitutes for exact mathematical
+predicates. A necessity finding must identify marginal reader value rather
+than merely say that a passage is clear or mathematically true. A precision
+finding must identify the intended exact referent or predicate and the
+inference or ambiguity imposed by the current wording; a necessary passage may
+require `rename` or `replace` rather than deletion or compression.
 
 Continuous and editorial reports form one review cycle. Adjudicate their
-owner-judgment findings together. Accepted clean deletions, compressions, and
-renamings need ordinary final regression, not another editorial pass.
+owner-judgment findings together. Accepted clean deletions, compressions,
+renamings, and local precision replacements need ordinary final regression,
+not another editorial pass.
 Substantial replacement prose, new remarks, or new qualifications invalidate
 the editorial gate and require another fresh editorial review.
 
@@ -179,8 +187,12 @@ that passes the cold-reader success test:
 
 Apply accepted clusters in one bounded pass. Check the aggregate diff against
 success tests and non-scopes, and justify substantial net prose growth. For an
-editorial finding, record the passage's intended role, the exact reader-visible
-loss under deletion, and any concrete beneficiary before deciding to retain it.
+editorial necessity finding, record the passage's intended role, the exact
+reader-visible loss under deletion, and any concrete beneficiary before
+deciding to retain it. For an editorial precision finding, record the intended
+exact referent or predicate, what the current wording licenses, and the
+reconstruction imposed on the reader before deciding to keep, rename, or
+replace it.
 
 ### Adjudicate host-project diagnostics
 

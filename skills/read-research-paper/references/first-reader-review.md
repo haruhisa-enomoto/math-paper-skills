@@ -8,8 +8,9 @@ paper to it one segment at a time.
 This is a test of exposition, not of truth.  It answers: can a competent
 reader who does not know the cited sources follow this paper on a first
 pass?  It does not answer whether the mathematics is correct.  A proof audit
-is a different task with a different protocol; do not merge them.  It also
-does not decide whether every understandable passage earns its space.  Use
+is a different task with a different protocol; do not merge them. It also
+does not decide whether every understandable passage earns its space or
+whether understandable wording exposes its exact mathematical interface. Use
 [skeptical-editor protocol](skeptical-editor-review.md) for that independent
 whole-manuscript test.
 
@@ -276,12 +277,13 @@ Each of these cost a real run or a wrong call.
 ## The deliverable
 
 The report has four parts.  The journal is the evidence base.  Writing review
-applies the portable paper-writing guide to the manuscript's first-encounter evidence; it is
-not a second-pass deletion audit.  Findings and Verdict are what you revise
-from: Findings should be ranked and anchored, and the Verdict should say where
-first-reading rhythm broke or flowed and what reconstruction burden remained.
-Do not treat absence of friction as evidence that every passage earns its
-space; that is the separate skeptical-editor test.
+applies the portable paper-writing guide to the manuscript's first-encounter
+evidence; it is not a second-pass necessity or referential-precision audit.
+Findings and Verdict are what you revise from: Findings should be ranked and
+anchored, and the Verdict should say where first-reading rhythm broke or flowed
+and what reconstruction burden remained. Do not treat absence of friction as
+evidence that every passage earns its space or uses the most precise
+mathematical interface; that is the separate skeptical-editor test.
 
 Read the whole report before acting.  Then look for *causes* rather than
 working the list: thirty findings usually have three or four sources, and

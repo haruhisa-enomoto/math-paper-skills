@@ -1,13 +1,14 @@
 ---
 name: read-research-paper
-description: Run an independent exposition review of a frozen mathematics manuscript as a forward-blind continuous first reader, a whole-paper skeptical editor, or a bounded delta-regression reader. Use to collect readability or editorial-necessity evidence without editing; do not use to summarize a paper, verify proofs, assess novelty, adjudicate repairs, or review an unstable draft.
+description: Run an independent exposition review of a frozen mathematics manuscript as a forward-blind continuous first reader, a whole-paper skeptical editor, or a bounded delta-regression reader. Use to collect first-pass readability, whole-paper necessity and referential-precision, or repair-regression evidence without editing; do not use to summarize a paper, verify proofs, assess novelty, adjudicate repairs, or review an unstable draft.
 ---
 
 # Read a research paper
 
 Act only as an independent exposition reviewer in the assigned mode. Report
-first-encounter reading evidence, whole-paper editorial necessity, or bounded
-regression evidence as appropriate. Never edit or adjudicate the manuscript.
+first-encounter reading evidence, whole-paper editorial necessity and
+referential precision, or bounded regression evidence as appropriate. Never
+edit or adjudicate the manuscript.
 
 ## Validate the run before reading
 
@@ -56,7 +57,8 @@ the two tasks yourself.
   defect from a lexical or content category alone; explain what the intended
   reader cannot recover and why it matters at that point.
 - Do not convert absence of a stumble into a keep/delete judgment. A clear
-  passage may still fail the separate whole-paper necessity audit.
+  passage may still fail the separate whole-paper necessity or
+  referential-precision audit.
 - Stop at the issued boundary and wait for the same process-only supervisor.
 
 If the host cannot resume the same isolated reader across segments, mark the
@@ -82,20 +84,29 @@ the run invalid.
 
 - Read the complete paper once to recover its promise, result hierarchy,
   section jobs, intended audience, and detail budget.
-- Read it again under the deletion counterfactual: identify the exact
-  reader-visible loss, if any, caused by deleting a passage.
+- Read it again under two coupled audits: identify the exact reader-visible
+  loss, if any, caused by deleting a passage, and test whether every retained
+  substantive statement or result pointer gives an exact subject, predicate,
+  status, and referent without requiring guesswork.
 - Audit every explicit remark, negative or defensive scope qualification,
-  recurring informal alias, and phrase presented as a named theorem,
-  criterion, principle, method, or argument.
+  recurring informal alias, phrase presented as a named theorem, criterion,
+  principle, method, or argument, and wording that hides an exact mathematical
+  predicate or result behind a descriptive phrase, citation, or loose pointer.
 - Distinguish `clear` from `worth retaining`. Truth, relevance, and a
   reconstructible purpose do not by themselves establish reader benefit.
+- Distinguish `understandable` from `referentially precise`. A reader's ability
+  to guess the intended theorem or predicate does not validate the wording; a
+  necessary passage may merit `rename` or `replace` rather than compression or
+  deletion.
 - Do not optimize raw word count, rewrite passages, or remove necessary
   mathematical context. Explain the marginal reader value before assigning an
-  editorial category.
+  editorial category, and explain the exact ambiguity or reconstruction burden
+  before assigning a precision category.
 
-Report the recovered contract, section audit, mandatory inventories, ranked
-findings, and overall verdict required by the protocol. Keep objective
-exposition defects separate from owner-judgment questions.
+Report the recovered contract, section audit, mandatory necessity and
+referential-precision inventories, ranked findings, and overall verdict
+required by the protocol. Keep objective exposition defects separate from
+owner-judgment questions.
 
 ## Delta mode
 
