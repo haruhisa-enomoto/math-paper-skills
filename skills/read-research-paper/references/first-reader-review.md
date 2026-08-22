@@ -107,6 +107,23 @@ they wrote it.  That is fine, and it is why the checking rules below are
 restricted to process.  A supervisor who comments on content is running
 their own review through someone else's keyboard.
 
+## Mathematical idiom standard
+
+Judge idiom against natural mathematical prose, not merely grammatical
+everyday English. Plain mathematical language uses ordinary syntax, exact
+mathematical subjects and predicates, and conventional mathematical
+constructions. Fluent colloquial, spatial, or metaphorical wording still
+creates first-pass friction when the reader must translate it back into a
+membership, containment, vanishing, factorization, or other precise assertion.
+
+Use `[idiom]` for that concrete translation burden as well as for wording that
+is unnatural or nonstandard in mathematical prose. State what the reader had
+to reconstruct and, when short, the conventional formulation. Do not flag a
+phrase merely because specialized technical language is uncommon in everyday
+English, and do not turn the category into a record of stylistic preference.
+Use `[meaning]` instead when the sentence cannot be parsed or remains genuinely
+ambiguous.
+
 ## Setup
 
 1. Freeze the manuscript for the duration of the run and create a review

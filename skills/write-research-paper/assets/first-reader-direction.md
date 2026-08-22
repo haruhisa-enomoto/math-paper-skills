@@ -148,7 +148,11 @@ attention, not a checklist.}}
   justification or definition; an unresolvable back-reference.
 - `[cite]` — a cited result invoked without the precise statement,
   hypotheses, or conventions actually used here.
-- `[idiom]` — unnatural or nonstandard English.
+- `[idiom]` — wording that is unnatural, nonstandard, or unsuitable in
+  mathematical prose, including fluent general-English phrasing that obscures
+  an exact mathematical predicate or uses a nonconventional mathematical
+  construction. State the concrete translation burden; do not flag standard
+  technical language merely because it is uncommon in everyday English.
 - `[gap]` — possible mathematical problem (keep separate; do not verify).
 {{EXTRA_FLAGS — optional.  Add a category only when a whole class of
 difficulty would otherwise be invisible in the totals.}}

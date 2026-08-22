@@ -177,11 +177,14 @@ survives the shift`, or `the map passes through the projectives` are useful
 only when they have already been given a precise meaning and genuinely shorten
 a repeated argument.
 
-This is not a rule to replace mathematical prose by strings of symbols. Natural
-language should explain the logical movement and the purpose of a construction;
-the formula should state the fact on which that explanation depends. After
-writing \(\operatorname{grade} M=n\), say precisely which evaluation map remains
-to be proved injective or surjective.
+This is not a rule to replace mathematical prose by strings of symbols. Plain
+mathematical language uses ordinary syntax to explain the logical movement and
+the purpose of a construction, while stating load-bearing predicates exactly.
+Here `plain` means conventional, low-friction mathematical prose, not
+colloquial or merely fluent general English. The formula should state the fact
+on which the explanation depends. After writing
+\(\operatorname{grade} M=n\), say precisely which evaluation map remains to be
+proved injective or surjective.
 
 Define every paper-specific term, symbol, statistic, and construction before
 using it. Typography does not define a term; emphasizing an unexplained word
