@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Research Paper"
+  short_description: "Owner-directed mathematics paper writing"
+  default_prompt: "Use $write-research-paper to carry this mathematics paper task through the appropriate fresh reading, editorial review, regression, and host-project validation."

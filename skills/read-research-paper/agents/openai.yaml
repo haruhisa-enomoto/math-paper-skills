@@ -1,0 +1,4 @@
+interface:
+  display_name: "Read Research Paper"
+  short_description: "Independent reading, editorial review, and regression"
+  default_prompt: "Use $read-research-paper to run the appropriate isolated exposition review of this frozen manuscript."
