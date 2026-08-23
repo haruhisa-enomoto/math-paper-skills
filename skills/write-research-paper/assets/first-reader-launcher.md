@@ -32,8 +32,10 @@ its cause in the run log.
 
 Spawn exactly one new subagent.  Explicitly select no inherited conversation
 turns or research context; do not rely on a harness default that forks the
-supervisor's context.  In the Codex collaboration tool, set
-`fork_turns: "none"`.  Record the stable identity the harness returns:
+supervisor's context.  In Codex, set `fork_turns: "none"`.  In Claude Code,
+use a fresh agent or session rather than a fork agent.  On another harness,
+use its equivalent no-inherited-context option.  Record the stable identity
+the harness returns:
 
     Reader label:
     Subagent identity:
@@ -76,7 +78,8 @@ Send this message, and nothing else, to the fresh subagent:
     You are the reader in a forward-blind first-reader review.  This is
     exposition-review work, not mathematical research: do not load the
     project's mathematical boot state.  Your agent label: <LABEL>.
-    Use $read-research-paper in continuous mode. Read <path>/DIRECTION.md and
+    Load the read-research-paper skill in continuous mode. Read
+    <path>/DIRECTION.md and
     every guide the skill and direction require, completely. Do not open or
     receive any manuscript segment yet. Validate the isolation conditions,
     then reply only: Ready for the first segment.

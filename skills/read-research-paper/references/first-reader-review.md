@@ -65,7 +65,9 @@ A run is forward-blind only when all of the following hold.
    inherited conversation turns or research context.  The supervisor must not
    read in the reader role.  When the harness offers context forking,
    explicitly choose no inherited context rather than trusting its default.
-   In the Codex collaboration tool, use `fork_turns: "none"`.
+   In Codex, use `fork_turns: "none"`.  In Claude Code, use a fresh agent or
+   session rather than a fork agent.  On another harness, use its equivalent
+   no-inherited-context option.
 2. **The same reader completes the run.**  Send every segment and the closing
    instruction to that same subagent.  Do not replace it between sections or
    spawn a new reader per segment.

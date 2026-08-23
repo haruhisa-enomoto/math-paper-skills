@@ -29,10 +29,10 @@ Send this message, and nothing else, to a fresh subagent:
 
     You are the fresh editor in an independent skeptical-editor review. This
     is exposition-review work, not mathematical research; do not load project
-    research state. Your editor label is <LABEL>. Use $read-research-paper in
-    editorial mode. Read <path>/DIRECTION.md and every guide the skill and
-    direction require completely. Do not open or receive manuscript text yet.
-    Validate isolation, then reply only: Ready for the frozen manuscript.
+    research state. Your editor label is <LABEL>. Load the read-research-paper
+    skill in editorial mode. Read <path>/DIRECTION.md and every guide the skill
+    and direction require completely. Do not open or receive manuscript text
+    yet. Validate isolation, then reply only: Ready for the frozen manuscript.
 
 If the editor sees the manuscript before confirming readiness, mark the run
 invalid and begin again with a new editor.
