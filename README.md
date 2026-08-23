@@ -58,18 +58,12 @@ Pull this repository at its canonical checkout. All user-level symlinks then
 resolve to the updated files. Tag a known-good revision before manuscript work
 that needs a reproducible skill version.
 
-The `agents/openai.yaml` files contain optional OpenAI-specific presentation
-metadata. They do not change the portable instructions and may be ignored by
-other hosts.
-
 ## Host-project boundary
 
 These skills contain the portable exposition, workflow, review, and template
 resources. A host project may add local authorship rules, manuscript state,
 compilation gates, vocabulary diagnostics, and publication conventions through
-its own instructions or paper-writing overlay. Such project-specific material,
-research records, manuscripts, and private evaluation gold do not belong in
-this repository.
+its own instructions or paper-writing overlay.
 
 ## Layout
 

@@ -116,7 +116,8 @@ order:
 - base and changed revision identifiers;
 - each changed region with enough preceding and following context;
 - the cold-reader success criterion for each repair cluster; and
-- explicit non-scope, without the diagnosis, preferred wording, or gold answer.
+- explicit non-scope, without the diagnosis, preferred wording, or expected
+  answer.
 
 For each cluster report what the passage now communicates; whether the
 criterion passes, fails, or is untestable; what reconstruction remains; and

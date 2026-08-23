@@ -124,8 +124,8 @@ precise.
 ### Freeze and review
 
 Freeze one revision. The host must give `read-research-paper` a fresh,
-read-only context without drafting history, expected findings, owner gold, or
-later manuscript text. One stable reader must handle a continuous review; use
+read-only context without drafting history, expected findings, or later
+manuscript text. One stable reader must handle a continuous review; use
 another fresh reader for delta regression. Do not default to a swarm.
 
 Use a two-step launch: first give the fresh reader only the governing guides
@@ -149,12 +149,12 @@ necessity, compression, or referential-precision audit.
 
 The editor receives the complete reading-order manuscript with a reproducible
 content hash, audience, promise, detail budget, and protected content, but no
-drafting history, diagnoses, continuous report, vocabulary report, owner gold,
-or proposed cuts. It verifies the hash before reading, reads the whole paper,
-then runs separate necessity and referential-precision audits. It inventories
-remarks, defensive qualifications, informal aliases, apparent result names,
-loose result pointers, and descriptive substitutes for exact mathematical
-predicates. A necessity finding must identify marginal reader value rather
+drafting history, diagnoses, continuous report, vocabulary report, expected
+findings, or proposed cuts. It verifies the hash before reading, reads the
+whole paper, then runs separate necessity and referential-precision audits. It
+inventories remarks, defensive qualifications, informal aliases, apparent
+result names, loose result pointers, and descriptive substitutes for exact
+mathematical predicates. A necessity finding must identify marginal reader value rather
 than merely say that a passage is clear or mathematically true. A precision
 finding must identify the intended exact referent or predicate and the
 inference or ambiguity imposed by the current wording; a necessary passage may

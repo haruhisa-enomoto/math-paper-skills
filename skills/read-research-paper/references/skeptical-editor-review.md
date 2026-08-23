@@ -60,7 +60,8 @@ A valid run requires all of the following:
 4. **Read-only manuscript.** The editor writes only its report and never edits
    the manuscript.
 5. **Isolation.** Withhold proof notes, ledgers, cited sources, vocabulary
-   reports, drafting history, prior reviews, proposed repairs, and owner gold.
+   reports, drafting history, prior reviews, proposed repairs, and expected
+   findings.
 
 If freshness, frozen input, or read-only isolation fails, mark the run invalid.
 
