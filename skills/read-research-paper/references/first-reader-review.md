@@ -362,7 +362,8 @@ working the list: thirty findings usually have three or four sources, and
 repairing the sources converts most of the list into non-issues.  A list of
 defects is not a revision plan.
 
-The supervisor may disagree with the reader, and should say so explicitly
-when synthesizing.  A first reader's judgement about what a paper needs is
-weaker than its report of where it stumbled; the stumble is data, the
-prescription is opinion.
+The supervisor may disagree with the reader's diagnosis or proposed repair,
+and should say so explicitly when synthesizing. It must not erase a recorded
+inference, rereading, backward search, or translation burden merely because an
+expert can recover the intended meaning. The stumble is data; the diagnosis
+and prescription are judgments.

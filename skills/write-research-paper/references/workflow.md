@@ -178,10 +178,25 @@ First decide whether the evidence establishes a defect at all. Abstention is a
 valid decision. Missing surrounding context warrants a conditional diagnosis,
 not a manufactured repair.
 
+Separate the reader's observation from its diagnosis and proposed repair. A
+report that the reader had to infer, reread, search backward, or translate
+ordinary language into an exact mathematical predicate is evidence about the
+current prose. `Reject` or `defer` may apply to the proposed cause or remedy;
+it must not erase that observed burden merely because the intended meaning is
+nearby, familiar to the audience, or recoverable to an expert. If the signal
+identifies ordinary language standing in for the predicate or referent used by
+the argument, treat it as a local/objective exposition defect and make the
+smallest adequate repair. Treat the signal as a nondefect only when the exact
+content was already available at that point or the reported burden conflicts
+with the explicitly assumed reader background; record that concrete textual
+or contract evidence rather than an expertise judgment.
+
 `local/objective` means the intended result is fixed by accepted manuscript
 content or an accepted project convention—for example, a broken reference, undefined
 symbol, literal numerical error, omitted already-accepted hypothesis, or clear
-drafting-process leakage with a direct deletion or replacement.
+drafting-process leakage with a direct deletion or replacement. It also
+includes a first-reader signal that ordinary language conceals the exact
+mathematical predicate or referent used in the argument.
 
 `owner-judgment` includes paper promise, story or architecture, title/abstract
 voice, theorem hierarchy, literature position, length/detail boundary,

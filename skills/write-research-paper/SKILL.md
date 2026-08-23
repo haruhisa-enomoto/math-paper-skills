@@ -82,6 +82,14 @@ defects from owner-judgment choices, and choose the smallest accepted repair
 that passes the recorded reader-success test. A reader's proposed wording is
 not automatically an accepted repair.
 
+Preserve the reader's observed burden separately from its proposed remedy.
+You may reject a diagnosis or suggested wording, but do not dismiss a recorded
+inference, rereading, backward search, or translation into an exact
+mathematical predicate merely because the intended meaning is recoverable to
+you. Apply the exact-mathematics standard to that evidence and make the
+smallest local repair when ordinary language is standing in for the
+load-bearing predicate or referent.
+
 Every exposition edit requires fresh independent regression unless the owner
 explicitly waives it for that named edit. If the change alters the promise,
 structural front matter, section order, or reading path, run a new continuous
