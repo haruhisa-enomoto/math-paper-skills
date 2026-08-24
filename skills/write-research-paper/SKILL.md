@@ -38,17 +38,7 @@ state. Inspect the project read-only before asking a question. If one material
 axis remains ambiguous, ask one short question about it; otherwise state the
 inferred contract concisely and proceed.
 
-Use the route in the workflow reference:
-
-- whole-paper or new-paper work receives continuous first reading, skeptical
-  editorial review, adjudication, revision, and final regression;
-- a named-section revision receives a cumulative read through that section and
-  remains within the named edit scope;
-- an exact local correction may begin with the repair but still receives fresh
-  delta regression; and
-- a new section receives the minimal surrounding integration changes, with
-  shape alignment and whole-paper review when it changes the paper's promise,
-  architecture, reading path, or detail budget.
+Use the exact pipeline diagrammed in `references/workflow.md` under the 'Route the task' heading. You must read that diagram to determine your steps before making a plan.
 
 Apply the paper-writing guide during drafting. In particular, keep private
 discussion and internal labels out of manuscript prose, state imported results
