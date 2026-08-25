@@ -266,6 +266,9 @@ report `revision drafted; independent regression pending`.
 - A changed promise, structural front matter, section order, or reading path
   invalidates the continuous review and requires a new full run.
 - Unchanged local prose outside those dependencies does not require a full run.
+- If the abstract or introduction grows in consecutive rounds, the repairs are
+  the wrong kind and the review will not terminate; correct that before
+  commissioning another reader.
 
 A completed writing task is tied to one exact revision. Require current shape
 locks, all accepted clusters applied, the appropriate continuous and editorial

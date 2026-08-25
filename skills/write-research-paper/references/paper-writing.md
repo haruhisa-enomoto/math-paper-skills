@@ -359,11 +359,13 @@ Better:
 The introduction should give a governing mathematical question and a clear
 hierarchy of results. Explain the familiar setting, formulate the problem,
 state the principal results precisely, distinguish the new contribution from
-known work, and indicate the proof strategy when that helps the reader see why
-the announced ingredients enter. The introduction is mathematical front
-matter, not a preliminary section: do not interrupt this route with routine
-declarations about module side, path-composition order, representative choices,
-variance, or standard notation.
+known work, and indicate the proof strategy only far enough that the reader
+sees why the announced ingredients enter and which methods the paper depends
+on. The introduction is not a self-contained proof map: the Organization block
+routes the reader, and each section states its own plan. The introduction is
+mathematical front matter, not a preliminary section: do not interrupt this
+route with routine declarations about module side, path-composition order,
+representative choices, variance, or standard notation.
 
 This placement rule is specific to the introduction. Standard vocabulary and
 conventional notation belonging to the paper's stated audience may be used
@@ -377,12 +379,13 @@ global convention to precede its first mention.
 
 An introductory theorem must nevertheless be understandable at the level at
 which it is stated. Define every paper-specific term and symbol needed to read
-it, and fix a convention locally when different choices change the meaning of
-the statement or of a displayed formula. A pointer to a later section is not a
-definition. An informal introductory preview also does not relieve the body of
-giving the complete formal definition before a proof or later result depends on
-it. Once the introduction ends, apply the ordinary first-occurrence standard
-strictly.
+that statement, and fix a convention locally when different choices change its
+meaning or that of a displayed formula. Elsewhere in the introduction a
+paper-specific term is owed an ordinary-language description or omission, not
+a definition. A pointer to a later section is not a definition. An informal
+introductory preview also does not relieve the body of giving the complete
+formal definition before a proof or later result depends on it. Once the
+introduction ends, apply the ordinary first-occurrence standard strictly.
 
 Close the introduction with two visibly separate, bold, unnumbered blocks in
 the following order:
