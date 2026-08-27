@@ -224,16 +224,22 @@ When the supervisor says the manuscript is finished, append:
     or referential-precision audit.)
 
     ## Findings
-    (distilled, most severe first.  For each: quoted opening phrase,
+    (distilled, most severe first, with stable identifiers `FR-1`, `FR-2`, ... .
+    For each: supporting journal entry identifiers, quoted opening phrase,
     approximate line number, category tag, one sentence on what the cold
     reader lacks there, and a one-line repair where one is short enough to
-    state.)
+    state. Group repeated instances by cause, but ensure that every distinct
+    objective burden recorded in the journal or Writing review occurs in one
+    of these findings.)
 
     ## Verdict
-    (per section: where the first-reading rhythm broke or flowed and what
-    reconstruction burden remained.  Then one paragraph on the paper as a
-    whole.  Do not convert absence of first-pass friction into an editorial
-    verdict that a passage earns its space.)
+    (begin with the literal line `Continuous-reader verdict: PASS` or
+    `Continuous-reader verdict: FAIL`. Use FAIL when an objective finding
+    requires manuscript change for the stated audience to follow the paper on
+    first encounter. Then state per section where the first-reading rhythm
+    broke or flowed and what reconstruction burden remained, followed by one
+    paragraph on the paper as a whole. Do not convert absence of first-pass
+    friction into an editorial verdict that a passage earns its space.)
 
 Writing review, Findings, and Verdict may draw on the whole journal — that
 is synthesis, not a forward-blindness violation.  The journal entries stay

@@ -221,23 +221,29 @@ verified reading-copy identity, and completion state.  It then contains:
 2. **Section audit:** for every section, whether it earns its place and any
    recurring source of excess, avoidable terminology, or imprecise
    mathematical reference.
-3. **Mandatory inventories:** every explicit remark; every negative or
-   defensive scope qualification; every recurring informal alias; and every
-   phrase presented as a named theorem, criterion, principle, method, or
-   argument. Also inventory every loose result pointer, descriptive substitute
-   for an exact mathematical predicate, or citation-based application found in
-   the precision audit. Give each a `keep`, `compress`, `delete`, `rename`, or
-   `replace` verdict and one sentence identifying either its reader benefit or
-   its exact referential defect.
-4. **Findings:** ranked findings with the quoted opening phrase, locator,
-   category, intended role, audit evidence, verdict, confidence, and at most a
-   brief repair direction. Necessity evidence records reader-visible loss under
-   deletion and any concrete beneficiary; precision evidence records the exact
-   intended referent or predicate and the reconstruction currently required.
-5. **Verdict:** separately whether the manuscript passes the necessity audit
-   and the referential-precision audit, followed by an overall editorial
-   verdict and a distinction between objective exposition defects and choices
-   about voice, historical context, or paper scope.
+3. **Mandatory inventories:** with stable identifiers, every explicit remark;
+   every negative or defensive scope qualification; every recurring informal
+   alias; and every phrase presented as a named theorem, criterion, principle,
+   method, or argument. Also inventory every loose result pointer, descriptive
+   substitute for an exact mathematical predicate, or citation-based
+   application found in the precision audit. Give each a `keep`, `compress`,
+   `delete`, `rename`, or `replace` verdict and one sentence identifying either
+   its reader benefit or its exact referential defect.
+4. **Findings:** ranked findings with stable identifiers `SE-1`, `SE-2`, and so
+   on, supporting inventory identifiers where applicable, the quoted opening
+   phrase, locator, category, intended role, audit evidence, verdict,
+   confidence, and at most a brief repair direction. Necessity evidence records
+   reader-visible loss under deletion and any concrete beneficiary; precision
+   evidence records the exact intended referent or predicate and the
+   reconstruction currently required.
+5. **Verdict:** literal `PASS` or `FAIL` verdicts for the necessity audit and
+   the referential-precision audit, followed by a literal overall `PASS` or
+   `FAIL` editorial verdict and a distinction between objective exposition
+   defects and choices about voice, historical context, or paper scope.
+
+Every actionable inventory item and every distinct objective defect in the
+section audit must be represented by a ranked finding so that the writer can
+check complete adjudication coverage.
 
 Silence is not endorsement.  A passed editorial review does not certify proof
 correctness, source accuracy, novelty, or first-encounter readability.

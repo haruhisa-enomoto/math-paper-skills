@@ -99,19 +99,24 @@ Write one Markdown report to the recorded destination.  Include:
    isolation conditions, and completion;
 2. the recovered paper contract;
 3. a section-by-section necessity and referential-precision audit;
-4. inventories of every explicit remark, negative or defensive scope
-   qualification, recurring informal alias, named-result phrase, and each
-   loose result pointer, hidden mathematical predicate, or citation-based
-   application found in the precision audit, each with a `keep`, `compress`,
-   `delete`, `rename`, or `replace` verdict and one-sentence reason;
-5. ranked findings giving the opening phrase, locator, category, intended role,
-   audit evidence, verdict, confidence, and at most a brief repair direction;
-   necessity findings give reader-visible loss under deletion and any concrete
-   beneficiary, while precision findings give the intended exact referent or
-   predicate and the reconstruction currently required; and
-6. separate pass/fail verdicts for the necessity and referential-precision
-   audits, an overall editorial verdict, and a distinction between objective
-   exposition defects and owner-judgment questions.
+4. inventories with stable identifiers for every explicit remark, negative or
+   defensive scope qualification, recurring informal alias, named-result
+   phrase, and each loose result pointer, hidden mathematical predicate, or
+   citation-based application found in the precision audit, each with a
+   `keep`, `compress`, `delete`, `rename`, or `replace` verdict and one-sentence
+   reason;
+5. ranked findings with stable identifiers `SE-1`, `SE-2`, ... giving the
+   supporting inventory identifiers where applicable, opening phrase,
+   locator, category, intended role, audit evidence, verdict, confidence, and
+   at most a brief repair direction; necessity findings give reader-visible
+   loss under deletion and any concrete beneficiary, while precision findings
+   give the intended exact referent or predicate and the reconstruction
+   currently required; and
+6. literal `PASS` or `FAIL` verdicts for the necessity and
+   referential-precision audits, a literal overall `PASS` or `FAIL` editorial
+   verdict, and a distinction between objective exposition defects and
+   owner-judgment questions. Every actionable inventory item and distinct
+   objective defect in the section audit must occur in a ranked finding.
 
 Do not rewrite passages.  Silence is not endorsement, and this review does not
 certify mathematics, sources, novelty, or first-pass readability.

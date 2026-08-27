@@ -36,12 +36,20 @@ Include only unresolved story, voice, scope, retention, or terminology choices.
 
 ## Valid gates
 
-| Gate | Checked revision | Invalidated by |
-|---|---|---|
-| Shape calibration | | material change to audience, promise, result package, architecture, or budget |
-| Continuous first read | | changed promise, structural front matter, section order, or reading path |
-| Skeptical editorial review | | substantial new prose, new remarks or qualifications, new informal labels, or changed promise, architecture, or detail budget |
-| Delta regression | | further edit to a checked region or its dependency |
+Copy source-review verdicts literally and record later closure evidence in a
+separate column. A delta pass names only the cluster IDs it covers. If an edit
+invalidates a whole-paper gate, only a fresh review in that mode replaces it.
+
+| Gate | Source artifact and exact revision | Literal source verdict | Current closure evidence or status | Invalidated by |
+|---|---|---|---|---|
+| Shape calibration | | | | material change to audience, promise, result package, architecture, or budget |
+| Continuous first read | | PASS \| FAIL \| INVALID | open \| regression report and clusters \| fresh continuous PASS | changed promise, structural front matter, section order, or reading path |
+| Skeptical editorial review | | PASS \| FAIL \| INVALID | open \| regression report and clusters \| fresh editorial PASS | substantial new prose, new remarks or qualifications, new informal labels, or changed promise, architecture, or detail budget |
+| Delta regression | | PASS \| FAIL \| UNTESTABLE | covered clusters: | further edit to a checked region or its dependency |
+
+Review closure batch:
+
+Open finding IDs or owner decisions (must be empty at a finished checkpoint):
 
 ## Host-project diagnostics
 

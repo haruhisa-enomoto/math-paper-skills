@@ -72,6 +72,16 @@ defects from owner-judgment choices, and choose the smallest accepted repair
 that passes the recorded reader-success test. A reader's proposed wording is
 not automatically an accepted repair.
 
+Review closure is a coverage invariant. Before editing, map every ranked
+finding and every separately stated objective burden or actionable inventory
+item to exactly one revision cluster. Give each cluster an explicit decision:
+`implement`, `modify`, `reject`, or `defer`. A rejection requires concrete
+manuscript or audience-contract evidence; a deferral remains open and prevents
+a finished checkpoint unless the owner explicitly resolves or excludes it.
+Preserve each report's literal verdict; do not relabel a failed source review
+after editing. Close its findings only through the fresh regression required by
+the workflow, using a new full review whenever the edit invalidates that gate.
+
 Preserve the reader's observed burden separately from its proposed remedy.
 You may reject a diagnosis or suggested wording, but do not dismiss a recorded
 inference, rereading, backward search, or translation into an exact
@@ -85,6 +95,8 @@ explicitly waives it for that named edit. If the change alters the promise,
 structural front matter, section order, or reading path, run a new continuous
 review instead of delta regression. Substantial replacement prose, new remarks,
 or new qualifications after editorial review require a new editorial pass.
+A delta pass closes only the repair-cluster identifiers named in its packet; it
+does not close omitted findings or certify unchanged text.
 
 This independent-regression requirement explicitly authorizes the fresh reader
 needed to complete an otherwise authorized manuscript edit. If the execution

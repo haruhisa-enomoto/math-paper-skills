@@ -174,9 +174,27 @@ common cause. Each cluster records an exact stumble, success test, minimal
 repair, explicit non-scope, risk class, decision, changed locators, and
 regression result.
 
+Before changing the manuscript, build the finding-coverage table in
+`assets/revision-batch.md`. Give every ranked finding a stable source
+identifier. Also give an identifier to every distinct objective defect stated
+in the report's synthesis but not already represented by a ranked finding, and
+to every editorial inventory item whose verdict calls for change. Map each
+source identifier to exactly one cluster. Several findings may share a cause
+and cluster, but none may be omitted or silently absorbed. Journal entries are
+evidence for these source findings; they need not each become a separate
+cluster.
+
+Copy each review's literal verdict and exact reviewed revision into the batch
+and writing state. The writer cannot upgrade `FAIL` to `PASS` by adjudication,
+self-review, compilation, or repair. Record closure of the failed review's
+findings separately through the fresh regression required below. If the edit
+invalidates the continuous or editorial gate, only a new review in that mode
+can establish the replacement verdict.
+
 First decide whether the evidence establishes a defect at all. Abstention is a
-valid decision. Missing surrounding context warrants a conditional diagnosis,
-not a manufactured repair.
+valid temporary decision. Record it as `defer`; it remains open and prevents a
+finished checkpoint. Missing surrounding context warrants a conditional
+diagnosis, not a manufactured repair.
 
 Separate the reader's observation from its diagnosis and proposed repair. A
 report that the reader had to infer, reread, search backward, or translate
@@ -202,6 +220,20 @@ mathematical predicate or referent used in the argument.
 voice, theorem hierarchy, literature position, length/detail boundary,
 retention of substantial material, new terminology, and disputed diagnoses.
 Batch these with one recommendation, reason, tradeoff, and minimal alternative.
+
+Use the four decisions literally.
+
+- `implement`: accept the diagnosis and proposed repair class;
+- `modify`: accept the observed burden but use a different repair;
+- `reject`: close the finding only with exact earlier text or an explicit
+  audience/owner contract showing that the reported burden is not a defect;
+- `defer`: leave the finding open for owner judgment or missing evidence.
+
+Disagreement with proposed wording is not rejection of the observed burden.
+An objective finding cannot remain deferred in a completed writing task. An
+owner-judgment finding may remain open only if the task is reported unfinished
+and the owner decision is named as the dependency, or if the owner explicitly
+excludes it from the requested finish state.
 
 A reader's prescription is not an accepted repair. Use the smallest repair
 that passes the cold-reader success test:
@@ -251,6 +283,13 @@ readers.
 A fresh delta reader checks changed regions, surrounding context, and recorded
 success tests without seeing diagnoses or preferred repairs.
 
+The regression packet names the exact implemented or modified cluster
+identifiers it covers. Compare that set with the revision batch before launch
+and after the report returns. A delta verdict applies only to those identifiers
+and their supplied dependencies. It cannot close a rejected or deferred
+finding, an omitted cluster, or unchanged prose outside the packet, and it does
+not relabel an earlier failed whole-paper verdict.
+
 Independent regression is a completion invariant for every exposition edit,
 including a local objective or writer-found repair. Freeze the changed revision
 and run delta regression unless the change invalidates the continuous review,
@@ -271,9 +310,15 @@ report `revision drafted; independent regression pending`.
   commissioning another reader.
 
 A completed writing task is tied to one exact revision. Require current shape
-locks, all accepted clusters applied, the appropriate continuous and editorial
-gates, final regression, compilation, and any artifact or checkpoint checks
-required by the host project. If regression fails, repair
+locks; a coverage row for every source finding; no duplicate or orphan source
+identifier; no unresolved objective finding; no `defer` decision unless the
+owner explicitly excluded it; all implemented or modified clusters applied;
+and the appropriate continuous, editorial, regression, compilation, artifact,
+and host-project gates. Preserve each independent report's literal verdict in
+state and record the current revision's closure evidence separately. A source
+`FAIL` never becomes a source `PASS`; an appropriate delta may close all of its
+bounded repair clusters, while an edit that invalidates the whole-paper gate
+requires a new whole-paper review. If regression fails, repair
 and run another fresh regression reader until it passes or owner input is
 needed. If no repair is accepted, do not manufacture an edit or empty
 checkpoint. Keep ordinary reader and editor reports in the host project's

@@ -114,6 +114,7 @@ Use delta mode only after a bounded accepted repair. Receive, in document
 order:
 
 - base and changed revision identifiers;
+- the complete list of repair-cluster identifiers the packet claims to cover;
 - each changed region with enough preceding and following context;
 - the cold-reader success criterion for each repair cluster; and
 - explicit non-scope, without the diagnosis, preferred wording, or expected
@@ -126,6 +127,12 @@ displaced motivation, boilerplate, conflict, or out-of-scope change. Do not
 rewrite the passage. A brief repair direction is allowed only to explain a
 failure and must remain separate from the evidence.
 
+End with the exact set of cluster identifiers actually checked and the literal
+line `Delta verdict: PASS`, `Delta verdict: FAIL`, or `Delta verdict:
+UNTESTABLE`. `PASS` means only that every listed cluster passed its supplied
+criterion in the material read. It says nothing about omitted findings,
+unchanged text, or a prior whole-paper verdict.
+
 If the packet changes the paper promise, structural front matter, section
 order, or reading path, report that delta mode is insufficient and a new
 continuous read is required.
@@ -135,6 +142,7 @@ continuous read is required.
 Record mode, exact revision, material actually read, isolation conditions, and
 completion state. Silence is not endorsement; flag counts are not a quality
 score; a possible gap is not a mathematical verdict; and a passed delta does
-not certify unchanged text. A passed editorial review does not certify
+not certify unchanged text or replace a failed continuous or editorial
+verdict. A passed editorial review does not certify
 first-encounter readability. State the concrete reader burden or marginal
 reader value before assigning a category or suggesting a repair.

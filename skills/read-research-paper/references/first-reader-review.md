@@ -359,6 +359,16 @@ absence of friction as evidence that every passage earns its space or uses the
 most precise mathematical interface; that is the separate skeptical-editor
 test.
 
+Give the distilled findings stable identifiers `FR-1`, `FR-2`, and so on, and
+list their supporting journal entry identifiers. Group repeated instances by
+cause, but represent every distinct objective burden recorded in the journal
+or Writing review by one finding. Begin the Verdict with the literal line
+`Continuous-reader verdict: PASS` or
+`Continuous-reader verdict: FAIL`; use `FAIL` when an objective finding
+requires manuscript change for the stated audience to follow the paper on
+first encounter. The writer may disagree later, but must preserve this literal
+verdict and adjudicate every finding.
+
 Read the whole report before acting.  Then look for *causes* rather than
 working the list: thirty findings usually have three or four sources, and
 repairing the sources converts most of the list into non-issues.  A list of
