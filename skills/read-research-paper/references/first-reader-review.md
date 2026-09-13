@@ -126,6 +126,13 @@ English, and do not turn the category into a record of stylistic preference.
 Use `[meaning]` instead when the sentence cannot be parsed or remains genuinely
 ambiguous.
 
+Within the existing reading pass, ask: **Where did the prose omit an
+operation, reason, or referent that you had to reconstruct?** If this occurred,
+record the location and the missing connection using the existing finding
+categories. Do not infer a defect from a non-human subject or from repetition
+of ordinary mathematical connectives. This question adds no separate pass,
+report inventory, or requirement to find a problem.
+
 ## Introduction-specific convention discipline
 
 Apply the paper-writing guide's delayed-convention allowance only while reading

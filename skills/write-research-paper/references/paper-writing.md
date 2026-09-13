@@ -273,6 +273,35 @@ they are used.
 Use a formula when it states a relation more clearly than prose, and use prose
 to explain the purpose and logical role of the relation.
 
+### Sentence rhythm and visible reasoning
+
+Prefer familiar mathematical language. Repetition of `Let`, `Take`, `Since`,
+`Applying`, `Then`, and `Hence` is acceptable; do not vary these words merely
+for variety. Read each paragraph as a sequence of choices, operations, reasons,
+and conclusions. When a sentence compresses a deduction into `X makes Y`,
+`X supplies Y`, or a similar expression, check whether the operation and the
+reason for the conclusion remain visible to the intended reader. Name the
+operation or separate the premise from the conclusion when that resolves a
+real reconstruction burden. Routine steps need not be expanded when their
+justification is already immediate.
+
+For example, after specifying the relevant short exact sequence, prefer
+`Since Hom(E,Y)=0, the long exact sequence shows that the indicated Ext map is
+injective` when `Hom(E,Y)=0 makes the Ext map injective` hides the reasoning.
+Keep precise mathematical subjects such as `the functor preserves projectives`
+or `the inclusion induces an equivalence`. Non-human subjects, passive voice,
+and the words `gives`, `makes`, or `supplies` are not defects by themselves.
+Do not mechanically replace them by `we` or treat this guidance as a word ban.
+
+When calibrating a requested style, read complete proof passages and their
+surrounding definitions, statements, and transitions from owner-approved or
+otherwise suitable exemplars. Compare how they expose the reasoning, not only
+which phrases occur. Frequency searches can locate passages but cannot replace
+reading them. Distinguish observations about those passages from claims about
+an author's entire output or a mathematical school. Keep personal preferences
+and source-specific examples in the host project rather than making them
+universal skill requirements.
+
 ### Formal definitions and constructions
 
 Choose between a numbered environment and an inline introduction according to

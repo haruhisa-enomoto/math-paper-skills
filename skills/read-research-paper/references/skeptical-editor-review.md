@@ -20,6 +20,12 @@ name. Apply the
 [mathematical paper-writing guide](../../write-research-paper/references/paper-writing.md)
 throughout the review.
 
+As part of referential precision, ask where the prose omits an operation,
+reason, or referent that the reader must reconstruct. Apply the writer guide's
+sentence-rhythm standard: a mathematical subject is not itself a defect, and
+an explicit operation is useful only when it resolves a reader burden. Use the
+existing audit and findings; add no separate stylistic pass or inventory.
+
 ## When to run one
 
 Run this pass on the nearly final integrated revision of:
