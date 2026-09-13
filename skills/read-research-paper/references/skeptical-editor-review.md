@@ -17,12 +17,12 @@ tests the semantic interface of retained prose without turning the review into
 copy editing. A passage may earn its space yet still require an exact theorem
 reference, predicate, status marker, or replacement for an apparent result
 name. Apply the
-[mathematical paper-writing guide](../../write-research-paper/references/paper-writing.md)
+[shared exposition standard](../../write-research-paper/references/exposition-standard.md)
 throughout the review.
 
 As part of referential precision, ask where the prose omits an operation,
-reason, or referent that the reader must reconstruct. Apply the writer guide's
-sentence-rhythm standard: a mathematical subject is not itself a defect, and
+reason, or referent that the reader must reconstruct. Apply the shared exposition standard's
+sentence-rhythm guidance: a mathematical subject is not itself a defect, and
 an explicit operation is useful only when it resolves a reader burden. Use the
 existing audit and findings; add no separate stylistic pass or inventory.
 
@@ -56,10 +56,11 @@ A valid run requires all of the following:
 1. **Fresh editor.** Use a subagent with no inherited writer conversation,
    diagnoses, research state, or earlier review.  The writer or supervisor
    must not perform this role.
-2. **Frozen complete paper.** Identify one exact manuscript revision and a
-   content hash for the complete reading-order copy. Give the editor that copy
-   only after initialization; before reading, the editor recomputes the hash by
-   the recorded method and stops if it differs.
+2. **Frozen complete paper.** Identify the exact revision and complete
+   reading-order copy, preserving source locators. Use an immutable snapshot or
+   a dedicated copy held unchanged for the run. Add a hash and verification
+   command when transfer or mutable-file ambiguity poses an identity risk;
+   when supplied, verify it before reading and stop on mismatch.
 3. **Explicit contract.** State the intended audience, paper promise, length
    and detail boundary, protected content, allowed files, withheld material,
    and report destination without naming suspected defects or desired cuts.
@@ -80,11 +81,11 @@ preserve source locators. Copy and fill the writer skill's
 and [skeptical-editor launcher](../../write-research-paper/assets/skeptical-editor-launcher.md)
 templates.
 
-Launch in two steps.  First give a fresh agent only `DIRECTION.md` and the
-guides it names.  Wait for confirmation that the guides are loaded and no
-manuscript has been opened.  Then give that same editor the complete frozen
-reading copy.  Do not add diagnoses, target phrases, or reactions while the
-run is active.
+Launch a fresh agent with the direction, skill, and complete frozen reading
+copy in one packet. It loads the standard and editorial protocol before
+reviewing the paper; no readiness exchange is required. Do not add diagnoses,
+target phrases, or reactions while the run is active. If a hash was supplied,
+verify it as specified before reading.
 
 Unlike a continuous first-reader relay, this editor must see the complete
 paper.  Redundancy, displaced explanation, unnecessary qualifications, and the
@@ -106,40 +107,14 @@ The editor makes two passes.
    substitutes for exact predicates, and phrases shaped like names of theorems
    or criteria.
 
-### Introduction architecture
+### Introduction and boundaries
 
-Audit the introduction under its specific contract in the paper-writing guide.
-Do not classify standard background vocabulary or harmless conventional
-notation as imprecise solely because the closing **Conventions and notation**
-block has not yet appeared. Require a concrete ambiguity: the object is not
-available to the stated audience, the terminology is paper-specific, or a
-plausible choice of convention changes the current assertion or display. A
-later block must not be used retroactively to excuse a genuine ambiguity in an
-introductory theorem.
-
-Treat the closing **Organization** and **Conventions and notation** blocks as
-distinct structural components rather than presumptive repetition. Audit the
-first for a concise account of the paper's logical route and the second for the
-global setup needed by the body; flag either block when it is missing,
-misplaced, merged with the other, substantively incomplete, or filled with
-material belonging to the mathematical narrative. After the introduction,
-apply the ordinary first-occurrence and referential-precision standards
-strictly.
-
-### Transitions and local handoffs
-
-The continuous reader owns the first-encounter evidence about whether a
-boundary feels abrupt. In this whole-paper pass, do not infer that experience
-from hindsight. Enforce the shared structural rule that every numbered section
-and subsection, including appendices, begins with ordinary prose before any
-formal environment, display, list, or nested heading. When auditing that prose,
-count a concise local handoff as reader-visible work when it connects the task
-just completed to the task now beginning, explains why a formal statement
-appears at that point, or prevents an abrupt change of discourse mode. A global
-Organization block does not automatically make such a local bridge repetitive.
-Conversely, generic roadmap prose which supplies no distinct local capability
-should be replaced with a useful opening rather than retained as boilerplate or
-deleted into a formal-first opening.
+Apply the shared standard's introduction-specific convention allowance,
+separate closing front-matter blocks, prose-first rule, and local-handoff test.
+Do not infer first-encounter experience from hindsight. A useful local bridge
+is not redundant merely because an Organization block exists; replace empty
+roadmap prose with a useful opening rather than deleting it into a formal-first
+section.
 
 ### Necessity audit
 
@@ -220,7 +195,7 @@ rewrite the manuscript.
 ## Report
 
 The report records mode, exact revision, material read, isolation conditions,
-verified reading-copy identity, and completion state.  It then contains:
+reading-copy identity and any required verification, and completion state.  It then contains:
 
 1. **Recovered contract:** the promise, audience, result hierarchy, section
    jobs, and apparent detail budget learned from the manuscript and direction.
@@ -254,20 +229,8 @@ check complete adjudication coverage.
 Silence is not endorsement.  A passed editorial review does not certify proof
 correctness, source accuracy, novelty, or first-encounter readability.
 
-## Adjudication and regression
+## Handoff
 
-The writer reads the complete report and adjudicates it; the editor has no edit
-authority. Undefined aliases, apparently coined result names, loose result
-pointers, citations standing in for the assertion used, hidden mathematical
-predicates, literal repetition, and qualifications with no reader-visible
-payoff are usually local exposition defects. Removing substantial context,
-history, comparisons, or owner-approved scope discussion may require owner
-judgment.
-
-Apply accepted findings as one bounded revision.  Ordinary deletions,
-compressions, renamings, and local precision replacements then receive fresh
-delta regression. If the edits change the paper promise, structural front
-matter, section order, or reading path, run a new continuous review instead.
-Substantial replacement prose, new remarks, or new qualifications require
-another skeptical-editor pass; a clean deletion or exact local replacement
-does not.
+The writer adjudicates the complete report under its own workflow. The editor
+has no edit authority. Preserve literal verdicts and every required inventory
+and finding; an editor's proposed repair is not automatically accepted.

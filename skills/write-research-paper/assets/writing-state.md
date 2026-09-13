@@ -30,7 +30,7 @@ Main-text/appendix and length/detail boundary:
 |---|---|---|---|
 | | | | |
 
-## Open owner batch
+## Unresolved owner decisions
 
 Include only unresolved story, voice, scope, retention, or terminology choices.
 
@@ -42,12 +42,14 @@ invalidates a whole-paper gate, only a fresh review in that mode replaces it.
 
 | Gate | Source artifact and exact revision | Literal source verdict | Current closure evidence or status | Invalidated by |
 |---|---|---|---|---|
-| Shape calibration | | | | material change to audience, promise, result package, architecture, or budget |
+| Current shape choices | | | | material change to audience, promise, result package, architecture, or budget |
 | Continuous first read | | PASS \| FAIL \| INVALID | open \| regression report and clusters \| fresh continuous PASS | changed promise, structural front matter, section order, or reading path |
 | Skeptical editorial review | | PASS \| FAIL \| INVALID | open \| regression report and clusters \| fresh editorial PASS | substantial new prose, new remarks or qualifications, new informal labels, or changed promise, architecture, or detail budget |
 | Delta regression | | PASS \| FAIL \| UNTESTABLE | covered clusters: | further edit to a checked region or its dependency |
 
 Review closure batch:
+
+Named-edit owner waiver, if any (record exact scope and report it at handoff):
 
 Open finding IDs or owner decisions (must be empty at a finished checkpoint):
 

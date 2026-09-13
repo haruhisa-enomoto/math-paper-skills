@@ -145,7 +145,7 @@ and decide the revisions after it finishes.
 Recompute from the report file; never accumulate across turns.
 
 ```bash
-for f in meaning purpose order cite idiom gap; do
+for f in meaning purpose order cite idiom continuity gap; do
   printf "%-8s %s\n" "$f" "$(sed -n '1,/^## Writing review/p' report-*.md | grep -o "\[$f\]" | wc -l)"
 done
 ```

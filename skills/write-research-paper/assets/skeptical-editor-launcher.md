@@ -1,59 +1,28 @@
-# Launcher notes: skeptical-editor review
+# Skeptical-editor launcher
 
-<!-- TEMPLATE. Use with the write and read research-paper skills. Editors must not open this. -->
+<!-- TEMPLATE: supervisor-only record. -->
 
-**Editors must not open this file.**
+Freeze the complete reading-order copy, preserve source locators, and fill
+DIRECTION.md. Ensure a fresh reader with no inherited writer context can read
+the paper and write its report but cannot edit the manuscript. Include a hash
+only to address a concrete transfer or mutable-file identity risk.
 
-## Setup
+Reader identity:
+Launch time:
+Frozen manuscript and revision:
+Report:
 
-- [ ] The complete reading-order manuscript is frozen and its revision is
-      recorded in `DIRECTION.md` together with a reproducible content hash.
-- [ ] `DIRECTION.md` states audience, promise, length/detail boundary,
-      protected content, withheld material, and report destination without
-      suspected defects, target phrases, or preferred conclusions.
-- [ ] The editor can write its report but cannot edit the manuscript.
-- [ ] A fresh subagent with no inherited conversation or research context is
-      available.
+Send one packet:
 
-## Editor identity
+> Use read-research-paper in editorial mode. This is exposition review, not
+> mathematical research; do not load project research state. Read DIRECTION.md,
+> the skill's shared exposition standard, and its editorial protocol, then
+> review the complete frozen manuscript at <PATH> and write the required report.
 
-    Editor label:
-    Subagent identity:
-    Launch time:
-    Frozen manuscript path:
-    Frozen manuscript identity:
+Do not provide diagnoses, expected findings, prior reviews, or substantive
+reactions while the run is active. On return check revision identity, complete
+coverage, both audit verdicts, exhaustive inventories and findings, isolation,
+and report creation. The writer then adjudicates the content.
 
-## Initialize
-
-Send this message, and nothing else, to a fresh subagent:
-
-    You are the fresh editor in an independent skeptical-editor review. This
-    is exposition-review work, not mathematical research; do not load project
-    research state. Your editor label is <LABEL>. Load the read-research-paper
-    skill in editorial mode. Read <path>/DIRECTION.md and every guide the skill
-    and direction require completely. Do not open or receive manuscript text
-    yet. Validate isolation, then reply only: Ready for the frozen manuscript.
-
-If the editor sees the manuscript before confirming readiness, mark the run
-invalid and begin again with a new editor.
-
-## Supply the manuscript
-
-After readiness confirmation, send only:
-
-    Frozen manuscript: <PATH>. Verify its recorded identity, complete the
-    two-pass necessity-and-referential-precision skeptical-editor review, and
-    write the report required by DIRECTION.md.
-
-Do not react to findings or provide further substantive instructions while the
-run is active.
-
-## Completion
-
-Check process only: exact revision, complete manuscript coverage, both audit
-verdicts, required inventories, isolation statement, and report creation. The
-writer later adjudicates the content.
-
-    Status: complete | invalid | aborted
-    Report:
-    Failure and point of discovery, if any:
+Status: complete | invalid | aborted
+Failure and point of discovery, if any:

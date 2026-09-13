@@ -15,6 +15,16 @@ loads that standard through a sibling-relative link while remaining isolated
 from the writer workflow and project state. Install the two skills together and
 keep their directory layout unchanged.
 
+The shared standard is `write-research-paper/references/exposition-standard.md`.
+Writers additionally load their workflow; readers load only the assigned
+continuous, editorial, or delta protocol. The longer `paper-writing.md` keeps
+examples for selective consultation. Mandatory independent regression after
+every exposition edit and exhaustive editorial inventories and adjudication
+coverage are unchanged. Continuous review retains staged exposure; editorial
+review accepts instructions and a complete frozen copy together, with identity
+hashing only when a concrete risk warrants it. Established owner choices carry
+forward without predetermined approval batches.
+
 ## Install once for supported agents
 
 Clone this repository once at a stable path. Then link both skill directories

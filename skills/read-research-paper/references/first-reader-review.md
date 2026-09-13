@@ -18,7 +18,7 @@ Reusable direction and launcher templates ship with the writer skill as
 [first-reader direction](../../write-research-paper/assets/first-reader-direction.md)
 and [first-reader launcher](../../write-research-paper/assets/first-reader-launcher.md).
 The writing standards the review applies are in the
-[mathematical paper-writing guide](../../write-research-paper/references/paper-writing.md);
+[shared exposition standard](../../write-research-paper/references/exposition-standard.md);
 before receiving any manuscript text, the reader reads that guide completely
 and applies it throughout the review.
 
@@ -90,7 +90,7 @@ it through the relay, or let it write the persistent report.  Do not describe
 the resulting reading as forward-blind.
 
 This is exposition-review work, not mathematical research. The reader may read
-this protocol, the portable paper-writing guide, and its frozen direction, but
+this protocol, the shared exposition standard, and its frozen direction, but
 must not load project research state, proof notes, earlier reviews, or drafting
 history.
 
@@ -98,7 +98,7 @@ history.
 
 **Reader.** A fresh agent, no prior context, follows `DIRECTION.md`.  Reads
 one segment, appends a journal, stops, waits.  After the final segment it
-reviews the complete manuscript against the portable paper-writing guide and appends Writing
+reviews the complete manuscript against the shared exposition standard and appends Writing
 review, Findings, and Verdict without changing the journal.
 
 **Supervisor.** Prepares the segments, issues them one at a time, checks
@@ -109,80 +109,20 @@ they wrote it.  That is fine, and it is why the checking rules below are
 restricted to process.  A supervisor who comments on content is running
 their own review through someone else's keyboard.
 
-## Mathematical idiom standard
+## Applying the exposition standard
 
-Judge idiom against natural mathematical prose, not merely grammatical
-everyday English. Plain mathematical language uses ordinary syntax, exact
-mathematical subjects and predicates, and conventional mathematical
-constructions. Fluent colloquial, spatial, or metaphorical wording still
-creates first-pass friction when the reader must translate it back into a
-membership, containment, vanishing, factorization, or other precise assertion.
+Record concrete reconstruction burden, not lexical preferences. Use `[idiom]`
+when fluent wording requires translation into an exact predicate, `[meaning]`
+when it remains ambiguous, and `[order]` for prose-first violations. At major
+boundaries record the preceding and incoming jobs and use `[continuity]` for
+missing or delayed handoffs, separately from logical gaps. Do not infer defects
+from non-human subjects or repeated conventional connectives.
 
-Use `[idiom]` for that concrete translation burden as well as for wording that
-is unnatural or nonstandard in mathematical prose. State what the reader had
-to reconstruct and, when short, the conventional formulation. Do not flag a
-phrase merely because specialized technical language is uncommon in everyday
-English, and do not turn the category into a record of stylistic preference.
-Use `[meaning]` instead when the sentence cannot be parsed or remains genuinely
-ambiguous.
-
-Within the existing reading pass, ask: **Where did the prose omit an
-operation, reason, or referent that you had to reconstruct?** If this occurred,
-record the location and the missing connection using the existing finding
-categories. Do not infer a defect from a non-human subject or from repetition
-of ordinary mathematical connectives. This question adds no separate pass,
-report inventory, or requirement to find a problem.
-
-## Introduction-specific convention discipline
-
-Apply the paper-writing guide's delayed-convention allowance only while reading
-the introduction. Do not record a flag merely because standard vocabulary or
-conventional notation belonging to the assumed background appears before the
-closing **Conventions and notation** block. First identify a concrete burden at
-that point: for example, the term is paper-specific, the intended audience
-cannot identify the object, or different plausible conventions change the
-meaning of the current assertion or display. The mere fact that module side,
-path-composition order, or another harmless global choice has not yet been
-declared is not a first-reading defect.
-
-This rule does not permit looking ahead to repair a genuine ambiguity. If an
-introductory theorem or convention-sensitive formula cannot be interpreted as
-issued, record that burden where it occurs. When the end of the introduction
-is issued, assess whether it closes with distinct **Organization** and
-**Conventions and notation** blocks and whether each performs its assigned job
-without interrupting the earlier mathematical route. Once the introduction
-ends, apply the ordinary first-occurrence standard strictly: every new term
-and symbol must be meaningful when it first appears.
-
-## Reading continuity and boundary handoffs
-
-The forward-blind reader is also the continuity reader. Logical
-recoverability is not the whole test: a section title or an earlier
-Organization block may let the reader reconstruct why material appears while
-the actual transition still feels abrupt or interruptive on first encounter.
-
-At every major boundary---abstract to introduction, mathematical narrative to
-front-matter blocks, conventions to the first body section, and each section
-or subsection break---keep the job of the preceding passage active. First
-check that every numbered section and subsection, including appendices, begins
-with ordinary prose before any formal environment, display, list, or nested
-heading. Then read the new heading together with its opening prose and first
-formal statement and ask:
-
-- what mathematical or expository job just ended;
-- what job begins now;
-- whether the manuscript itself supplies why the new task begins here and how
-  it connects to the preceding work; and
-- whether the handoff is seamless, compressed but natural, abrupt,
-  interruptive, delayed, or displaced.
-
-Record a prose-first violation as `[order]`. Use `[continuity]` separately when
-a competent reader can eventually reconstruct the sequence but must silently
-supply the local connection, absorb an unexplained change of task or discourse
-mode, or wait for later orientation. Record the two jobs and the missing or
-delayed connective work. A generic roadmap sentence may satisfy the structural
-rule while still deserving `[continuity]`; do not reward boilerplate or a local
-repetition of the table of contents.
+Apply the shared standard's introduction allowance: harmless background
+conventions may wait, but a convention-sensitive assertion or undefined
+paper-specific theorem term cannot. Check the separate closing Organization
+and Conventions and notation blocks when issued; do not look ahead to excuse
+an earlier ambiguity. After the introduction apply ordinary first-use discipline.
 
 ## Setup
 
@@ -326,36 +266,18 @@ for f in meaning purpose order cite idiom continuity gap; do
 done
 ```
 
-## Known failure modes
+## Process cautions
 
-Each of these cost a real run or a wrong call.
-
-1. **Launcher content in the reader's file.** A segment table below a "for
-   the launcher only" divider inside `DIRECTION.md` was read in one pass,
-   compromising every "what do I expect next" entry.  Separate files.
-2. **Initialization and the first segment sent together.** A reader told to
-   read the guides and open segment 1 in one message reads them in whatever
-   order it likes, and often opens the manuscript first.  Initialize, wait for
-   the readiness reply, then issue the segment.
-3. **The reader's harness refuses to write a report file.** Some agent
-   system prompts forbid creating report or documentation files.  The
-   direction must override this explicitly and offer a shell-append
-   fallback.
-4. **A reply carrying findings.** If the reader summarizes its findings back
-   to you, you will be tempted to react, and your reaction leaks.  Restrict
-   replies to range, entry count, and flag counts.
-5. **Entry count read as effort.** Entry count tracks the manuscript's
-   paragraph structure, not the reader's diligence.  A segment with five
-   entries may be five blocks long.  Verify against blocks before
-   concluding anything.
-6. **Fast, low-flag segment read as fatigue.** A well-structured proof
-   generates few flags and few turn-backs, and finishes quickly.  Read an
-   entry before deciding the reader faded.
+Keep launcher state out of reader files and replies process-only. Entry counts
+reflect paragraph structure, not diligence; few flags or a quick segment do not
+establish fatigue. Check coverage against blocks. If the host prevents writing
+a persistent report, use a permitted report-writing method or mark the run
+invalid; a direction cannot override higher-priority execution restrictions.
 
 ## The deliverable
 
 The report has four parts.  The journal is the evidence base.  Writing review
-applies the portable paper-writing guide to the manuscript's first-encounter
+applies the shared exposition standard to the manuscript's first-encounter
 evidence; it is not a second-pass necessity or referential-precision audit.
 Findings and Verdict are what you revise from: Findings should be ranked and
 anchored, and the Verdict should say where first-reading rhythm broke or flowed

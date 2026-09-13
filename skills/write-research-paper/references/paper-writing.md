@@ -1,10 +1,14 @@
 # Mathematical paper writing
 
-Read this guide end to end when the writing or reviewing skill directs you to
-it; a bounded excerpt does not satisfy that step. It governs mathematical
-exposition, not merely TeX syntax or PDF layout. A host project may add local
-authorship, formatting, evidence, or publication conventions, but those local
-rules do not replace this standard.
+This is a reference collection of explanations and examples. Read the shared
+[exposition standard](exposition-standard.md) first, then consult only the
+relevant sections here. It does not create additional review rounds or replace
+the workflow's completion rules.
+
+Topics: forward reading and boundaries (§1); private-process leakage (§2);
+exact predicates, terminology, rhythm, and definitions (§3); introduction and
+headings (§4); proofs and imported results (§5); computation (§6); review and
+artifact checks (§7).
 
 ## Authorship metadata
 
