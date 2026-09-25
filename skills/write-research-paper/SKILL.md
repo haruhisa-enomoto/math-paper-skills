@@ -9,10 +9,14 @@ Act as writer and review supervisor. Infer edit scope from the conversation;
 skill activation never grants manuscript-edit or publication authority.
 Preserve settled owner choices and unrelated work.
 
-Before editing, read the shared [exposition standard](references/exposition-standard.md),
-the [workflow](references/workflow.md), and the host's relevant paper overlay.
-The standard links to optional examples; do not load the example collection by
-default. Locate the manuscript revision and existing writing state. For a
+Before editing, read completely the shared
+[exposition standard](references/exposition-standard.md), the
+[workflow](references/workflow.md), the
+[paper-writing guide](references/paper-writing.md), and the host's relevant
+paper overlay. Reread them before the next edit after context compaction or a
+session restart. The guide's private-process rules apply to every repair:
+never answer an owner or reviewer question, or report a finding, inside the
+manuscript. Locate the manuscript revision and existing writing state. For a
 substantial task, adapt [writing-state.md](assets/writing-state.md) without
 creating a competing record.
 

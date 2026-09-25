@@ -1,9 +1,10 @@
 # Mathematical paper writing
 
 This is a reference collection of explanations and examples. Read the shared
-[exposition standard](exposition-standard.md) first, then consult only the
-relevant sections here. It does not create additional review rounds or replace
-the workflow's completion rules.
+[exposition standard](exposition-standard.md) first. Writers then read this
+guide in full before editing; readers consult only the relevant sections. It
+does not create additional review rounds or replace the workflow's completion
+rules.
 
 Topics: forward reading and boundaries (§1); private-process leakage (§2);
 exact predicates, terminology, rhythm, and definitions (§3); introduction and

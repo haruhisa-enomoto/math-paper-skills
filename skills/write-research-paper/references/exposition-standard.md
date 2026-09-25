@@ -3,8 +3,9 @@
 Read this standard for every writing or exposition-review task. It governs
 reader-facing mathematics; the writer workflow and reader protocols govern
 authorization, review coverage, and completion. Host instructions add local
-conventions. Consult [examples](paper-writing.md) only for the relevant topic
-when a distinction below needs illustration or style calibration.
+conventions. Writers read the [paper-writing guide](paper-writing.md) in
+full before editing; readers consult it only for the relevant topic when a
+distinction below needs illustration or style calibration.
 
 ## Reader and purpose
 
