@@ -43,7 +43,10 @@ and immediate referent. State the membership, vanishing, factorization, equality
 or other condition actually used; an informal gloss may explain it but cannot
 replace it. A later display does not repair an earlier opaque sentence.
 Repeat notation or use a numbered reference when a relative pointer requires
-backtracking. Distinguish new, imported, conditional, computed, and conjectural
+backtracking. When a result, equation, or case already has a number, cite the
+number rather than a descriptive label such as "the X formula" or "the
+equality case", and number any display that a later sentence needs instead of
+pointing to it by position. Distinguish new, imported, conditional, computed, and conjectural
 statements where confusion is possible.
 
 Define paper-specific terms, symbols, statistics, and constructions before use,

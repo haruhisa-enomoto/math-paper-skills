@@ -632,6 +632,37 @@ Better:
 
 > Proposition 4.3 gives \(\ker f=0\); hence \(f\) is injective.
 
+When a result, formula, or case already has a number, refer to it by that
+number instead of a new descriptive name. A definite phrase such as `the
+exchange formula`, `the comparison identity`, `the lower bound`, or `the
+equality case` reads like an established name that the reader should
+recognize, even when its referent can be guessed. This applies equally to the
+Organization block and to section headings, which should name the result or
+its content rather than coin a label for it.
+
+Bad:
+
+> Section 3 proves the exchange formula in the relative setting. Section 5
+> proves the lower bound, and Section 6 the equality case.
+
+Better:
+
+> Section 3 proves an analogue of (1.2) for relative modules. Section 5 proves
+> Theorem A(1), and Section 6 proves Theorem A(2).
+
+Likewise, number a display that a later sentence needs, and cite the number.
+Do not point to an unnumbered formula by position, as in `the second equality
+in the display`, `the last equality`, `the identities above`, or `the
+formula`.
+
+Bad:
+
+> For the second equality in the display, ...
+
+Better: label the equation, say (3.4), and write
+
+> For (3.4), ...
+
 State the precise mathematical content imported from a source, including the
 needed hypotheses and conventions, and give an exact locator. Separate that
 statement from any new specialization or application. The reader should not
