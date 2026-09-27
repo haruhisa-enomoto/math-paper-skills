@@ -115,6 +115,16 @@ one repeated syntactic template. Give useful examples before or alongside
 constructions when needed to understand them. Keep the conceptual argument in
 the main text; move interruptive calculation to appendices with its role stated.
 
+## Page layout
+
+Leave page spacing and page breaks to the document class and LaTeX unless the
+owner explicitly requests manual layout adjustments. Do not insert or tune
+page breaks, page-height overrides, vertical spacing, margins, or similar
+pagination controls to improve the appearance of a draft. Examples include
+`\newpage`, `\clearpage`, `\enlargethispage`, and layout-driven `\vspace`.
+Preserve owner-approved formatting. A request to revise prose, compile, or
+inspect rendered pages does not by itself authorize layout adjustments.
+
 ## Statements, proofs, and sources
 
 Explain why a formal statement appears in preceding prose. Avoid advertising
