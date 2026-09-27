@@ -79,6 +79,11 @@ counts or generalizations about an author's whole output.
 
 The abstract must stand alone for its audience: setting, problem, and principal
 results, without unexplained machinery, defensive commentary, or drafting history.
+Keep abstracts within **150 words by default**, unless explicit owner or venue
+instructions call for a different length. Check the word count when drafting or
+revising an abstract. Leave secondary results and organizational detail to the
+introduction rather than compressing every contribution into the abstract.
+
 The introduction gives the governing question, precise principal results,
 contribution relative to known work, and the main ideas needed to understand
 the approach. Keep proof details in the body.
