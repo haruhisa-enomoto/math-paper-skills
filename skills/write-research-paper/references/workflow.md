@@ -60,7 +60,8 @@ Supervise fresh isolated readers under their mode-specific protocols. Continuous
 reading retains one reader and staged cumulative exposure. Editorial reading
 accepts one packet with instructions and the complete frozen paper. Withhold
 writer history, owner discussion, previous reviews, vocabulary diagnostics,
-expected findings, and proposed repairs. If the required isolation or continuity
+expected findings, proposed repairs, and author's choices or review contracts
+other than the audience. If the required isolation or continuity
 cannot be established, report the review invalid.
 
 After continuous reading, apply clear local/objective repairs to create a
@@ -106,6 +107,11 @@ Missing context warrants a conditional diagnosis, not an invented repair.
 Use the smallest adequate repair: deletion, reordering, replacement, or a local
 clause before adding a definition, proof block, or theory. Apply accepted clusters
 as one bounded pass and check success criteria, non-scopes, and aggregate growth.
+After each repair, reread the whole enclosing section in reading order (for the
+abstract or introduction, all of it), not only the changed sentence, and check
+that the repair fits there. Prefer deletion or plain restatement to new
+wording. Do not rewrite a passage that is already acceptable only because a
+reviewer offers other wording.
 For retained editorial material, record the role, loss under deletion, and
 beneficiary; for precision findings, record exact referent or predicate, what
 current wording licenses, and the reader's reconstruction burden.

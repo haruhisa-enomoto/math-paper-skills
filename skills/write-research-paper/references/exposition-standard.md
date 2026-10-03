@@ -57,7 +57,10 @@ State field, algebra, module-side, and other assumptions wherever load-bearing.
 
 Use one established term per notion. Retain a new name or symbol only when it
 names a useful mathematical object or materially reduces later reading work;
-do not add near-synonyms or aliases for brief local expressions. Keep temporary
+do not add near-synonyms or aliases for brief local expressions. Do not formally
+define an ordinary mathematical phrase whose standard meaning is the intended
+one, such as "restricts to an equivalence"; if the reader may doubt that its
+hypothesis holds, state the needed fact where it is used. Keep temporary
 notation local. Put lasting notions in numbered Definitions, assignments with
 input, output, and choice dependence in Constructions, and short local reminders
 in prose. Prove well-definedness at the appropriate point. Cite imported
@@ -68,12 +71,14 @@ which data it records and why that data is independent of the choices. State
 and cite needed uniqueness or well-definedness input without inventing a source
 locator or expanding a bounded definition repair into its proof.
 
-Use familiar mathematical syntax and connectives without forced variation or
-forced "we". Expose omitted operations and reasons when the intended reader
+Use familiar mathematical syntax and connectives. Do not change words only to
+avoid repetition. Use the authorial "we" to say what the paper and its proofs
+do ("we show", "we prove", "let us explain"); a precise mathematical subject is
+also fine when the sentence states a mathematical fact ("the functor preserves
+projectives"). Expose omitted operations and reasons when the intended reader
 would otherwise reconstruct them; do not expand immediate routine steps.
-Non-human subjects, passive voice, or particular words are not defects by
-themselves. Calibrate style from complete approved passages, not frequency
-counts or generalizations about an author's whole output.
+Calibrate style from complete approved passages, not frequency counts or
+generalizations about an author's whole output.
 
 ## Organization and first encounters
 
@@ -84,9 +89,9 @@ instructions call for a different length. Check the word count when drafting or
 revising an abstract. Leave secondary results and organizational detail to the
 introduction rather than compressing every contribution into the abstract.
 
-The introduction gives the governing question, precise principal results,
-contribution relative to known work, and the main ideas needed to understand
-the approach. Keep proof details in the body.
+The introduction gives the problem or subject, the precise principal results
+and their significance, the contribution relative to known work, and the main
+ideas needed to understand the approach. Keep proof details in the body.
 
 In the introduction, ordinary background vocabulary and harmless global
 conventions may precede the closing conventions block. Define paper-specific

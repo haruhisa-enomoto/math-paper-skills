@@ -293,10 +293,45 @@ justification is already immediate.
 For example, after specifying the relevant short exact sequence, prefer
 `Since Hom(E,Y)=0, the long exact sequence shows that the indicated Ext map is
 injective` when `Hom(E,Y)=0 makes the Ext map injective` hides the reasoning.
-Keep precise mathematical subjects such as `the functor preserves projectives`
-or `the inclusion induces an equivalence`. Non-human subjects, passive voice,
-and the words `gives`, `makes`, or `supplies` are not defects by themselves.
-Do not mechanically replace them by `we` or treat this guidance as a word ban.
+The words `gives`, `makes`, or `supplies` are not defects by themselves. Use
+the authorial `we` to say what the paper and its proofs do (`we show`, `we
+prove`, `let us explain`); a precise mathematical subject such as `the functor
+preserves projectives` or `the inclusion induces an equivalence` is also fine
+when the sentence states a mathematical fact.
+
+Avoid sentence patterns typical of generated text: a paragraph that opens with
+a negation or a disclaimer, a short slogan sentence that announces structure or
+novelty without content, and a sentence that restates a trivial fact. Lead
+into a statement with its mathematical content, for example by giving the
+example or construction that shows the point.
+
+Bad:
+
+> Reflexive equivalence does not imply Morita equivalence.
+
+Better:
+
+> There are many examples of algebras that are reflexively equivalent but not
+> Morita equivalent: for instance, if \(X\) is a reflexive \(A\)-module, then
+> \(A\) and \(\operatorname{End}_A(A\oplus X)\) are reflexively equivalent.
+
+Bad slogan sentences:
+
+> The proof has two steps.
+
+> The hypothesis is empty if \(R\) is Artinian.
+
+> What is new in Theorem A is that ...
+
+Better: begin with the content, as in `Let us explain the idea of the proof.
+First, ...` or `The assumption is automatically satisfied if \(R\) is
+Artinian`, and state the significance of a theorem as a mathematical
+consequence.
+
+Bad trivial restatement, better deleted:
+
+> Morita equivalent algebras have equivalent projective, reflexive and module
+> categories.
 
 When calibrating a requested style, read complete proof passages and their
 surrounding definitions, statements, and transitions from owner-approved or
@@ -390,10 +425,10 @@ Better:
 
 ### Give the introduction its own job
 
-The introduction should give a governing mathematical question and a clear
-hierarchy of results. Explain the familiar setting, formulate the problem,
-state the principal results precisely, distinguish the new contribution from
-known work, and indicate the proof strategy only far enough that the reader
+The introduction should give the problem or subject, a clear hierarchy of
+results, and their significance. Explain the familiar setting, formulate the
+problem, state the principal results precisely, distinguish the new
+contribution from known work, and indicate the proof strategy only far enough that the reader
 sees why the announced ingredients enter and which methods the paper depends
 on. The introduction is not a self-contained proof map: the Organization block
 routes the reader, and each section states its own plan. The introduction is
@@ -420,6 +455,16 @@ a definition. A pointer to a later section is not a definition. An informal
 introductory preview also does not relieve the body of giving the complete
 formal definition before a proof or later result depends on it. Once the
 introduction ends, apply the ordinary first-occurrence standard strictly.
+
+Let the introduction reach the main results and their significance early. If
+the paper poses a question or problem, say how it is answered before
+introducing machinery. Before a main theorem, introduce only what its statement
+needs. Put proof ingredients, such as criteria, auxiliary equivalences, and
+reductions, in a short passage on the idea of the proof after the theorem, and
+state plainly what makes the result interesting. Use the authorial `we` for
+this narrative, for example `In this paper, we give ...`, `Our first main
+result is the following.`, `Let us explain the idea of the proof.`, `Next we
+consider ...`, or `As an application, we ...`.
 
 Close the introduction with two visibly separate, bold, unnumbered blocks in
 the following order:
@@ -728,8 +773,8 @@ exact assertion being used.
 Before declaring a revision complete, check:
 
 1. Can the abstract be understood without the introduction?
-2. Does the introduction state a governing question and a hierarchy of new
-   results?
+2. Does the introduction state the problem or subject and a hierarchy of new
+   results, and reach them and their significance early?
 3. Does the introduction close with separate bold unnumbered **Organization**
    and **Conventions and notation** blocks, with routine global setup deferred
    there unless an earlier passage is convention-sensitive?
