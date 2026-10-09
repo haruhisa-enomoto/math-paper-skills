@@ -157,9 +157,9 @@ an earlier ambiguity. After the introduction apply ordinary first-use discipline
 behind a "do not read past this line" marker.  An agent pointed at a file
 reads the whole file.
 
-Treat cited sources as unavailable for the run.  A fresh subagent may still
-carry general or source-specific knowledge from training; the direction must
-forbid using recalled source content to fill a gap in the manuscript.
+Treat cited sources as unavailable for the run.  The direction must tell the
+reader to use only what the manuscript states, so that no gap in the
+manuscript is filled from outside it.
 
 ## Segmenting
 
@@ -233,9 +233,10 @@ review of a modified manuscript is a new run.
 Check exactly these:
 
 - Did it cover the whole range, block by block?
-- Are entries reading experience, or have they drifted into content summary?
-- Do they distinguish what the manuscript communicated from what the reader
-  had to infer, reconstruct, or recover by rereading?
+- Do entries record problems in the text, or have they drifted into content
+  summary?
+- Does each entry separate what the paragraph states from the problems at
+  that point in the text?
 - Did it append, rather than rewrite the file?
 - Did it use the flag categories, and keep `[continuity]` and `[gap]`
   separate?

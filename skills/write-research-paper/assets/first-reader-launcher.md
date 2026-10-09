@@ -103,9 +103,10 @@ The launcher has usually read the manuscript, or wrote it.  Both are
 contaminated.  The check is therefore restricted to process.
 
 - Did the reader cover the whole range, block by block?
-- Are entries reading experience, or content summary?
-- Did it distinguish what the manuscript communicated from what it had to
-  infer, reconstruct, or recover by rereading?
+- Do entries record problems in the text, or have they drifted into content
+  summary?
+- Does each entry separate what the paragraph states from the problems at
+  that point in the text?
 - Did it append rather than rewrite?
 - Did it use the flag categories, and keep `[gap]` separate?
 - Did it stop at the end of its range?

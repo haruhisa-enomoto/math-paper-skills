@@ -46,9 +46,8 @@ correspondence the paper imports rather than defines.}}
 
 A citation number is not knowledge.  When the manuscript says "this is
 [Source, Proposition 13.6]", you learn only that a source exists; you do not
-learn what the source says.  You may still carry source-specific knowledge
-from training: do not use it to supply a definition, hypothesis, or argument
-that the manuscript has not yet given.
+learn what the source says.  Use only what the manuscript states: do not
+supply a definition, hypothesis, or argument that it has not yet given.
 
 You review exposition, not truth.  The question is always: can a cold
 reader, at this point on the page, parse this sentence AND know why it is
@@ -73,9 +72,9 @@ necessity-and-referential-precision audit assigned to a skeptical editor.
 - Do NOT open any cited source, whether it is stored locally or available
   online. Opening one destroys the premise of this review.
 - Do not compile the paper.  Do not edit the manuscript.
-- Do not silently repair prose from your own expertise.  If you had to
-  re-read a sentence, or you understood it only by expanding it yourself,
-  that is a finding — report it instead of fixing it.
+- Do not silently repair prose.  A sentence that can be followed only
+  after rereading, or only after supplying a step the text omits, is a
+  finding — report it instead of fixing it.
 
 If you open `LAUNCHER.md` or any later text, tell the supervisor immediately
 and stop.  The run is invalid and cannot be repaired by continuing.
@@ -87,9 +86,9 @@ at a file containing the manuscript from the beginning through the end of
 that segment, and nothing after it.
 
 - Journal only the new range.  You may re-read anything earlier in the file.
-- Do not guess or reconstruct what comes after your segment.  If you find
-  yourself wanting to know, write that wish down as journal item (c) — that
-  is exactly the data this review collects.
+- Do not guess what comes after your segment.  If the text leaves a
+  question open at that point, record it under journal item (c) — that is
+  exactly the data this review collects.
 - When you have reported, stop and wait.  Do not begin the next segment on
   your own initiative.
 
@@ -107,7 +106,9 @@ Two rules are yours to keep:
    question raised at entry 2.4, but 900 lines later") and leave the earlier
    entry untouched.  A late-resolved confusion is a finding about ordering.
 2. **Turning back is allowed, and is itself data.** A real reader can always
-   turn back, but it costs.  If you had to, say so and say what sent you.
+   turn back, but it costs.  When a passage can be followed only by going
+   back, name the earlier passage and the point in the text that requires
+   it.
 
 ## Reading protocol
 
@@ -116,13 +117,15 @@ of text separated by blank lines; displayed formulas belong to the paragraph
 around them; a theorem, lemma, definition, remark, or proof counts as one or
 more paragraphs in the usual way.
 
-After EVERY paragraph, stop and write a journal entry answering:
+After each paragraph, write one journal entry:
 
-  (a) What did the manuscript itself communicate in this paragraph?
-  (b) What inference, reconstruction, rereading, or supplied connection was
-      needed to understand it — in meaning, or in purpose ("I can parse it,
-      but why is it being said here")?
-  (c) What do you now expect to come next?
+  (a) What the paragraph states or does.
+  (b) Problems at this point in the text: a term or symbol used before its
+      definition; a claim whose justification has not yet appeared; a
+      sentence with two possible readings; a back-reference that cannot be
+      located; a step the text leaves out; a passage whose role here is not
+      stated.
+  (c) What the paragraph announces or sets up for the text that follows.
 
 At every major section or subsection boundary, first check that the new
 section begins with ordinary prose before any formal environment, display,
@@ -134,13 +137,13 @@ identify the connection the manuscript supplied or left to you. A generic
 roadmap sentence can pass the structural check while failing this continuity
 test, so do not reward boilerplate.
 
-Length rule: if nothing rubbed, the entry is ONE line compressing (a)-(c).
-Spend words only where there is friction.  Record your reading experience,
-not a mathematical summary — "I stumbled because X was not yet defined" is
-useful; a paraphrase of the content is not.
+Length rule: if (b) is empty, the entry is ONE line compressing (a) and
+(c).  Spend words only on problems.  Record problems in the text, not a
+mathematical summary — "X is used here but not yet defined" is useful; a
+paraphrase of the content is not.
 
-If a later paragraph breaks the expectation you wrote in (c) without
-signposting, that is a finding.
+If a paragraph does not deliver what an earlier entry (c) recorded as
+announced, and the change is not signposted, that is a finding.
 
 Do NOT verify proofs mathematically, and do not check signs or derivations.
 If something looks wrong or gapped, flag it briefly as `[gap]` and move on.
