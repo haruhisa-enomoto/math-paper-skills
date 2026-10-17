@@ -1,0 +1,4 @@
+interface:
+  display_name: "Polish Math Prose"
+  short_description: "Natural mathematical English and proof-presentation polishing"
+  default_prompt: "Use $polish-math-prose to rewrite AI-like mathematical prose and compressed proof steps into natural mathematical English, logging substantive mathematical argument touches in REVISION-NOTES.md."

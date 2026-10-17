@@ -9,13 +9,14 @@ distinction below needs illustration or style calibration.
 
 ## Reader and purpose
 
-Respect the requested repair boundary. If only one sentence creates the
-identified dependency, repair that sentence without polishing the surrounding
-section. For a request to make text independent of an accompanying package,
-remove package-dependent prose while retaining the mathematical procedure,
-scope, and reproducibility conditions already stated; do not substitute code,
-pseudocode, or a reproduction command. A public verification reference can
-remain when it serves the requested deliverable rather than replacing it.
+Respect the requested scope boundary (such as a named section or target topic),
+while ensuring that any modified sentence and its enclosing paragraph read
+naturally and coherently as a whole rather than accumulating tacked-on clauses.
+For a request to make text independent of an accompanying package, remove
+package-dependent prose while retaining the mathematical procedure, scope, and
+reproducibility conditions already stated; do not substitute code, pseudocode,
+or a reproduction command. A public verification reference can remain when it
+serves the requested deliverable rather than replacing it.
 
 Write for the stated mathematical audience without assuming access to private
 discussion, research records, or cited sources. At each point use only what
@@ -71,14 +72,22 @@ which data it records and why that data is independent of the choices. State
 and cite needed uniqueness or well-definedness input without inventing a source
 locator or expanding a bounded definition repair into its proof.
 
-Use familiar mathematical syntax and connectives. Do not change words only to
-avoid repetition. Use the authorial "we" to say what the paper and its proofs
-do ("we show", "we prove", "let us explain"); a precise mathematical subject is
-also fine when the sentence states a mathematical fact ("the functor preserves
-projectives"). Expose omitted operations and reasons when the intended reader
-would otherwise reconstruct them; do not expand immediate routine steps.
-Calibrate style from complete approved passages, not frequency counts or
-generalizations about an author's whole output.
+Use familiar mathematical syntax and explicit logical connectives (`Since`,
+`By`, `Consequently`, `Moreover`, `Hence`). Do not change words only to avoid
+repetition. Use the authorial "we" to say what the paper and its proofs do
+("we show", "we prove", "let us explain"); a stative or structural mathematical
+subject is also fine when the sentence states a mathematical fact ("the functor
+preserves projectives", "the sequence splits"). Avoid **causative verb
+compression** that turns abstract properties, equations, or theorem numbers into
+physical actors ("Nilpotence writes...", "Linear independence puts...",
+"Irreducibility makes...", "Lemma 9.6 forces...", "kills"), **telegraphic
+imperative chains** ("Eliminate... Give... Reverse... Assign..."), and
+**stacked noun modifiers** ("the rightmost surviving return arrow factor"); see
+[`polish-math-prose/references/anti-patterns.md`](../../polish-math-prose/references/anti-patterns.md).
+Expose omitted operations and reasons when the intended reader would otherwise
+reconstruct them; do not expand immediate routine steps. Calibrate style from
+complete approved passages, not frequency counts or generalizations about an
+author's whole output.
 
 ## Organization and first encounters
 

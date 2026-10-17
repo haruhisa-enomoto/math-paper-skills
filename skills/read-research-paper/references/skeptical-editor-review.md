@@ -21,10 +21,13 @@ name. Apply the
 throughout the review.
 
 As part of referential precision, ask where the prose omits an operation,
-reason, or referent that the reader must reconstruct. Apply the shared exposition standard's
-sentence-rhythm guidance: a mathematical subject is not itself a defect, and
-an explicit operation is useful only when it resolves a reader burden. Use the
-existing audit and findings; add no separate stylistic pass or inventory.
+reason, or referent that the reader must reconstruct—including where causative
+verb compression ("X makes Y", "X puts Y in Z", "X writes Y", "kills"),
+telegraphic imperative chains, or private shorthand ("projective labels", "Z is
+intended") hides the mathematical mechanism or logical connective. An ordinary
+stative mathematical subject ("the functor preserves projectives") is not a
+defect. Use the existing audit and findings; add no separate stylistic pass or
+inventory.
 
 ## When to run one
 

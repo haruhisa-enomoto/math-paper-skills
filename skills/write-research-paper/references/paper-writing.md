@@ -283,21 +283,22 @@ to explain the purpose and logical role of the relation.
 Prefer familiar mathematical language. Repetition of `Let`, `Take`, `Since`,
 `Applying`, `Then`, and `Hence` is acceptable; do not vary these words merely
 for variety. Read each paragraph as a sequence of choices, operations, reasons,
-and conclusions. When a sentence compresses a deduction into `X makes Y`,
-`X supplies Y`, or a similar expression, check whether the operation and the
-reason for the conclusion remain visible to the intended reader. Name the
-operation or separate the premise from the conclusion when that resolves a
-real reconstruction burden. Routine steps need not be expanded when their
-justification is already immediate.
+and conclusions. Avoid compressing a deduction into causative inanimate-agency
+clauses such as `Nilpotence writes Y`, `Linear independence puts Y in Z`,
+`Irreducibility makes Y split`, `Lemma 9.6 forces Y`, or `kills`: state the
+premise and conclusion with explicit logical connectives (`Since ...`,
+`By Lemma 9.6, ...`, `Consequently, ...`). Likewise, avoid stringing together
+disconnected imperative sentences (`Eliminate... Give... Reverse... Assign...`)
+like pseudocode; connect proof steps in first-person plural (`we`) prose so the
+logical progression is explicit.
 
-For example, after specifying the relevant short exact sequence, prefer
+For example, after specifying the relevant short exact sequence, write
 `Since Hom(E,Y)=0, the long exact sequence shows that the indicated Ext map is
-injective` when `Hom(E,Y)=0 makes the Ext map injective` hides the reasoning.
-The words `gives`, `makes`, or `supplies` are not defects by themselves. Use
-the authorial `we` to say what the paper and its proofs do (`we show`, `we
-prove`, `let us explain`); a precise mathematical subject such as `the functor
-preserves projectives` or `the inclusion induces an equivalence` is also fine
-when the sentence states a mathematical fact.
+injective` rather than `Hom(E,Y)=0 makes the Ext map injective`. Use the
+authorial `we` to say what the paper and its proofs do (`we show`, `we prove`,
+`let us explain`); a stative or structural mathematical subject such as `the
+functor preserves projectives` or `the inclusion induces an equivalence` is
+also natural when the sentence states a mathematical fact.
 
 Avoid sentence patterns typical of generated text: a paragraph that opens with
 a negation or a disclaimer, a short slogan sentence that announces structure or

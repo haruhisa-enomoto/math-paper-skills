@@ -26,21 +26,27 @@ A bounded task needs only the corresponding information, not a new state file.
 
 ## Route the task
 
+Match the execution mode to the owner's request:
+
 ```text
-whole paper: freeze/continuous read -> objective repairs -> editorial read -> adjudicate/revise -> regress -> validate/finish
-named section: cumulative read through section -> scoped revise -> regress -> validate/finish
-exact local edit: revise -> delta regression -> validate/finish
-new paper: shape -> draft/integrate -> continuous read -> objective repairs -> editorial read -> adjudicate/revise -> regress -> validate/finish
-new section: shape if needed -> draft/integrate -> continuous read -> editorial read if promise/architecture/budget changes -> adjudicate/revise -> regress -> validate/finish
+writer/reviser turn: draft or adjudicate/revise from named reports -> compile + host diagnostics -> finish turn
+review-supervisor turn: freeze manuscript -> run isolated FR and/or SE subagent relay -> synthesize report
+full-cycle turn (when explicitly requested): draft/integrate -> FR/SE review -> adjudicate/revise -> optional delta regression -> validate/finish
+post-convergence prose polish: hand off to $polish-math-prose (rewrite) -> mathematical diff audit <-> $polish-math-prose (repair)
 ```
 
-An unqualified paper revision follows the whole-paper route with a new
-continuous read before editing; use an existing report only when the owner
-requests it. A named-section review receives the cumulative prefix through
-that section, but edits remain confined to the authorized scope. Request a
-needed expansion once. Adding a section includes the minimal introduction,
-transition, cross-reference, and later-summary edits needed to integrate it.
-An exact local correction still requires fresh independent regression.
+In a multi-model workflow, the writer model (e.g. Codex or Claude) and the
+review supervisor (e.g. Claude Opus) often run in separate turns or sessions.
+Do not automatically launch `FR`, `SE`, or `Delta` subagents at the end of a
+drafting or revision turn unless the owner asks you to run a review round or
+full cycle. Conversely, when asked to supervise an `FR` or `SE` review round,
+run the isolated reader protocol and return the completed report without
+editing the manuscript unless also authorized to revise.
+
+A named-section review receives the cumulative prefix through that section, but
+edits remain confined to the authorized scope. Request a needed expansion once.
+Adding a section includes the minimal introduction, transition, cross-reference,
+and later-summary edits needed to integrate it.
 
 For a new paper or material change of shape, establish audience, paper promise,
 result hierarchy, section jobs, reading paths, main-text/appendix split, and
@@ -55,21 +61,19 @@ Draft within the locks, integrate in reading order, and apply the shared
 standard, including first encounters and a top-to-bottom boundary pass.
 Record revision and scope; writer self-review is not independent evidence.
 
-Freeze the reading copy, preserving source locators for flattened inputs.
-Supervise fresh isolated readers under their mode-specific protocols. Continuous
-reading retains one reader and staged cumulative exposure. Editorial reading
-accepts one packet with instructions and the complete frozen paper. Withhold
-writer history, owner discussion, previous reviews, vocabulary diagnostics,
-expected findings, proposed repairs, and author's choices or review contracts
-other than the audience. If the required isolation or continuity
-cannot be established, report the review invalid.
+When supervising a review round, freeze the reading copy, preserving source
+locators for flattened inputs. Supervise fresh isolated readers under their
+mode-specific protocols. Continuous reading retains one reader and staged
+cumulative exposure. Editorial reading accepts one packet with instructions and
+the complete frozen paper. Withhold writer history, owner discussion, previous
+reviews, vocabulary diagnostics, expected findings, proposed repairs, and
+author's choices or review contracts other than the audience. If the required
+isolation or continuity cannot be established, report the review invalid.
 
-After continuous reading, apply clear local/objective repairs to create a
-coherent candidate and defer unresolved owner choices. New papers and whole-paper
-revisions require a fresh editorial audit of that candidate. Also run it for a
-substantial addition changing promise, architecture, or detail budget, or an
-explicit necessity, compression, or referential-precision audit. Read both
-reports and resolve any remaining owner choices together where practical.
+When running both continuous and editorial reviews in sequence, apply clear
+local/objective repairs from the continuous reading first to create a coherent
+candidate before running the editorial audit, or run them as directed by the
+owner.
 
 ## Exhaustive adjudication
 
@@ -81,8 +85,8 @@ repair cluster; assign source IDs where missing. Repeated instances may share
 one cause and cluster, but none may disappear. Journal entries support findings
 and need not each become a cluster.
 
-For each cluster record the observed burden, success criterion, minimal repair,
-non-scope, risk, decision, changed locators, and regression evidence. Decide:
+For each cluster record the observed burden, success criterion, planned repair,
+non-scope, risk, decision, and changed locators. Decide:
 
 - `implement`: accept diagnosis and repair class;
 - `modify`: accept the observed burden and choose another repair;
@@ -104,64 +108,50 @@ require owner judgment. Resolve them within existing authority where settled;
 otherwise present the recommendation, reason, tradeoff, and minimal alternative.
 Missing context warrants a conditional diagnosis, not an invented repair.
 
-Use the smallest adequate repair: deletion, reordering, replacement, or a local
-clause before adding a definition, proof block, or theory. Apply accepted clusters
-as one bounded pass and check success criteria, non-scopes, and aggregate growth.
-After each repair, reread the whole enclosing section in reading order (for the
-abstract or introduction, all of it), not only the changed sentence, and check
-that the repair fits there. Prefer deletion or plain restatement to new
-wording. Do not rewrite a passage that is already acceptable only because a
-reviewer offers other wording.
+Avoid **structural bloat**: prefer deletion, reordering, or direct explanation
+before adding a new numbered definition, remark, or auxiliary machinery. At the
+**sentence and paragraph level**, however, never wedge compressed parenthetical
+clauses, semicolon chains, or causative shortcuts (`"X makes Y"`, `"X puts Y"`)
+into an existing sentence just to minimize diff lines. When a sentence or
+paragraph needs repair, rewrite the affected sentence and its immediate
+transitions so that the whole paragraph reads naturally and coherently in
+reading order. After each repair, reread the enclosing section in reading order
+(for the abstract or introduction, all of it) to verify natural flow. Do not
+rewrite a passage that is already clear and natural merely because a reviewer
+offers alternative phrasing.
 For retained editorial material, record the role, loss under deletion, and
 beneficiary; for precision findings, record exact referent or predicate, what
 current wording licenses, and the reader's reconstruction burden.
 
-## Host diagnostics and mandatory regression
+## Host diagnostics and optional delta regression
 
-After repairs and before freezing, run every required host diagnostic over its
-required scope and adjudicate every warning at the exact revision. Warnings are
-locations for judgment, not automatic defects. For terminology, judge meaning,
-necessity, and introduction before spelling or hyphenation. Never change text
-just to clear a flag. Rerun after wording changes; withhold diagnostics from
+After repairs, run every required host diagnostic over its required scope and
+adjudicate every warning at the exact revision. Warnings are locations for
+judgment, not automatic defects. For terminology, judge meaning, necessity,
+and introduction before spelling or hyphenation. Never change text just to
+clear a flag. Rerun after wording changes; withhold diagnostics from
 independent readers. Host-specific commands and report conventions belong in
 the host overlay.
 
-Every exposition edit, including exact local and writer-found repairs, requires
-fresh independent regression before completion. Only an explicit owner waiver
-for that named edit bypasses it; record and report the waiver. The authorized
-edit includes authorization to launch its necessary fresh reader. If unavailable, report
-`revision drafted; independent regression pending` and leave the task unfinished.
-
-For bounded repairs use the [delta protocol](../../read-research-paper/references/delta-review.md):
+When the owner requests bounded post-edit regression (or when running an
+autonomous full-cycle loop), use the
+[delta protocol](../../read-research-paper/references/delta-review.md):
 changed regions, surrounding dependencies, cluster IDs, and neutral success
 criteria without diagnoses or preferred wording. Compare the packet's covered
 IDs with the revision batch before launch and with the returned report.
 A delta closes only those implemented/modified clusters actually checked; it
 cannot close omitted or deferred findings or certify unchanged text.
 
-Review validity follows the changed dependencies:
-
-- Further edits to a checked region or its dependencies invalidate its delta.
-- Changes to promise, structural front matter, section order, or reading path
-  require a new continuous review instead of delta alone.
-- Substantial replacement prose, new remarks, qualifications, or informal
-  labels, or changes to promise, architecture, or detail budget require a new
-  editorial pass. Clean deletions, compressions, renamings, and exact local
-  precision replacements need regression but do not alone require that pass.
-- Unchanged text outside those dependencies does not require another full run.
-
-Repair failed regression and use another fresh reader until it passes or an
-owner dependency arises. If abstract/introduction growth continues across
-rounds, reconsider the repair class before commissioning another reader.
+When the owner instead runs iterative `FR`/`SE` rounds or hands off to
+`polish-math-prose` and a mathematical diff audit once `FR`/`SE` converge, do
+not launch unsolicited delta subagents after local edits.
 
 ## Finish at one exact revision
 
 Require current locks, complete source-finding coverage without duplicate or
 orphan IDs, no unresolved objective finding, and no deferral unless the owner
-explicitly excludes it. All implemented/modified clusters must be applied and
-closed by the appropriate fresh evidence. Preserve source `FAIL` verdicts;
-record current closure separately rather than relabeling old reports. A change
-invalidating a whole-paper gate needs a new review in that mode.
+explicitly excludes it. Preserve source `FAIL` verdicts; record current closure
+separately rather than relabeling old reports.
 
 Compile and inspect the log, complete all host diagnostics and artifact gates,
 and inspect the aggregate diff. Render only affected pages for a concrete

@@ -112,11 +112,15 @@ their own review through someone else's keyboard.
 ## Applying the exposition standard
 
 Record concrete reconstruction burden, not lexical preferences. Use `[idiom]`
-when fluent wording requires translation into an exact predicate, `[meaning]`
-when it remains ambiguous, and `[order]` for prose-first violations. At major
+when wording requires translation into an exact predicate or uses compressed
+inanimate-agency causatives ("Nilpotence writes...", "Linear independence
+puts...", "Irreducibility makes...", "kills"), telegraphic imperative chains, or
+private shorthand ("projective labels", "Z is intended"), `[meaning]` when it
+remains ambiguous, and `[order]` for prose-first violations. At major
 boundaries record the preceding and incoming jobs and use `[continuity]` for
 missing or delayed handoffs, separately from logical gaps. Do not infer defects
-from non-human subjects or repeated conventional connectives.
+from ordinary stative mathematical subjects ("the functor is exact") or
+repeated conventional connectives ("Since", "Then", "Hence").
 
 Apply the shared standard's introduction allowance: harmless background
 conventions may wait, but a convention-sensitive assertion or undefined
