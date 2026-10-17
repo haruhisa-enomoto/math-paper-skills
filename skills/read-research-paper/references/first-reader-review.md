@@ -84,10 +84,14 @@ A run is forward-blind only when all of the following hold.
 5. **The supervisor communicates only about process.**  Use the fixed messages
    in `LAUNCHER.md`.  Do not react to the substance, severity, or absence of
    the reader's findings during the relay.
+6. **Report delivery is settled before manuscript exposure.** Select
+   `reader-persisted` or `supervisor-persisted` delivery as described below.
+   The direction and host agent instructions must agree on a permitted method.
+   The report must persist between segments in either mode.
 
 Stop the run if the harness cannot create an isolated fresh subagent, retain
-it through the relay, or let it write the persistent report.  Do not describe
-the resulting reading as forward-blind.
+it through the relay, or preserve the report by the selected method. Do not
+describe the resulting reading as a completed forward-blind review.
 
 This is exposition-review work, not mathematical research. The reader may read
 this protocol, the shared exposition standard, and its frozen direction, but
@@ -96,18 +100,63 @@ history.
 
 ## Roles
 
-**Reader.** A fresh agent, no prior context, follows `DIRECTION.md`.  Reads
-one segment, appends a journal, stops, waits.  After the final segment it
-reviews the complete manuscript against the shared exposition standard and appends Writing
-review, Findings, and Verdict without changing the journal.
+**Reader.** A fresh agent, no prior context, follows `DIRECTION.md`. Reads
+one segment in order, produces paragraph-anchored editorial annotations,
+delivers them by the selected method, stops, and waits. After the final segment
+it reviews the complete manuscript against the shared exposition standard and
+produces Writing review, Findings, and Verdict without rewriting earlier entries.
 
-**Supervisor.** Prepares the segments, issues them one at a time, checks
-each report for process compliance, and synthesizes at the end.
+**Supervisor.** Prepares the segments, issues them one at a time, persists the
+reader's report when that delivery mode is selected, checks process compliance,
+and synthesizes at the end.
 
 The supervisor is almost always contaminated — they have read the paper, or
 they wrote it.  That is fine, and it is why the checking rules below are
 restricted to process.  A supervisor who comments on content is running
 their own review through someone else's keyboard.
+
+## What the annotations preserve
+
+The `Reading journal` is a public editorial artifact, not an internal reasoning
+transcript. Read in manuscript order and cover every paragraph, but deliver the
+annotations at segment boundaries; do not report an exhaustive sequence of
+intermediate thoughts, guesses, or calculations. Give assessments and concise
+reasons, including mathematical formulas when needed to identify an ambiguity
+or missing connection. Natural reviewer language such as "I cannot tell which
+object this denotes" is welcome; impersonal prose is not required.
+
+Do not reduce the review to a checklist of demonstrable local errors. Preserve:
+
+- **Purpose and pacing:** a lemma can be perfectly understandable while its
+  job remains unexplained for two sections. Record the missing orientation,
+  not just undefined terms.
+- **Substantive expectations:** an announced pair of comparisons whose second
+  member is not identified, or a construction whose relation to the main
+  problem is unclear, leaves a real reader question. Anchor such questions
+  to the text and audience; do not predict the next paragraph by rote.
+- **Cumulative burden:** individually clear symbol choices or local convention
+  changes can together make a long argument hard to follow. Cite the earlier
+  and current uses rather than requiring one defective sentence.
+- **Recoverable but costly exposition:** identify backward searches, ambiguous
+  readings, translation into an exact predicate, and missing mathematical
+  bridges even when an expert can recover the intended meaning. A concise
+  account of the omitted connection is useful; replaying a derivation is not.
+- **Harmless postponement and routine compression:** a precise early statement
+  can make a proof 1000 lines later harmless. Do not turn every delay, implicit
+  step, or reasonable open question into a defect.
+- **Effective exposition:** identify examples that make an abstract construction
+  concrete, useful convention reminders, and dense proofs made readable by
+  explicit reductions and case exhaustion. These passages guide preservation
+  and repair; absence of difficulty alone is not a necessity verdict.
+
+Separate the observation from its diagnosis and proposed repair. An uncertain
+referent or missing sense of purpose may be recorded before the reader can
+settle whether a change is needed. Distinguish routine compression, small
+friction, substantive difficulty, and a possible mathematical gap. Not every
+annotation is an actionable finding. At a later clarification, link the earlier
+entry and assess whether the delay mattered; later understanding does not erase
+a first-encounter problem. Append an explicit correction if an earlier review
+entry was mistaken, without silently altering its historical text.
 
 ## Applying the exposition standard
 
@@ -139,9 +188,11 @@ an earlier ambiguity. After the introduction apply ordinary first-use discipline
    preserve source locators or a small line map, so that findings transfer
    back to the manuscript.
 
-3. Copy both templates into the review directory.  Fill the five slots in
-   `DIRECTION.md`:
+3. Copy both templates into the review directory. Fill all marked fields in
+   `DIRECTION.md`, including the paper, audience, and report-delivery fields:
 
+   - **delivery mode and method** — choose one permitted mode below and name
+     the writing tool or response/handback channel; do not leave both active.
    - **background** — what the reader is assumed to know.  Pitch this at a
      competent non-specialist in the paper's own area.
    - **withheld** — what the reader must not claim to know.  Start from the
@@ -154,8 +205,13 @@ an earlier ambiguity. After the introduction apply ordinary first-use discipline
    - **extra flag categories** — optional.  Add one only when a whole class
      of difficulty would otherwise be invisible in the totals.
 
-4. Build the segment table in `LAUNCHER.md` (below), then extract the
-   segment files.
+4. Confirm the delivery method and isolation permissions before issuing any
+   manuscript. Use host permission information or a process-only preflight;
+   do not test with manuscript content. If reader file writes are unavailable
+   or uncertain, choose a permitted supervisor-persisted response channel.
+
+5. Start the segment table in `LAUNCHER.md` (below), then extract only the
+   first segment. Extend the table and cumulative copies as the relay proceeds.
 
 `LAUNCHER.md` must be a separate file, never a section of `DIRECTION.md`
 behind a "do not read past this line" marker.  An agent pointed at a file
@@ -164,6 +220,34 @@ reads the whole file.
 Treat cited sources as unavailable for the run.  The direction must tell the
 reader to use only what the manuscript states, so that no gap in the
 manuscript is filled from outside it.
+
+## Report delivery
+
+Both modes preserve one report, the same reader, paragraph coverage, and the
+append-only history. Delivery does not change the editorial task.
+
+- **`reader-persisted`:** the reader creates and appends the report using the
+  permitted tool named in the direction. Its segment reply contains only
+  coverage and counts.
+- **`supervisor-persisted`:** the reader returns the new report section through
+  the response or handback channel named in the direction, followed by coverage
+  and counts. The supervisor saves the delivered editorial text without
+  substantive alteration before issuing the next segment. Keep process messages
+  outside the report. Make the saved report available to that same reader for
+  reference. On the first segment include the header; on subsequent segments
+  deliver only the new subsection, and at closing only the synthesis sections.
+
+The reader authors the assessments and final synthesis in both modes. The
+supervisor checks persistence and preservation of earlier entries; it does not
+rewrite, complete, or reconstruct missing reader output. Host-required handback
+mechanisms take precedence over assumptions about plain chat replies.
+
+If the selected method fails, stop and record the incomplete run. Do not bypass
+execution restrictions through another tool or improvise a demand for an
+undelivered journal. Resolve the delivery contract before a fresh run. If a
+safety safeguard stops a response, record the failure and do not attempt to
+recover or reproduce withheld content. A protocol change is not a guarantee
+that any particular model will complete a run.
 
 ## Segmenting
 
@@ -216,7 +300,8 @@ read the governing guides without opening manuscript text.  Only then send the
 first-segment message, again from `LAUNCHER.md` and nothing else.  Any extra
 word of guidance is forward information from a contaminated supervisor.
 
-Then loop: receive the report, check process, issue the next segment with
+Then loop: receive the segment output, ensure the report is persisted by the
+selected method, check process, and issue the next segment with
 
     Recorded. Next segment: <KEY>, lines <a>--<b>, in <segment file>.
 
@@ -226,8 +311,8 @@ your mood, which is a content channel.
 
 After the last segment, release the synthesis:
 
-    Recorded. The manuscript is finished. Append the Writing review,
-    Findings, and Verdict sections as specified in the direction.
+    Recorded. The manuscript is finished. Deliver the Writing review,
+    Findings, and Verdict sections by the method specified in the direction.
 
 Once a range has been read, never change its boundary or replace the text.  A
 review of a modified manuscript is a new run.
@@ -237,11 +322,13 @@ review of a modified manuscript is a new run.
 Check exactly these:
 
 - Did it cover the whole range, block by block?
-- Do entries record problems in the text, or have they drifted into content
-  summary?
-- Does each entry separate what the paragraph states from the problems at
-  that point in the text?
-- Did it append, rather than rewrite the file?
+- Do entries give editorial assessments and concise reasons, rather than
+  extended content summaries or internal process transcripts?
+- Are passage function, reading assessment, and any substantive outstanding
+  question distinguishable? Positive observations and uncertain concerns are
+  valid; no difficulty or prediction is required for every paragraph.
+- Was the new section saved by the selected method, with earlier entries
+  unchanged and any correction or later resolution separately appended?
 - Did it use the flag categories, and keep `[continuity]` and `[gap]`
   separate?
 - Did it stop at the end of its range?
@@ -263,7 +350,9 @@ fixed form.
 
 Totals — entries, flags, segments — must be recounted from the report file
 each time you quote them.  Summing the reader's per-segment reports across a
-long relay drifts, and the drift is silent.
+long relay drifts, and the drift is silent. The following counts historical
+journal flags, not unresolved findings: later resolutions and corrections cite
+entry IDs without repeating bracketed tags.
 
 ```bash
 for f in meaning purpose order cite idiom continuity gap; do
@@ -273,11 +362,12 @@ done
 
 ## Process cautions
 
-Keep launcher state out of reader files and replies process-only. Entry counts
-reflect paragraph structure, not diligence; few flags or a quick segment do not
-establish fatigue. Check coverage against blocks. If the host prevents writing
-a persistent report, use a permitted report-writing method or mark the run
-invalid; a direction cannot override higher-priority execution restrictions.
+Keep launcher state out of reader files and supervisor replies process-only.
+Reader replies carry annotations only in supervisor-persisted mode. Entry
+counts reflect paragraph structure, not diligence; few flags or a quick segment
+do not establish fatigue. Check coverage against blocks. Never demand more
+criticism or more detailed thought processes to demonstrate effort. A direction
+cannot override higher-priority execution restrictions.
 
 ## The deliverable
 
@@ -296,7 +386,11 @@ test.
 Give the distilled findings stable identifiers `FR-1`, `FR-2`, and so on, and
 list their supporting journal entry identifiers. Group repeated instances by
 cause, but represent every distinct objective burden recorded in the journal
-or Writing review by one finding. Begin the Verdict with the literal line
+or Writing review by one finding. Preserve useful positive observations and
+unresolved questions in the Writing review without automatically turning them
+into repair demands. A corrected reviewer mistake is not an outstanding defect;
+retain the original entry and its correction link. Begin the Verdict with the
+literal line
 `Continuous-reader verdict: PASS` or
 `Continuous-reader verdict: FAIL`; use `FAIL` when an objective finding
 requires manuscript change for the stated audience to follow the paper on
@@ -310,6 +404,7 @@ defects is not a revision plan.
 
 The supervisor may disagree with the reader's diagnosis or proposed repair,
 and should say so explicitly when synthesizing. It must not erase a recorded
-inference, rereading, backward search, or translation burden merely because an
-expert can recover the intended meaning. The stumble is data; the diagnosis
-and prescription are judgments.
+reading difficulty, backward search, translation burden, or cumulative loss of
+orientation merely because an expert can recover the intended meaning. Preserve
+the reported observation separately from the diagnosis and repair; neither the
+reader's proposed repair nor every uncertain concern is automatically binding.

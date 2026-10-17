@@ -53,7 +53,11 @@ its assets:
 Use fresh isolated readers running `read-research-paper`, never the writer's
 context. Withhold drafting history, owner discussion, prior reviews,
 diagnostics, expected findings, and proposed repairs. Continuous reading
-requires a staged relay; editorial review accepts one frozen packet.
+requires a staged relay; choose a permitted reader- or supervisor-persisted
+report-delivery method before manuscript exposure. Preserve rich first-pass
+editorial annotations, including purpose, cumulative burden, and effective
+exposition; do not request an internal reasoning transcript. Editorial review
+accepts one frozen packet.
 
 When revising from completed reports, read them completely before editing and
 use [revision-batch.md](assets/revision-batch.md) for complete finding

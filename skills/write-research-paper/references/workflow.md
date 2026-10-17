@@ -64,8 +64,12 @@ Record revision and scope; writer self-review is not independent evidence.
 When supervising a review round, freeze the reading copy, preserving source
 locators for flattened inputs. Supervise fresh isolated readers under their
 mode-specific protocols. Continuous reading retains one reader and staged
-cumulative exposure. Editorial reading accepts one packet with instructions and
-the complete frozen paper. Withhold writer history, owner discussion, previous
+cumulative exposure. Before manuscript exposure, choose the protocol's
+reader-persisted or supervisor-persisted report delivery and align the direction
+with host permissions. Both modes preserve the same reader-authored editorial
+annotations and append-only history; do not improvise delivery after a failure.
+Editorial reading accepts one packet with instructions and the complete frozen
+paper. Withhold writer history, owner discussion, previous
 reviews, vocabulary diagnostics, expected findings, proposed repairs, and
 author's choices or review contracts other than the audience. If the required
 isolation or continuity cannot be established, report the review invalid.
@@ -94,10 +98,14 @@ non-scope, risk, decision, and changed locators. Decide:
   showing why the reported burden is not a defect;
 - `defer`: keep an unresolved decision or missing evidence open.
 
-Do not erase observed inference, rereading, backward search, or translation to
-an exact predicate merely because an expert can recover the intended meaning.
-Disagreeing with proposed wording does not reject the observation. A missing
-predicate or referent fixed by accepted mathematics is a local/objective defect,
+Do not erase a reported reading difficulty, backward search, translation to an
+exact predicate, or cumulative loss of orientation merely because an expert can
+recover the intended meaning. Preserve useful positive observations and
+unresolved reader questions without automatically turning them into repair
+clusters. Distinguish later manuscript clarification from an explicit correction
+of a reader mistake. Disagreeing with proposed wording does not reject the
+observation. A missing predicate or referent fixed by accepted mathematics is a
+local/objective defect,
 as are broken references, undefined notation, omitted accepted hypotheses,
 literal errors, and direct process-leakage repairs. A nondefect decision needs
 concrete text already available at that point or an explicit audience contract.
