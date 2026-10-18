@@ -20,6 +20,12 @@ record the verified form in the state file.
   for later turns of the same role.
 - Save every worker's final message to a file in the review directory and
   read it from there.
+- If a worker fails with a capacity or rate-limit error and made no edits,
+  retry the same session and prompt with backoff. If it fails after making
+  edits, stop and ask the owner.
+- When the coordinator discards a worker's partial edits at the owner's
+  direction, say so in one factual line in the next prompt to that worker,
+  so that it does not re-apply them.
 - Pin the model and effort on every call, as in the commands below, so that
   a changed tool default cannot switch a worker silently. Record the pinned
   values in the state file. The reader subagents get theirs from their agent
@@ -178,6 +184,9 @@ repetitive, too detailed, or too compressed, and what works well. Free
 form; cite locations.
 ```
 
+Give the plain reader both the TeX and the compiled PDF, so that its result
+numbers match the paper.
+
 Default worker: a fresh Claude Opus subagent. The owner may choose Argon via
 `agy` instead; record the choice in the state file. Save the reply verbatim.
 
@@ -229,7 +238,9 @@ Audit the mathematics of the change from <pre-polish revision> to <current
 revision> of <manuscript>, using git diff and REVISION-NOTES.md. Do not load
 paper-writing skills; this is a math audit, not an exposition review. For
 each defect give the locator, what is wrong, and whether the polish
-introduced it or it predates the polish. End with exactly one line:
+introduced it or it predates the polish. Also check that every reworded
+statement of an imported result still says what its citation supports. End
+with exactly one line:
 "Audit verdict: CLEAN" or "Audit verdict: DEFECTS".
 ```
 
@@ -241,12 +252,36 @@ new session and audits the whole manuscript, not a diff:
 Do a full math audit of <manuscript> at <revision>, TeX only. Do not load
 paper-writing skills or read notes, reviews, or history. Check every
 statement and proof step. For each numbered result give one line: the
-result, what you checked, and any gap. Then end with exactly one line:
+result, the key step of its proof that you checked, and any gap. Then end
+with exactly one line:
 "Audit verdict: CLEAN" or "Audit verdict: DEFECTS".
 ```
 
 A verdict without the per-result record is incomplete; ask the auditor for
 the record before accepting it.
+
+## Citation auditor (Codex)
+
+Run once in Phase 1c, after the content settles and before polish, in a new
+session. The host's citation-audit workflow may download sources, which the
+read-only sandbox blocks, so allow network access in `workspace-write`:
+
+```sh
+codex exec -C <repo> -s workspace-write -c sandbox_workspace_write.network_access=true \
+  -m gpt-6-astra -c model_reasoning_effort="high" --json \
+  -o <review-dir>/cite-<n>.md "<prompt>" </dev/null
+```
+
+```text
+Do citation audit for <manuscript> at <revision> following <the host's
+citation-audit workflow>. Do not edit the manuscript. For each finding give
+the locator, the claim or citation concerned, what the source actually
+states (with exact source locator and version), and a proposed repair.
+```
+
+Afterwards check with `git diff --stat` that the manuscript files are
+unchanged. Send the report to the writer like a review report; the writer
+adjudicates it.
 
 ## Checking a returned step
 

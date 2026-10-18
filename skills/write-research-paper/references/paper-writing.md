@@ -833,6 +833,9 @@ Before declaring a revision complete, check:
 24. Are published proofs cited with an exact statement of what is imported,
    rather than reproduced?
 25. Does the stated audience cover the background the paper actually uses?
+26. Read in sequence, do the abstract and introduction tell the story in
+   order (question, then the answer, then limitations), with no sentence
+   that exists only to disclaim?
 
 Compilation checks the artifact, not the reader's understanding. For an ordinary
 prose or proof-structure revision, compile the paper and inspect the log, but do

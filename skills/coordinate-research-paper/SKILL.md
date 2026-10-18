@@ -68,6 +68,7 @@ Phase 0  draft:   writer proposes a plan -> gate G0 -> writer drafts from scratc
 Phase 1  relay:   writer self-audit -> FR + SE in parallel -> writer revises -> FR + SE -> ...
                   gate G1 after about 3 FR+SE rounds per structural version
 Phase 1b plain:   plain fresh read -> writer revises from it -> writer self-audit (once, before polish)
+Phase 1c cite:    citation audit -> writer revises from it (once, before polish)
 Phase 2  polish:  polisher rewrites -> auditor audits diff -> polisher repairs -> ... until audit clean
 Phase 3  final:   optional plain fresh read -> new-session full math audit -> gate G3
 ```
@@ -172,8 +173,10 @@ reference, at:
   or scope change.
 - **G2** when the polish audit loop exceeds its cap (default 5 audit rounds)
   or an audit reports a false statement that predates the polish.
-- **G3** after the final audit. The owner's own reading decides when the
-  paper is done.
+- **G3** after the final audit. Report whether the citation audit ran, at
+  which revision, and any open citation findings, so that a clean math audit
+  is not read as covering attribution. The owner's own reading decides when
+  the paper is done.
 
 Never say the paper has converged or is ready. Give counts, trends, and the
 open items, and a recommendation for the next step if useful.

@@ -181,6 +181,22 @@ prepositional phrases (`of`, `for`, `in`) or relative clauses.
 
 ---
 
+## Anti-Pattern 11: Negation-Led Framing and Disclaimers
+
+AI prose often introduces a question or result by saying what something does
+not do, and scatters stand-alone disclaimers that answer no question the
+reader has asked. Lead with the positive statement and put genuine
+limitations last, in one place.
+
+* **Bad:** *"Since this algebra is representation-infinite, however, it does not answer the following question."*
+  **Good:** *"This raises the following question."* (followed by the question, then the answer)
+* **Bad:** *"Both hypotheses are needed. The general case remains open. Our concern is instead the finite case."*
+  **Good:** state the result for the finite case; mention, once and at the end, the examples showing that the hypotheses cannot be dropped.
+* **Bad:** *"Section 3 treats the faithful quotient."*
+  **Good:** *"In Section 3 we prove that the faithful quotient is gentle."*
+
+---
+
 ## Quick Diagnostic Checklist for a Prose Polish Pass
 
 When reading a draft `.tex` file, scan specifically for these surface signals:
