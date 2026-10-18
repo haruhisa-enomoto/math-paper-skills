@@ -78,8 +78,8 @@ writing guide's rules on stating the mathematics exactly and on proof
 structure are binding here:
 
 - turn a prose paraphrase of a short condition back into notation (write
-  "w has no subword $aa^{-1}$ or $a^{-1}a$", not a sentence describing edges
-  and labels), and display a list or set instead of narrating it;
+  "$x \in U$", not "x lies in the set U described above"), and display a list
+  or set instead of narrating it;
 - divide a long proof into steps, cases, or claims, even when no reviewer
   asked for it.
 

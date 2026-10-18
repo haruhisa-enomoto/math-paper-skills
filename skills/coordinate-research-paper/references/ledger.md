@@ -29,6 +29,8 @@ Classes, assigned by the coordinator:
 - **repair-induced**: its locator lies in text changed by the previous
   revision (check with `git diff` between the two reviewed revisions);
 - **lock**: asks to change a locked owner decision;
+- **self-audit miss**: an SE finding or plain-read point that breaks a
+  paper-writing checklist item which the latest writer self-audit passed;
 - **source access**: the burden exists only because the reader cannot open a
   cited source (an imported fact or a convention match). Once the writer
   states the import exactly, with locator and any change of convention,
@@ -73,7 +75,7 @@ After each writer revision, record in the state file:
 
 - FR and SE finding counts and literal verdicts;
 - counts by class: new objective, repeat, repair failed, repair-induced,
-  lock, owner judgment;
+  self-audit miss, lock, owner judgment;
 - words in total, introduction, and abstract (`texcount`), counted the
   same way every round;
 - passages edited in each of the last three revisions, from `git diff`
@@ -91,6 +93,10 @@ belongs to the owner.
 |-------|----------|----|----|---------------|--------|---------------|----------------|------------------------------|
 
 Introduction and abstract length since the last gate: <words per round>
+
+Self-audit misses (checklist items the writer passed but a later reader
+broke): <count, items>; repeated misses suggest the self-audit is not
+catching what it should.
 
 Churned passages (edited in 3 consecutive rounds, or text added then removed):
 - <locator>: <round>: <what changed>, ...

@@ -144,6 +144,8 @@ For retained mathematical work ask:
 - Does each substantive sentence expose the exact subject and predicate, or
   does ordinary English leave the reader to infer a membership, containment,
   vanishing, factorization, implication, or other assertion?
+- Is a short condition, list, or set stated in notation or a display, or
+  paraphrased in prose that the reader must translate back?
 - Does every pronoun, descriptive phrase, relative pointer, and citation-based
   application have one immediate mathematical referent?
 - When a result is applied, does the prose identify the exact statement or
@@ -202,15 +204,17 @@ reading-copy identity and any required verification, and completion state.  It t
 
 1. **Recovered contract:** the promise, audience, result hierarchy, section
    jobs, and apparent detail budget learned from the manuscript and direction.
-2. **Section audit:** for every section, whether it earns its place and any
-   recurring source of excess, avoidable terminology, or imprecise
-   mathematical reference.
+2. **Section audit:** for every section, whether its opening states what the
+   section proves or does, whether it earns its place as a separate section
+   rather than belonging inside a neighbouring one, and any recurring source
+   of excess, avoidable terminology, or imprecise mathematical reference.
 3. **Mandatory inventories:** with stable identifiers, every explicit remark;
    every negative or defensive scope qualification; every recurring informal
    alias; and every phrase presented as a named theorem, criterion, principle,
    method, or argument. Also inventory every loose result pointer, descriptive
-   substitute for an exact mathematical predicate, or citation-based
-   application found in the precision audit. Give each a `keep`, `compress`,
+   substitute for an exact mathematical predicate, prose paraphrase of a short
+   condition, list, or set, or citation-based application found in the
+   precision audit. Give each a `keep`, `compress`,
    `delete`, `rename`, or `replace` verdict and one sentence identifying either
    its reader benefit or its exact referential defect.
 4. **Findings:** ranked findings with stable identifiers `SE-1`, `SE-2`, and so
