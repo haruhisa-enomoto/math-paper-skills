@@ -15,6 +15,9 @@ This is exposition review, not mathematical research.
 - Length/detail boundary: {{BUDGET}}
 - Protected content and non-scope: {{LOCKS}}
 - Report destination: {{REPORT_PATH}}
+- Delivery method: {{WRITE_THE_REPORT_FILE | RETURN_THE_REPORT_IN_THE_REPLY}}
+  If the named method fails, return the complete report in your reply and
+  state the failure; this is acceptable for a single-packet editorial review.
 - Withheld material: {{PROOF_NOTES_LEDGERS_SOURCES_PRIOR_REVIEWS_DIAGNOSTICS_AND_HISTORY}}
 
 Read only this direction, the reader skill and permitted exposition references,

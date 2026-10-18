@@ -148,9 +148,12 @@ packet. Run FR and SE in parallel. The launchers and directions are
 [SE direction](../../write-research-paper/assets/skeptical-editor-direction.md),
 and [SE launcher](../../write-research-paper/assets/skeptical-editor-launcher.md).
 
-Prefer reader-persisted FR delivery when the reader agent can write its
-report file; supervisor-persisted delivery makes the coordinator re-emit
-every segment report, which costs much context over many rounds.
+Use supervisor-persisted delivery for FR and SE in Claude Code: the reader
+returns its report text and the coordinator saves it verbatim. Claude Code
+refuses report-file writes from subagents ("Subagents should return findings
+as text, not write report files") even when the agent has a Write tool, so a
+Write tool is no basis for reader-persisted delivery. This costs coordinator
+context, since every FR segment report passes through the coordinator.
 
 The coordinator has read the manuscript and the history, so it is
 contaminated: it checks process only, and its messages to readers stay

@@ -10,6 +10,9 @@ Infer the target revision, requested outcome, edit scope, content and structural
 locks, audience, owner-decision boundary, and finish state from conversation
 and read-only inspection. A review or diagnosis alone does not authorize edits.
 Carry settled positive choices forward; do not require their approval again.
+Owner choices in force are those recorded in the live writing state or the
+paper's README. Archived writing states and other archived records are
+history: they carry no choices unless the owner restates them.
 Ask only when an unresolved choice would materially change audience, promise,
 structure, theorem hierarchy, scope, voice, or length/detail boundary beyond
 existing authority. Continue independent authorized work while awaiting it.
