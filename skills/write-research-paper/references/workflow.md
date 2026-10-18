@@ -90,13 +90,24 @@ one cause and cluster, but none may disappear. Journal entries support findings
 and need not each become a cluster.
 
 For each cluster record the observed burden, success criterion, planned repair,
-non-scope, risk, decision, and changed locators. Decide:
+non-scope, risk, decision, and changed locators. Record the decision in two
+parts, so that disagreeing with the reader's repair is never recorded as
+disagreeing with the burden:
 
-- `implement`: accept diagnosis and repair class;
-- `modify`: accept the observed burden and choose another repair;
-- `reject`: cite exact manuscript text or an explicit audience/owner contract
-  showing why the reported burden is not a defect;
-- `defer`: keep an unresolved decision or missing evidence open.
+- **Burden**: `accepted`, `rejected`, or `deferred`. `rejected` needs exact
+  manuscript text or an explicit audience/owner contract showing that the
+  stated audience would not stall there; a reason about the reader's proposed
+  repair never rejects the burden. `deferred` keeps an unresolved decision or
+  missing evidence open.
+- **Repair**, for an accepted burden: `reader's` (the reader's proposed
+  repair) or `alternative` (move, inline, merge, rewrite, delete, or other).
+  When a rule or owner direction bars the reader's repair, name it and choose
+  an alternative.
+
+An accepted burden must change text at its locator; if nothing changes,
+record the burden as rejected with its evidence. Older records map as
+`implement` = accepted with the reader's repair, `modify` = accepted with an
+alternative, `reject` = rejected, and `defer` = deferred.
 
 Do not erase a reported reading difficulty, backward search, translation to an
 exact predicate, or cumulative loss of orientation merely because an expert can
@@ -112,7 +123,8 @@ concrete text already available at that point or an explicit audience contract.
 
 Paper promise, architecture, title/abstract voice, theorem hierarchy, literature
 position, substantial retention, new terminology, and disputed diagnoses can
-require owner judgment. Resolve them within existing authority where settled;
+require owner judgment, as does any edit that changes the wording of a recorded
+owner choice. Resolve them within existing authority where settled;
 otherwise present the recommendation, reason, tradeoff, and minimal alternative.
 Missing context warrants a conditional diagnosis, not an invented repair.
 
@@ -147,7 +159,7 @@ autonomous full-cycle loop), use the
 changed regions, surrounding dependencies, cluster IDs, and neutral success
 criteria without diagnoses or preferred wording. Compare the packet's covered
 IDs with the revision batch before launch and with the returned report.
-A delta closes only those implemented/modified clusters actually checked; it
+A delta closes only those accepted-burden clusters actually checked; it
 cannot close omitted or deferred findings or certify unchanged text.
 
 When the owner instead runs iterative `FR`/`SE` rounds or hands off to

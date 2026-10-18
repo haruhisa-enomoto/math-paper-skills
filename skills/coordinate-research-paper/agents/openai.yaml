@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coordinate Research Paper"
+  short_description: "Multi-model paper relay coordination"
+  default_prompt: "Use $coordinate-research-paper to run the writer, review, polish, and audit relay for this paper, stopping at owner gates."

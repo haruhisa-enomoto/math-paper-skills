@@ -14,6 +14,10 @@ independent exposition review, and natural mathematical prose polishing:
   `amsart` mathematical English with fresh eyes (logging substantive mathematical
   argument touches in `REVISION-NOTES.md`), and repairs any defects flagged in a
   subsequent mathematical diff audit.
+- `coordinate-research-paper` routes the three phases below between the
+  writer, isolated readers, polisher, and math auditor on the owner's behalf,
+  keeps a cross-round finding ledger, and stops at owner gates. It runs in a
+  top-level session that can spawn subagents (for example Claude Code).
 
 ## Multi-model workflow
 
@@ -39,7 +43,10 @@ independent exposition review, and natural mathematical prose polishing:
 The writer owns the shared mathematical-paper exposition standard
 (`write-research-paper/references/exposition-standard.md`). The reader and
 polisher load that standard through a sibling-relative link. Install the three
-skills together and keep their directory layout unchanged.
+skills together and keep their directory layout unchanged. The coordinator is
+needed only on the host that runs the relay, but it depends on the other three
+skills through relative links, so install all four together there; link it the
+same way, for example to `$HOME/.claude/skills/coordinate-research-paper`.
 
 ## Install once for supported agents
 
@@ -108,6 +115,11 @@ conventions through its own instructions or paper-writing overlay.
 
 ```text
 skills/
+├── coordinate-research-paper/
+│   ├── SKILL.md
+│   ├── agents/
+│   ├── assets/
+│   └── references/
 ├── polish-math-prose/
 │   ├── SKILL.md
 │   ├── agents/

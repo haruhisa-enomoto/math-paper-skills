@@ -18,14 +18,16 @@ stated in a synthesis, and every actionable editorial inventory item. Several
 rows may map to one common-cause cluster. Do not make one cluster per journal
 flag.
 
-| Source finding ID | Evidence locator or journal entries | Cluster ID | Decision | Closure evidence |
-|---|---|---|---|---|
-| | | | implement \| modify \| reject \| defer | |
+| Source finding ID | Evidence locator or journal entries | Cluster ID | Burden | Repair | Closure evidence |
+|---|---|---|---|---|---|
+| | | | accepted \| rejected \| deferred | reader's \| alternative: ... | |
 
-Every source finding ID appears exactly once. `Reject` requires exact textual
-or audience-contract evidence. `Defer` is open and prevents a finished
-checkpoint unless the owner explicitly excludes it. Before finishing, verify
-that there are no orphan, duplicate, or open source findings.
+Every source finding ID appears exactly once. A `rejected` burden requires
+exact textual or audience-contract evidence about the burden, not about the
+reader's proposed repair. An accepted burden needs changed text at its
+locator. `Deferred` is open and prevents a finished checkpoint unless the
+owner explicitly excludes it. Before finishing, verify that there are no
+orphan, duplicate, or open source findings.
 
 Use one cluster entry per common cause, not per flag or sentence.
 
@@ -46,17 +48,22 @@ Likely common cause:
 
 Cold-reader success test:
 
-Minimal proposed repair: delete | reorder | replace | add local clause | other
+Reader's proposed repair, if any:
+
+Burden: accepted | rejected | deferred
+
+Burden evidence, mandatory for rejected or deferred:
+
+Chosen repair, for an accepted burden: reader's | alternative (move | inline |
+merge | rewrite | delete | other), with the reason; name any rule that bars the
+reader's repair:
 
 Explicit non-scope:
 
-Risk: local/objective | owner-judgment
+Risk: local/objective | owner-judgment (an edit to the wording of a recorded
+owner choice is owner judgment)
 
 Recommendation and tradeoff:
-
-Decision: implement | modify | reject | defer
-
-Decision evidence, mandatory for reject or defer:
 
 Changed locators:
 
