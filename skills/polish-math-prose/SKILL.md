@@ -73,6 +73,16 @@ compressed. You have full freedom to:
   proofs (`\textbf{Step 1: ...}`) with explicit signposts and exhaustion
   statements.
 
+Natural mathematical English is not prose in place of mathematics. The
+writing guide's rules on stating the mathematics exactly and on proof
+structure are binding here:
+
+- turn a prose paraphrase of a short condition back into notation (write
+  "w has no subword $aa^{-1}$ or $a^{-1}a$", not a sentence describing edges
+  and labels), and display a list or set instead of narrating it;
+- divide a long proof into steps, cases, or claims, even when no reviewer
+  asked for it.
+
 ### 3. Log substantive mathematical touches in `REVISION-NOTES.md`
 
 Because a subsequent mathematical audit will verify your changes against the

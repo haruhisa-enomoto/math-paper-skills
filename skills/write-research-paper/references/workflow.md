@@ -61,6 +61,14 @@ Draft within the locks, integrate in reading order, and apply the shared
 standard, including first encounters and a top-to-bottom boundary pass.
 Record revision and scope; writer self-review is not independent evidence.
 
+**Writer self-audit.** Review findings cover only what readers report, so
+the writer also checks the whole manuscript against the guide: after a new
+draft or a structural change, before the first review of it, and again
+before handing the paper to prose polish. Read the manuscript in order
+against every item of the [paper-writing checklist](paper-writing.md#7-review-the-paper-as-a-reader),
+repair what fails, and record the pass (revision, failed items, repairs) in
+the writing state. The self-audit does not replace independent review.
+
 When supervising a review round, freeze the reading copy, preserving source
 locators for flattened inputs. Supervise fresh isolated readers under their
 mode-specific protocols. Continuous reading retains one reader and staged
@@ -105,7 +113,15 @@ disagreeing with the burden:
   an alternative.
 
 An accepted burden must change text at its locator; if nothing changes,
-record the burden as rejected with its evidence. Older records map as
+record the burden as rejected with its evidence. When a burden that was
+accepted and repaired in an earlier round is raised again, the earlier
+repair did not work: choose a structurally different repair (move, merge,
+inline, delete, or restate at another level), not another local sentence.
+
+Isolated readers cannot open cited sources. When a burden exists only because
+the reader cannot see a source (an imported fact, a convention match), repair
+it by stating exactly what is imported, with its locator and any change of
+convention; never reproduce the source to satisfy the reader. Older records map as
 `implement` = accepted with the reader's repair, `modify` = accepted with an
 alternative, `reject` = rejected, and `defer` = deferred.
 

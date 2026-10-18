@@ -65,14 +65,23 @@ worker.
 
 ```text
 Phase 0  draft:   writer proposes a plan -> gate G0 -> writer drafts from scratch
-Phase 1  relay:   [writer revises] -> FR + SE in parallel -> writer revises -> ...
+Phase 1  relay:   writer self-audit -> FR + SE in parallel -> writer revises -> FR + SE -> ...
                   gate G1 after about 3 FR+SE rounds per structural version
-Phase 1b plain:   plain fresh read -> writer revises from it (once, before polish)
+Phase 1b plain:   plain fresh read -> writer revises from it -> writer self-audit (once, before polish)
 Phase 2  polish:  polisher rewrites -> auditor audits diff -> polisher repairs -> ... until audit clean
 Phase 3  final:   optional plain fresh read -> new-session full math audit -> gate G3
 ```
 
-Enter at whatever phase the state file or the owner names.
+Enter at whatever phase the state file or the owner names. The writer
+self-audit (see the write skill's workflow) runs before the first FR+SE round
+of each structural version and once before polish.
+
+Run the Phase 3 plain read unless a plain read has run since the last
+structural change; report which you chose.
+
+Owner comments at G3 that change structure or content start a new
+structural version: route them to the writer (in discussion mode first if
+the owner wants to discuss), then return to Phase 1 with the self-audit.
 
 **Phase 0** applies when the manuscript does not exist yet. Pass the owner's
 description of the paper (results, sources, audience, any authorship or
@@ -82,7 +91,11 @@ and authorship. Stop at G0 with the plan. After the owner approves or
 comments, send the owner's reply verbatim and ask the writer to draft,
 compile, run the host diagnostics, and create the checkpoint. If the owner's
 comments change the plan materially, ask for a revised plan and stop at G0
-again. Phase 1 begins with an FR+SE round on the first draft.
+again. Phase 1 begins with the writer self-audit of the first draft.
+
+When the owner wants to discuss with the writer before any edit, use the
+discussion mode in the routing reference and relay messages unchanged until
+the owner says to proceed.
 
 ## Starting from a bare request
 

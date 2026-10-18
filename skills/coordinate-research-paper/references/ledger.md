@@ -28,7 +28,12 @@ Classes, assigned by the coordinator:
   repaired, so the repair did not remove the burden;
 - **repair-induced**: its locator lies in text changed by the previous
   revision (check with `git diff` between the two reviewed revisions);
-- **lock**: asks to change a locked owner decision.
+- **lock**: asks to change a locked owner decision;
+- **source access**: the burden exists only because the reader cannot open a
+  cited source (an imported fact or a convention match). Once the writer
+  states the import exactly, with locator and any change of convention,
+  later repeats are tagged but do not count toward the three-reader
+  escalation.
 
 ## Tags sent to the writer
 
@@ -84,6 +89,8 @@ belongs to the owner.
 ```text
 | Round | Revision | FR | SE | New objective | Repeat | Repair failed | Repair-induced | Words (total/intro/abstract) |
 |-------|----------|----|----|---------------|--------|---------------|----------------|------------------------------|
+
+Introduction and abstract length since the last gate: <words per round>
 
 Churned passages (edited in 3 consecutive rounds, or text added then removed):
 - <locator>: <round>: <what changed>, ...

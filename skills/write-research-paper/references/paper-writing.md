@@ -533,6 +533,16 @@ Keep the conceptual argument visible in the main text. Move extensive case
 analysis or calculation to an appendix when it interrupts that argument, but
 state its result and role in the main text.
 
+Do not reproduce a published proof or construction. Cite it with a precise
+locator and state exactly what is imported, including any change of
+convention (for example, applying a result for left modules to the opposite
+algebra). Reproduce material only when the source is unavailable to readers
+or the paper needs a genuinely different argument, and say which.
+
+Choose sections by mathematical job. A section holding a single example or a
+single short result usually belongs inside a neighbouring section; merge it
+unless it serves a separate reading path.
+
 ### Keep optional interpretation optional
 
 Related theories, alternative terminology, historical associations, and
@@ -812,6 +822,17 @@ Before declaring a revision complete, check:
    passage provide an adequate local handoff from the work just completed,
    without relying only on a distant Organization block or generic roadmap
    boilerplate?
+20. Does each section opening say what the section proves or does, rather
+   than only introducing its first lemma?
+21. Is every short condition, list, or set stated in notation or a display
+   rather than paraphrased in prose?
+22. Is every long proof divided into steps, cases, or claims that show its
+   structure?
+23. Does the section structure follow the mathematical jobs, without sections
+   that hold only one example or one short result?
+24. Are published proofs cited with an exact statement of what is imported,
+   rather than reproduced?
+25. Does the stated audience cover the background the paper actually uses?
 
 Compilation checks the artifact, not the reader's understanding. For an ordinary
 prose or proof-structure revision, compile the paper and inspect the log, but do

@@ -53,14 +53,41 @@ Later turns:
 
 ```sh
 codex exec resume <writer-session-id> -m gpt-6-astra \
-  -c model_reasoning_effort="high" \
+  -c model_reasoning_effort="high" -c sandbox_mode="workspace-write" \
   -c 'sandbox_workspace_write.writable_roots=["<repo>/.git"]' \
   -o <review-dir>/writer-<n>.md "<prompt>" </dev/null
 ```
 
-The `workspace-write` sandbox mounts `.git` read-only, so without the
-writable root the writer cannot create its checkpoint. `</dev/null` stops
-Codex from waiting for extra input on stdin.
+`codex exec resume` takes no `-s` flag; without `-c sandbox_mode=...` a
+resumed turn falls back to the sandbox in the user's Codex config, which may
+be full access. The `workspace-write` sandbox mounts `.git` read-only, so
+without the writable root the writer cannot create its checkpoint.
+`</dev/null` stops Codex from waiting for extra input on stdin.
+
+Self-audit prompt (after a new draft or structural change, before its first
+review, and before polish):
+
+```text
+Load write-research-paper and do the writer self-audit of <manuscript path>
+at <revision>: read it in order against every item of the paper-writing
+checklist, repair what fails, and record the pass in the writing state.
+Relay rule: do not launch reviews. Compile, run the host diagnostics, create
+the host checkpoint, and end with the new revision and the failed items.
+```
+
+Discussion mode, when the owner wants to talk with the writer before any
+edit: resume the writer with `-c sandbox_mode="read-only"` and
+
+```text
+Owner direction (verbatim):
+<owner message>
+
+Relay rule: discussion only; do not edit. Reply with your understanding, your
+plan, and your questions.
+```
+
+Relay the reply to the owner unchanged, and the owner's answer back, until
+the owner says to proceed.
 
 Plan prompt for a new paper (Phase 0):
 
@@ -94,15 +121,18 @@ Coordinator ledger tags (relay record, not owner direction):
 Owner direction (verbatim):
 <owner comments, or "none">
 
+Owner direction context (coordinator):
+<the question or gate the owner was answering, or "none">
+
 Relay rule: do not launch reviews; the coordinator runs them. Compile, run
 the host diagnostics, create the host checkpoint, and end with the new
 revision, the revision-batch path, and any item you defer or mark as owner
 judgment.
 ```
 
-Keep the three labels exactly. Only text under "Owner direction" comes from
-the owner; the writer must not cite ledger tags or relay rules as owner
-decisions.
+Keep the labels exactly. Only text under "Owner direction (verbatim)" comes
+from the owner; the context line, ledger tags, and relay rules are the
+coordinator's, and the writer must not cite them as owner decisions.
 
 ## FR and SE readers (Claude subagents)
 
@@ -118,9 +148,18 @@ packet. Run FR and SE in parallel. The launchers and directions are
 [SE direction](../../write-research-paper/assets/skeptical-editor-direction.md),
 and [SE launcher](../../write-research-paper/assets/skeptical-editor-launcher.md).
 
+Prefer reader-persisted FR delivery when the reader agent can write its
+report file; supervisor-persisted delivery makes the coordinator re-emit
+every segment report, which costs much context over many rounds.
+
 The coordinator has read the manuscript and the history, so it is
 contaminated: it checks process only, and its messages to readers stay
 uniform.
+
+Known harness leak: Claude Code may give a reader subagent a git-status
+snapshot with recent commit subjects. It reveals that earlier rounds
+existed, not their findings. Record it if a reader reports it; it does not
+by itself invalidate the run.
 
 ## Plain reader
 
@@ -191,15 +230,20 @@ introduced it or it predates the polish. End with exactly one line:
 "Audit verdict: CLEAN" or "Audit verdict: DEFECTS".
 ```
 
-Resume the same auditor session for re-audits within one polish phase. The
-final audit uses a new session and audits the whole manuscript, not a diff:
+Resume the same auditor session for re-audits within one polish phase, with
+`-c sandbox_mode="read-only"` (resume ignores `-s`). The final audit uses a
+new session and audits the whole manuscript, not a diff:
 
 ```text
 Do a full math audit of <manuscript> at <revision>, TeX only. Do not load
 paper-writing skills or read notes, reviews, or history. Check every
-statement and proof step. End with exactly one line: "Audit verdict: CLEAN"
-or "Audit verdict: DEFECTS".
+statement and proof step. For each numbered result give one line: the
+result, what you checked, and any gap. Then end with exactly one line:
+"Audit verdict: CLEAN" or "Audit verdict: DEFECTS".
 ```
+
+A verdict without the per-result record is incomplete; ask the auditor for
+the record before accepting it.
 
 ## Checking a returned step
 
