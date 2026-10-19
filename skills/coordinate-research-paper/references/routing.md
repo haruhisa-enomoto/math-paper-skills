@@ -270,19 +270,22 @@ read-only sandbox blocks, so allow network access in `workspace-write`:
 
 ```sh
 codex exec -C <repo> -s workspace-write -c sandbox_workspace_write.network_access=true \
+  -c 'sandbox_workspace_write.writable_roots=["<repo>/.git"]' \
   -m gpt-6-astra -c model_reasoning_effort="high" --json \
   -o <review-dir>/cite-<n>.md "<prompt>" </dev/null
 ```
 
 ```text
 Do citation audit for <manuscript> at <revision> following <the host's
-citation-audit workflow>. Do not edit the manuscript. For each finding give
-the locator, the claim or citation concerned, what the source actually
-states (with exact source locator and version), and a proposed repair.
+citation-audit workflow>. Do not edit the manuscript. Write the audit
+record the workflow requires and commit it, without the manuscript files.
+For each finding give the locator, the claim or citation concerned, what the
+source actually states (with exact source locator and version), and a
+proposed repair.
 ```
 
-Afterwards check with `git diff --stat` that the manuscript files are
-unchanged. Send the report to the writer like a review report; the writer
+Afterwards check that the auditor's commit and the working tree leave the
+manuscript files unchanged (`git show --stat HEAD`, `git status`). Send the report to the writer like a review report; the writer
 adjudicates it.
 
 ## Checking a returned step
