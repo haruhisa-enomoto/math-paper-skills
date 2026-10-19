@@ -209,8 +209,10 @@ Rewrite prompt:
 
 ```text
 Load polish-math-prose in rewrite mode. Polish <manuscript scope> with fresh
-eyes. Do not read earlier review reports or revision batches. Locked owner
-decisions: <list>. Owner-banned wording: <list>. Log every substantive
+eyes, including the story of the abstract and introduction; larger
+reorganization is allowed and is listed under "Structural changes". Do not
+read earlier review reports or revision batches. Locked owner decisions:
+<list>. Owner-banned wording: <list>. Log every substantive
 mathematical touch in REVISION-NOTES.md. Compile, run the host diagnostics,
 create the host checkpoint, and end with the new revision.
 ```

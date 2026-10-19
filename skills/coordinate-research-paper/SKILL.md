@@ -149,7 +149,8 @@ proceed without waiting for approval.
   proposed repairs into a direction unless the owner explicitly asks for a
   specific item to be there.
 - **Polisher turns.** Let the polisher rewrite freely, including proof
-  exposition and new overview text. Expect mathematical slips; the auditor
+  exposition, new overview text, the story of the abstract and
+  introduction, and larger reorganization of the body. Expect mathematical slips; the auditor
   catches them. Give the polisher only the scope, the locked owner decisions,
   and owner-banned wording, so that it does not revert explicit owner choices.
 - **Audit findings.** Send polish-introduced defects to the polisher for
@@ -172,7 +173,10 @@ reference, at:
   polish, or something else. Count rounds again from zero after a structural
   or scope change.
 - **G2** when the polish audit loop exceeds its cap (default 5 audit rounds)
-  or an audit reports a false statement that predates the polish.
+  or an audit reports a false statement that predates the polish; and, once
+  the audit is clean, when `REVISION-NOTES.md` lists structural changes. The
+  owner decides whether they need another FR+SE round; they do not send the
+  relay back to Phase 1 automatically.
 - **G3** after the final audit. Report whether the citation audit ran, at
   which revision, and any open citation findings, so that a clean math audit
   is not read as covering attribution. The owner's own reading decides when

@@ -30,6 +30,10 @@ mathematics paper workflow:
 Before editing, read completely the
 [AI mathematical writing anti-patterns guide](references/anti-patterns.md), the
 shared [exposition standard](../write-research-paper/references/exposition-standard.md),
+the writing guide's sections
+[State the mathematics exactly](../write-research-paper/references/paper-writing.md#3-state-the-mathematics-exactly)
+and
+[Expose the logic of statements and proofs](../write-research-paper/references/paper-writing.md#5-expose-the-logic-of-statements-and-proofs),
 and the host project's paper-writing overlay (such as `docs/PAPER-WRITING.md`)
 if present.
 
@@ -73,9 +77,8 @@ compressed. You have full freedom to:
   proofs (`\textbf{Step 1: ...}`) with explicit signposts and exhaustion
   statements.
 
-Natural mathematical English is not prose in place of mathematics. The
-writing guide's rules on stating the mathematics exactly and on proof
-structure are binding here:
+Natural mathematical English is not prose in place of mathematics. The two
+writing-guide sections in the read list above are binding here:
 
 - turn a prose paraphrase of a short condition back into notation (write
   "$x \in U$", not "x lies in the set U described above"), and display a list
@@ -83,14 +86,29 @@ structure are binding here:
 - divide a long proof into steps, cases, or claims, even when no reviewer
   asked for it.
 
-### 3. Log substantive mathematical touches in `REVISION-NOTES.md`
+### 3. Tell the story
+
+Read the abstract and introduction as a reader deciding whether to read the
+paper. If they do not carry a story (why the question matters, what the paper
+answers, and what the reader will learn), rewrite them: reorder, merge, or
+replace paragraphs freely so that the motivation comes first, the main
+results stand out, and limitations come last. Section openings may be
+rewritten the same way. Keep every theorem statement and hypothesis exact.
+
+Larger reorganization of the body (moving a result, merging or splitting
+sections) is allowed when it clearly improves the reading. List each such
+change under "Structural changes" in `REVISION-NOTES.md`.
+
+### 4. Log substantive mathematical touches in `REVISION-NOTES.md`
 
 Because a subsequent mathematical audit will verify your changes against the
 pre-polish baseline, create or update `REVISION-NOTES.md` (in the manuscript
 directory or owner-specified path) with:
 
-1. **Summary of prose and organizational improvements** by section; and
-2. **Substantive mathematical and proof-presentation log**: an explicit list of
+1. **Summary of prose and organizational improvements** by section;
+2. **Structural changes**, if any: every moved result and every merged,
+   split, added, or removed section, with old and new locations; and
+3. **Substantive mathematical and proof-presentation log**: an explicit list of
    every location (with file, theorem/lemma/proposition number, and line range)
    where you unpacked a proof step, reordered or combined deductions, rewrote a
    formula or sign convention, adjusted a quantifier or hypothesis, or
@@ -99,7 +117,7 @@ directory or owner-specified path) with:
 This log allows the mathematical auditor to focus immediately on every place
 where mathematical meaning could have shifted.
 
-### 4. Preserve invariants and validate the build
+### 5. Preserve invariants and validate the build
 
 - Preserve all `\label`, `\ref`, `\eqref`, and `\cite` keys and theorem/equation
   numbering unless the owner explicitly authorizes changing them.
