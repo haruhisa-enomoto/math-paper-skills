@@ -95,6 +95,12 @@ replace paragraphs freely so that the motivation comes first, the main
 results stand out, and limitations come last. Section openings may be
 rewritten the same way. Keep every theorem statement and hypothesis exact.
 
+The story continues through the body: rewrite transitions between sections
+and the motivation before key constructions or results so that the reader
+always knows why the next step is taken. A transition should carry
+mathematical content (what was just shown and what it is needed for), not
+generic roadmap boilerplate.
+
 Larger reorganization of the body (moving a result, merging or splitting
 sections) is allowed when it clearly improves the reading. List each such
 change under "Structural changes" in `REVISION-NOTES.md`.
