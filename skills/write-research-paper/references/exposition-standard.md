@@ -144,8 +144,10 @@ inspect rendered pages does not by itself authorize layout adjustments.
 Explain why a formal statement appears in preceding prose. Avoid advertising
 captions and coined theorem names; use established names or deliberately defined
 ones. State objects, hypotheses, and conclusions so the result is locally
-understandable. Mirror numbered parts in proofs; label implication directions
-explicitly with a colon and explain appeals to duality or earlier parts.
+understandable. Mirror numbered parts in proofs: open each part with its label
+as a paragraph heading (`(1)`, or `(1) $\Rightarrow$ (2):` for a direction), in
+the statement's order, never as `For (1), ...` or `this proves (1)`; explain
+appeals to duality or earlier parts.
 Distinguish fixed-algebra implications from universal ones, including changes
 of algebra along the argument.
 

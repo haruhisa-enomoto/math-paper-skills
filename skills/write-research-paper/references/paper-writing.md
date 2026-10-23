@@ -583,11 +583,30 @@ followed by
 
 The statement should contain the objects, hypotheses, and conclusions needed to
 understand it locally. Mirror numbered parts in the proof and label the actual
-directions of an equivalence. Treat each direction label as a heading ending in
-a colon. State explicitly when a part follows by duality or from an earlier
-part. Avoid phrases such as `the nontrivial direction` when the reader must stop
-to determine which implication is meant; it is fine for one direction to be
-immediate, but say explicitly why it is immediate.
+directions of an equivalence. Begin the proof of each numbered part with its
+label as a heading at the start of a paragraph, in the order of the statement:
+`(1)` for a part, `(1) $\Rightarrow$ (2):` for a direction. Do not refer to the
+part inside a sentence instead (`For (2), ...`, `Assertion (1) follows ...`,
+`... this proves (1)`), and do not interleave parts, for example by proving half
+of (1), then half of (2), then the duals of both. State explicitly when a part
+follows by duality or from an earlier part. Avoid phrases such as `the
+nontrivial direction` when the reader must stop to determine which implication
+is meant; it is fine for one direction to be immediate, but say explicitly why
+it is immediate.
+
+Bad:
+
+> Assertion (1) follows from Lemma 2.3. For (2), the map \(f\) is surjective
+> by (1), so \(\ker f\) is projective. Since \(\ker f\) is projective, the
+> sequence splits; this proves (3).
+
+Better:
+
+> (1) This follows from Lemma 2.3.
+>
+> (2) The map \(f\) is surjective by (1), so \(\ker f\) is projective.
+>
+> (3) Since \(\ker f\) is projective by (2), the sequence splits.
 
 Bad:
 
@@ -639,8 +658,8 @@ state the exact kernel, image, or universal property used.
 
 Choose an internal label according to its logical role. A `Step` is one stage of
 a sequential argument, a `Case` is one branch of a case division, a `Claim` is
-an assertion proved locally and used later, and `Part (1)`, `Part (2)`, and so
-on mirror the numbered conclusions of the statement. Announce a proof divided
+an assertion proved locally and used later, and the bare part labels `(1)`,
+`(2)`, and so on mirror the numbered conclusions of the statement. Announce a proof divided
 into several steps before the first step, and number steps, cases, or claims
 only when more than one occurs. Length alone does not require numbered claims:
 use short transitions when the argument is linear. Set the label and a

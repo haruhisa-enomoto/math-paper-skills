@@ -84,7 +84,11 @@ writing-guide sections in the read list above are binding here:
   "$x \in U$", not "x lies in the set U described above"), and display a list
   or set instead of narrating it;
 - divide a long proof into steps, cases, or claims, even when no reviewer
-  asked for it.
+  asked for it;
+- open the proof of each numbered part with its label as a paragraph heading
+  (`(1)`, or `(1) $\Rightarrow$ (2):`), in the statement's order. Never move a
+  part label into a sentence (`For (2), ...`, `this proves (1)`), and convert
+  such sentences you find into headed paragraphs.
 
 ### 3. Tell the story
 
