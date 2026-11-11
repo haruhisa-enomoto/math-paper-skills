@@ -41,8 +41,8 @@ placeholder or omission convention when none is supplied.
 
 Give each substantive statement an exact subject, predicate, evidence status,
 and immediate referent. State the membership, vanishing, factorization, equality,
-or other condition actually used; an informal gloss may explain it but cannot
-replace it. A later display does not repair an earlier opaque sentence.
+or other condition actually used; an informal gloss cannot replace it and is
+omitted when the formula is clear. A later display does not repair an earlier opaque sentence.
 Repeat notation or use a numbered reference when a relative pointer requires
 backtracking. When a result, equation, or case already has a number, cite the
 number rather than a descriptive label such as "the X formula" or "the
@@ -84,10 +84,21 @@ physical actors ("Nilpotence writes...", "Linear independence puts...",
 imperative chains** ("Eliminate... Give... Reverse... Assign..."), and
 **stacked noun modifiers** ("the rightmost surviving return arrow factor"); see
 [`polish-math-prose/references/anti-patterns.md`](../../polish-math-prose/references/anti-patterns.md).
-Expose omitted operations and reasons when the intended reader would otherwise
-reconstruct them; do not expand immediate routine steps. Calibrate style from
+Expose a load-bearing omitted operation or reason, in notation where possible;
+do not expand routine steps. Calibrate style from
 complete approved passages, not frequency counts or generalizations about an
 author's whole output.
+
+## Formulas over prose
+
+Walking through a condition, computation, or routine deduction in English
+when a formula with a short connective would state it is a defect, whatever
+the sentence length: write "Hence $I\Hom_A(M,N)=0$", not "every morphism from
+$M$ to $N$ is killed by $I$". Keep prose for purpose, choices, and proof
+ideas, and keep it short. Split or reduce body sentences over about 40 words;
+state a plan or a lemma's purpose once; use the field's standard notation for
+standard objects. Repair a reported reconstruction of a routine step by a
+formula, a reference, or a split sentence, not by added prose.
 
 ## Organization and first encounters
 
@@ -97,10 +108,16 @@ Keep abstracts within **150 words by default**, unless explicit owner or venue
 instructions call for a different length. Check the word count when drafting or
 revising an abstract. Leave secondary results and organizational detail to the
 introduction rather than compressing every contribution into the abstract.
+Mark main results in the authors' voice ("We prove that ...", "In particular,
+...") rather than listing bare statements.
 
 The introduction gives the problem or subject, the precise principal results
 and their significance, the contribution relative to known work, and the main
-ideas needed to understand the approach. Keep proof details in the body.
+ideas needed to understand the approach. Keep proof details in the body. Cite
+prior work where each known notion or phenomenon first appears, from the
+first paragraph on. Aim for about two to four pages; move worked checks and
+secondary examples to the body, and use subsections when the introduction
+has several jobs.
 
 In the introduction, ordinary background vocabulary and harmless global
 conventions may precede the closing conventions block. Define paper-specific
@@ -128,6 +145,8 @@ grammatical form. Read the contents as a mathematical synopsis and avoid imposin
 one repeated syntactic template. Give useful examples before or alongside
 constructions when needed to understand them. Keep the conceptual argument in
 the main text; move interruptive calculation to appendices with its role stated.
+Keep figure captions to a short phrase or sentence, with explanation in the
+text, and use colours clearly distinct from black on the rendered page.
 
 ## Page layout
 

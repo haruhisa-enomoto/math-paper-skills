@@ -153,6 +153,11 @@ proceed without waiting for approval.
   introduction, and larger reorganization of the body. Expect mathematical slips; the auditor
   catches them. Give the polisher only the scope, the locked owner decisions,
   and owner-banned wording, so that it does not revert explicit owner choices.
+  When passing owner locks to any worker, say that they protect content and
+  attributions, not wording or length.
+- **Figures.** Once per structural version, render the figure pages of the
+  PDF and check that the colours are clearly distinct and the captions are
+  short; report problems to the writer.
 - **Audit findings.** Send polish-introduced defects to the polisher for
   repair. Send defects that predate the polish to the writer.
 - **Checkpoints.** After each completed step, confirm that the worker

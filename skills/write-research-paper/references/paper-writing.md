@@ -185,30 +185,9 @@ for every \(i\ge 1\)
 before summarizing its consequence. A display which appears only after an opaque
 sentence does not make that sentence forward-readable.
 
-When a sentence merely paraphrases a short mathematical condition, state the
-condition in notation. Prefer
-
-```text
-Assume that \(\operatorname{Hom}_A(M,K)\ne 0\).
-Choose an indecomposable direct summand \(Z\) of \(K\) such that
-\(\operatorname{Hom}_A(M,Z)\ne 0\).
-```
-
-to idioms such as `K receives a nonzero map from M`. Avoid English-dependent
-spatial or directional paraphrases which conceal a standard predicate:
-expressions such as `the extension dies`, `the syzygy stabilizes`, `the module
-survives the shift`, or `the map passes through the projectives` are useful
-only when they have already been given a precise meaning and genuinely shorten
-a repeated argument.
-
-This is not a rule to replace mathematical prose by strings of symbols. Plain
-mathematical language uses ordinary syntax to explain the logical movement and
-the purpose of a construction, while stating load-bearing predicates exactly.
-Here `plain` means conventional, low-friction mathematical prose, not
-colloquial or merely fluent general English. The formula should state the fact
-on which the explanation depends. After writing
-\(\operatorname{grade} M=n\), say precisely which evaluation map remains to be
-proved injective or surjective.
+Follow the shared standard's "Formulas over prose". Avoid spatial paraphrases
+that conceal a standard predicate (`the extension dies`, `the map passes
+through the projectives`) unless they have been given a precise meaning.
 
 Define every paper-specific term, symbol, statistic, and construction before
 using it. Typography does not define a term; emphasizing an unexplained word
@@ -843,8 +822,8 @@ Before declaring a revision complete, check:
    boilerplate?
 20. Does each section opening say what the section proves or does, rather
    than only introducing its first lemma?
-21. Is every short condition, list, or set stated in notation or a display
-   rather than paraphrased in prose?
+21. Does the paper follow the shared standard's formulas-over-prose,
+   abstract, introduction, and caption rules?
 22. Is every long proof divided into steps, cases, or claims that show its
    structure?
 23. Does the section structure follow the mathematical jobs, without sections

@@ -171,6 +171,9 @@ missing or delayed handoffs, separately from logical gaps. Do not infer defects
 from ordinary stative mathematical subjects ("the functor is exact") or
 repeated conventional connectives ("Since", "Then", "Hence").
 
+Use `[verbose]` as defined in the direction; for a routine step, name the
+formula or reference that would remove the burden, not more prose.
+
 Apply the shared standard's introduction allowance: harmless background
 conventions may wait, but a convention-sensitive assertion or undefined
 paper-specific theorem term cannot. Check the separate closing Organization

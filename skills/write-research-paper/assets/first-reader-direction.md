@@ -199,6 +199,8 @@ attention, not a checklist.}}
   State the job that ended, the job that began, and the missing or delayed
   handoff. Tag a formal-first section opening as `[order]`; add `[continuity]`
   only when the handoff itself also imposes this reconstruction burden.
+- `[verbose]` — words, or a sentence too long to parse, where a formula, a
+  reference, or a shorter sentence would do; name the replacement.
 - `[gap]` — possible mathematical problem (keep separate; do not verify).
 {{EXTRA_FLAGS — optional.  Add a category only when a whole class of
 difficulty would otherwise be invisible in the totals.}}

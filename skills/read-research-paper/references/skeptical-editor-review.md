@@ -137,6 +137,12 @@ result from nearby work, exposes a proof dependency, supplies context needed
 for a later argument, or materially helps the intended reader use the result.
 Being true, clear, harmless, or mathematically related is not by itself enough.
 
+### Density audit
+
+Apply the shared standard's formulas-over-prose and caption rules: inventory
+verbal walk-throughs, body sentences over about 40 words, repeated plans, and
+long captions, with a verdict naming any replacing formula or reference.
+
 ### Referential-precision audit
 
 For retained mathematical work ask:
@@ -144,8 +150,8 @@ For retained mathematical work ask:
 - Does each substantive sentence expose the exact subject and predicate, or
   does ordinary English leave the reader to infer a membership, containment,
   vanishing, factorization, implication, or other assertion?
-- Is a short condition, list, or set stated in notation or a display, or
-  paraphrased in prose that the reader must translate back?
+- Is a condition, list, set, or routine deduction stated in notation or a
+  display, or walked through in prose that the reader must translate back?
 - Does every pronoun, descriptive phrase, relative pointer, and citation-based
   application have one immediate mathematical referent?
 - When a result is applied, does the prose identify the exact statement or
@@ -165,8 +171,10 @@ competent reader's ability to reconstruct the intended meaning does not make
 the interface precise. A passage may pass the necessity audit and still require
 `rename` or `replace`.
 
-Do not optimize raw word count.  Keep necessary hypotheses, definitions,
-motivation, proof explanations, and scope boundaries.  Do not replace correct
+Do not optimize raw word count for its own sake; the density audit targets
+words that a formula, a reference, or a shorter sentence would replace.  Keep
+necessary hypotheses, definitions, motivation, proof explanations, and scope
+boundaries.  Do not replace correct
 technical terminology merely because it is specialized.  This is exposition
 review, not proof verification, source checking, novelty assessment, or copy
 editing. The precision audit concerns mathematical reference and status, not a
@@ -188,6 +196,8 @@ reviewer's preferred prose style.
   paper or protects the writer's choice rather than the reader's understanding.
 - `[repeat]` -- the same mathematical work has already been done elsewhere in
   the paper without a new local role.
+- `[verbose]` -- words where a formula, a reference, or a shorter sentence
+  would do.
 
 Do not infer a defect from a keyword alone. State the passage's intended role
 and give the evidence required by the relevant audit. For a necessity finding,

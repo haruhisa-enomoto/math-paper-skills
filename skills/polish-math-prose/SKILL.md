@@ -80,7 +80,7 @@ compressed. You have full freedom to:
 Natural mathematical English is not prose in place of mathematics. The two
 writing-guide sections in the read list above are binding here:
 
-- turn a prose paraphrase of a short condition back into notation (write
+- apply the shared standard's formulas-over-prose and caption rules (write
   "$x \in U$", not "x lies in the set U described above"), and display a list
   or set instead of narrating it;
 - divide a long proof into steps, cases, or claims, even when no reviewer
@@ -89,6 +89,8 @@ writing-guide sections in the read list above are binding here:
   (`(1)`, or `(1) $\Rightarrow$ (2):`), in the statement's order. Never move a
   part label into a sentence (`For (2), ...`, `this proves (1)`), and convert
   such sentences you find into headed paragraphs.
+
+Owner locks protect content and attributions, not length.
 
 ### 3. Tell the story
 
